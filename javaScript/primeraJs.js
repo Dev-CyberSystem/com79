@@ -16,7 +16,7 @@ funcionAnonima();
 
 document.write(mensaje);
 
-function funcionMensaje(){
+function funcionSuma(){
   let suma = 0;
   let a = 5;
   let b = 10;
@@ -25,6 +25,7 @@ function funcionMensaje(){
   alert("El resultado de la suma es:" + suma);
 }
 
+funcionSuma();
 // console.log(nombre);
 
 // crear variables y mostrar en pantalla ya sea con un document.write o un alert o un console.log
