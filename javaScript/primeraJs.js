@@ -6,12 +6,24 @@
 // var nombre = "Almiron"
 
 let nombre = "Kennedy";
+let mensaje = "Hola mundo, aqui el asel informando";
 
 function funcionAnonima() {
 
   console.log(nombre);
 }
 funcionAnonima();
+
+document.write(mensaje);
+
+function funcionMensaje(){
+  let suma = 0;
+  let a = 5;
+  let b = 10;
+  suma = a+b;
+  console.log(suma);
+  alert("El resultado de la suma es:" + suma);
+}
 
 // console.log(nombre);
 
