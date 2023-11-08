@@ -13,6 +13,7 @@ function funcionAnonima() {
 }
 funcionAnonima();
 
+document.write("Hola mundo, aqui el asel")
 // console.log(nombre);
 
 // crear variables y mostrar en pantalla ya sea con un document.write o un alert o un console.log
