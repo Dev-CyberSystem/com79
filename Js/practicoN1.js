@@ -20,3 +20,8 @@ let b = prompt("Ingrese el primer número:");
 
    document.writeln(suma);
   }
+
+  sumar()
+
+  
+
