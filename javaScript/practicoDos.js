@@ -59,5 +59,5 @@ console.log(`El nombre que ingresaste es ${resultadoNombre.trim()}`)
 // Mediante un prompt pide al usuario que ingrese dos numeros, estos se deben almacenar en dos variables diferentes, luego haz una suma de ambos y que el resultado se guarde en otra variable, muestra el resultado de la suma en el documento.
 const primerNumeroIngresado = prompt('Ingresa un numero a sumar')
 const segundoNumeroIngresado = prompt('Ingresa un segundo numero a sumar')
-const resultadoSuma = parseInt(primerNumeroIngresado) + parseInt(segundoNumeroIngresado)
-console.log(`El resultado de la suma es ${resultadoSuma}`)
+const resultadoSuma = parseFloat(primerNumeroIngresado) + parseFloat(segundoNumeroIngresado)
+document.write(`El resultado de la suma es ${resultadoSuma}`)
