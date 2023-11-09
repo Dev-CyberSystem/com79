@@ -31,13 +31,37 @@ let sextoPunto2=`${sextoPunto} Gimenez`
 console.log(sextoPunto2)
 
 // Crea dos variables con valores booleanos diferentes y utiliza el operador lógico AND (&&) para compararlas. Muestra el resultado en la consola.
-let septimoPunto=10>12
-let septimoPunto2=10==10
+let septimoPunto=true
+let septimoPunto2=false
 let septimoResultado=septimoPunto&&septimoPunto2
 console.log(septimoResultado)
+
 // Crea dos variables con valores booleanos diferentes y utiliza el operador lógico OR (||) para compararlas. Muestra el resultado en la consola.
+let octavoPunto=true
+let octavoPunto2=false
+let octavoResultado=octavoPunto||octavoPunto2
+console.log(octavoResultado)
+
 // Crea una variable que almacene un valor numérico y utiliza el operador de comparación mayor que (>) para compararlo con otro valor numérico. Muestra el resultado en la consola.
+let novenoPunto=10
+let novenoResultado=novenoPunto<15
+console.log(novenoResultado)
+
 // Crea una variable que almacene un valor numérico y utiliza el operador de comparación menor o igual que (<=) para compararlo con otro valor numérico. Muestra el resultado en la consola.
+let decimoPunto=25
+let decimoResultado=decimoPunto<=15
+console.log(decimoResultado)
+
 // Mediante un prompt pide al usuario que ingrese un numero y luego muestra el resultado en la consola.
+let ingreseNumero=parseInt(prompt(`ingrese su numero aqui`))
+console.log(ingreseNumero)
+
 // Mediante un prompt pide al usuario que ingrese su nombre y luego muestra el resultado en la consola.
+let ingreseNombre= prompt(`ingrese su Nombre aqui`)
+console.log(ingreseNombre)
+
 // Mediante un prompt pide al usuario que ingrese dos numeros, estos se deben almacenar en dos variables diferentes, luego haz una suma de ambos y que el resultado se guarde en otra variable, muestra el resultado de la suma en el documento.
+let primerNumero=parseInt(prompt(`ingrese el primer numero`))
+let segundoNumero=parseInt(prompt(`ingrese el segundo numero`))
+let resultadoSuma=primerNumero+segundoNumero
+document.write(`El resultado de la suma entre ${primerNumero} y ${segundoNumero} es: ${resultadoSuma}`)
