@@ -1,0 +1,1 @@
+Realiza una operación matemática simple y almacena el resultado en una variable. Luego, muestra el resultado en la consola.
