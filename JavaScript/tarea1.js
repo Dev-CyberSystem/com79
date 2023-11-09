@@ -16,4 +16,6 @@ function mostrarMensaje(nombre, edad, pasatiempo) {
   console.log(mensaje);
 }
 
-mostrarMensaje('Nicolas', 26, 'Jugar videojuegos');
+mostrarMensaje('Nicolas', 26, 'Jugar videojuegos'); 
+
+
