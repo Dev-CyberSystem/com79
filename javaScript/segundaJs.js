@@ -100,7 +100,7 @@ let posicion = texto.indexOf("m")
 // let minuscula = prompt("Ingresa tu nombre").toLowerCase()
 
 // reemplazar
- let reemplazo = texto.replace("Hola", "Chau")
+let reemplazo = texto.replace("Hola", "Chau")
 
 //  Hola Mundo 
  // Obtener una subcadena
