@@ -13,6 +13,7 @@ function funcionAnonima() {
 }
 funcionAnonima();
 
+
 // console.log(nombre);
 
 // crear variables y mostrar en pantalla ya sea con un document.write o un alert o un console.log
