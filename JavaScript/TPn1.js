@@ -30,4 +30,4 @@ function matemática(){
 
     document.write("<br>"+"La constante "+text1+" "+"posee un valor de "+valorPi+" "+"y por ser una "+propiedadA+" "+"sabemos que tendrá infinitos decimales.")
 }
-matemática() //Hasta aquí segundo texto agregado la .html
+matemática() //Hasta aquí segundo texto agregado al .html
