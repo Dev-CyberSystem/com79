@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tp2 javascript </title>
+</head>
+
+<body>
+  <h1>IAbrí la consola y descubrí los resultados a las preguntas </h1>
+
+  <script src="./tp2js.js"></script>
+  <script>
+    let numero1 = 10;
+    let numero2 = 5;
+
+    let resultado = numero1 + numero2;
+    console.log("1)El resultado de la operación es: ", resultado)
+
+    let comparaUno = 10;
+    let comparaDos = 5;
+
+    let sonIguales = numero1 == numero2;
+    console.log("2)Los numeros son iguales? ", sonIguales);
+
+    let compararUno = 10;
+    let compararDos = 5;
+
+    let sonDistintos = numero1 != numero2;
+    console.log("3)Los numeros son distintos? ", sonDistintos);
+
+    let numeroAincrementar = 10;
+    let incremento = numeroAincrementar += 5;
+
+    console.log("4)El nuevo valor de la variable es: " + incremento);
+
+    let numeroDecreciente = 29;
+    let decremento = numeroDecreciente -= 3;
+
+    console.log("5)El nuevo valor de la variable es: " + decremento);
+
+
+    let texto1 = "Hola Agus como estás? ";
+    let texto2 = "Hola bel tanto tiempo!, muy bien, vos como estás? ";
+    let texto3 = "bien! voy apurada hasta luego!";
+
+    textoCharla = texto1 + texto2 + texto3
+
+    console.log("6) ", textoCharla + "  hasta luego bel!");
+
+
+    let ValorBooleano1 = true;
+    let ValorBooleano2 = false;
+
+
+    let resultadoBooleanos = ValorBooleano1 && ValorBooleano2;
+
+
+    console.log("7) El resultado de la comparación es: ", resultadoBooleanos);
+
+    let ValorBooleano3 = true;
+    let ValorBooleano4 = false;
+
+
+    let resultadoBooleanos2 = ValorBooleano3 || ValorBooleano4;
+
+    // Mostrar el resultado en la consola
+    console.log("8) El resultado de la comparación es: ", resultadoBooleanos2); 
+
+
+    let numeroComparar = 10;
+    let numeroComparar2 = 5;
+    let esMayorQue = numeroComparar > numeroComparar2;
+
+   
+    console.log("9)El primer número es mayor que el segundo? " + esMayorQue);
+
+
+    let numeroCompararMayorOigual = 20;
+    let numeroCompararMayorOigual2 = 15;
+    let esMayorOigualQue = numeroCompararMayorOigual <= numeroCompararMayorOigual2;
+
+   
+    console.log("10) El primer número es mayor o igual que el segundo? " + esMayorOigualQue);
+
+    let numeroIngresado = prompt("Ingrese un número:");
+    console.log ( "11 ) El número ingresado es: " , numeroIngresado)
+
+
+    let nombreIngresado = prompt("Ingrese su nombre:");
+    console.log ( "12 ) El nombre ingresado es: " , nombreIngresado)
+
+
+    let primerNumero = prompt("Ingrese el primer número a sumar:");
+    let segundoNumero = prompt("Ingrese el segundo número a sumar:");
+    let resultadoSuma = primerNumero + segundoNumero;
+
+    console.log( "13) El resultado de la suma entre ", primerNumero , "y " , segundoNumero ,"es :"  , resultadoSuma)
+
+  </script>
+</body>
+
+</html>
