@@ -14,6 +14,7 @@ function funcionAnonima() {
 }
 funcionAnonima();
 
+<<<<<<< HEAD
 document.write(mensaje);
 
 function funcionSuma(){
@@ -26,6 +27,9 @@ function funcionSuma(){
 }
 
 funcionSuma();
+=======
+
+>>>>>>> dcbdf2d93610259d436654f157b17fcf642acb40
 // console.log(nombre);
 
 // crear variables y mostrar en pantalla ya sea con un document.write o un alert o un console.log
