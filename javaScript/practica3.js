@@ -53,3 +53,17 @@ function sonDistintos (){
 }
 sonDistintos();
 
+// Ejercicio 6: Crea una funcion donde se declaren dos variables con valores numericos y se compare si el primero es mayor que el segundo, luego muestra el resultado en la consola.
+
+function esMayor(){
+    let numero5=17
+    let numero6=23
+
+    if(numero5 > numero6){
+        console.log("El número " +" "+ numero5 + "es mayor que " + numero6)
+    } else {
+        console.log("El número " + numero5 + " no es mayor que " + numero6)
+    }
+}
+esMayor();
+
