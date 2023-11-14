@@ -35,3 +35,12 @@ function combinadas (){
 combinadas()
 
 //Ejercicio 4:  Crea una funcion donde se declaren dos variables con valores booleanos y se compare si son iguales, luego muestra el resultado en la consola.
+
+function sonIguales(){
+    let verdad1= true
+    let falso2 = false
+
+    console.log(verdad1==falso2)
+}
+sonIguales();
+
