@@ -1,4 +1,4 @@
-//Crea una Funcion que reciba dos parametros y los reste, luego muestra el resultado en la consola.
+// Ejercicio 1 :Crea una Funcion que reciba dos parametros y los reste, luego muestra el resultado en la consola.
 
 /*function resta (num1, num2){
     console.log(num1-num2)
@@ -14,13 +14,24 @@ function restar(){
 }
 restar();*/
 
-// Crea una funcion donde se declare una variable con el valor 5 y se le sume 10, luego muestra el resultado en la consola.
+// Ejercicio 2: Crea una funcion donde se declare una variable con el valor 5 y se le sume 10, luego muestra el resultado en la consola. 
 
 
 function sumaDiez(){
     let soloCinco= 5
     let sumaleACinco= soloCinco+10
     console.log(sumaleACinco)
-    alert("Tu resultado es "+ sumaleACinco)
+   // alert("Tu resultado es "+ sumaleACinco)
 }
 sumaDiez();
+
+// Ejercicio 3: Crea una funcion donde se declaren dos variables con valores en string y se concatenen, luego muestra el resultado en la consola.
+
+function combinadas (){
+    let combi1= "Auto"
+    let combi2= "Movil"
+    console.log(combi1+combi2)
+}
+combinadas()
+
+//Ejercicio 4:  Crea una funcion donde se declaren dos variables con valores booleanos y se compare si son iguales, luego muestra el resultado en la consola.
