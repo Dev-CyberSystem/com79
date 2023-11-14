@@ -44,3 +44,12 @@ function sonIguales(){
 }
 sonIguales();
 
+// Ejercicio 5: Crea una funcion donde se declaren dos variables con valores booleanos y se compare si son diferentes, luego muestra el resultado en la consola.
+
+function sonDistintos (){
+    let verdad2= true
+    let verdad4= true
+    console.log(verdad2!=verdad4)
+}
+sonDistintos();
+
