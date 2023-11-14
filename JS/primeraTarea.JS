@@ -12,7 +12,7 @@ console.log("Actualmente estoy estudiando Programación: " + (carrera));
 
 let persona = {
   nombreyApellido:"Georgina Costilla",
-  aniodeNacimiento: 1991,
+  fechadeNacimiento: 1991,
   carrera: "Programación y Comunicación social",
   cursa: true
 }

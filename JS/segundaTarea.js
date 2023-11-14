@@ -56,12 +56,12 @@ console.log("¿Debo estudiar? " + estudiar)
 //• Crea una variable que almacene un valor numérico y utiliza el operador de comparación mayor que (>) para compararlo con otro valor numérico. Muestra el resultado en la consola.
 
 let datoNumerico = 13
-console.log(`¿el número ${datoNumerico} es mayor que el numero 7?: ${datoNumerico > 7}`)
+console.log(`¿El número ${datoNumerico} es mayor que el numero 7?: ${datoNumerico > 7}`)
 
 //• Crea una variable que almacene un valor numérico y utiliza el operador de comparación menor o igual que (<=) para compararlo con otro valor numérico. Muestra el resultado en la consola.
 
 let valorNumerico = 4
-console.log(`¿el número ${valorNumerico} es menor que el numero 17?: ${valorNumerico <= 17}`)
+console.log(`¿El número ${valorNumerico} es menor que el numero 17?: ${valorNumerico <= 17}`)
 
 //• Mediante un prompt pide al usuario que ingrese un numero y luego muestra el resultado en la consola.
 
