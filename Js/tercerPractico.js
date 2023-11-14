@@ -144,22 +144,124 @@ function palindromo(){
 palindromo()
 
 // Crear un programa que pida al usuario una letra y luego muestre si es una vocal o una consonante.
+let vocalConsonante = () => {
+    let letra=prompt(`ingrese una letra`)
+    if(letra===`a`|| letra===`e`|| letra===`i`|| letra===`o`|| letra===`u`){
+        console.log(`la letra ingresada es una vocal`)
+    }else{
+        console.log(`la letra ingresada es una consonante`)
+    }
+}
+vocalConsonante()
 
 // Crear un programa que pida al usuario un número del 1 al 7 y luego muestre el día de la semana correspondiente.
+let diaSemana = ()=> {
+    let num=parseInt(prompt(`ingrese un numero del 1 al 7`))
+    if(num==1){
+        console.log(`Lunes`)
+    }else if(num==2){
+        console.log(`Martes`)
+    }else if(num==3){
+        console.log(`Miercoles`)
+    }else if(num==4){
+        console.log(`Jueves`)
+    }else if(num==5){
+        console.log(`Viernes`)
+    }else if(num==6){
+        console.log(`Sabado`)
+    }else if(num==7){
+        console.log(`Domingo`)
+    }else{
+        console.log(`debe ingresar un numero del 1 al 7`)
+    }
+}
+diaSemana()
 
 // Crear un programa que pida al usuario un número y luego muestre si es primo o no.
-
+let numPrimo= () =>{
+    let num= parseInt(prompt(`ingrese un número`))
+    if(num==2 || num==3 || num== 5 || num==7 || num==-2 || num==-3 || num== -5 || num==-7){
+        console.log(`es primo`)
+    }else if(num%2!=0 && num&3!=0 && num%5!=0 && num&7!=0){
+        console.log(`Es Primo`)
+    }else {
+        console.log(`NO es Primo`)
+    }
+}
+numPrimo()
 // Crear un programa que pida al usuario su edad y luego muestre si es mayor o menor de edad (18 años).
+let edad= ()=>{
+    let edad=parseInt("ingrese su edad")
+    if (edad>=18){
+        console.log(`es mayor de edad`)
+    }else{
+        console.log(`es Menor de edad`)
+    }
+}
+edad()
 
 // Crear un programa que pida al usuario dos números y luego muestre si su suma es mayor, menor o igual a 100.
+let suma100= ()=>{
+    let num1=parseInt(prompt(`ingrese un numero`))
+    let num2=parseInt(prompt(`ingrese otro numero`))
+    if (num1+num2==100){
+        console.log(`la suma de ${num1} y ${num2} es 100`)
+    }else if (num1+num2<100){
+        console.log(`la suma de ${num1} y ${num2} es menor a 100`)
+    }else{
+        console.log(`la suma de ${num1} y ${num2} es mayor a 100`)
+    }
+}
+suma100()
 
 // Crear un programa que pida al usuario tres números y luego muestre cuál es el mayor de los tres.
-
+let mayorTres= () => {
+    let num1=parseInt(prompt(`ingrese un numero`))
+    let num2=parseInt(prompt(`ingrese otro numero`))
+    let num3=parseInt(prompt(`ingrese un tercer numero`))
+    const arrayNumeros=[num1,num2,num3]
+    let resultado=Math.max(...arrayNumeros)
+    console.log(`el mayor numero es: ${resultado}`)
+}
+mayorTres()
 // Crear un programa que pida al usuario una letra y luego muestre si es una letra mayúscula o minúscula.
+let mayusMinus= ()=>{
+    let letra = prompt("Ingrese una letra Mayuscula o Minuscula");
+    if (letra.length === 1) {
+        let codigoNum = letra.charCodeAt(0);
+        if (codigoNum >= 65 && codigoNum <= 90) {
+        console.log("La letra ingresada es mayúscula");
+        } else if (codigoNum >= 97 && codigoNum <= 122) {
+        console.log("La letra ingresada es minúscula");
+        } else {
+        console.log("No es una letra");
+        }
+    } else {
+    console.log("ingrese solo una letra");
+    }
+}
+mayusMinus()
 
 //Crear una función que tome un número como parámetro y devuelva "Fizz" si es divisible por 3, "Buzz" si es divisible por 5 o "FizzBuzz" si es divisible por ambos. En cualquier otro caso, devolver el número.
+let FizzBuzz=(num)=>{
+    if(num%3==0 && num%5 ==0){
+        console.log(`FizzBuzz`)
+    }else if(num%5==0){
+        console.log(`Buzz`)
+    }else if(num%3==0){
+        console.log(`Fizz`)
+    }else{
+        console.log(num)
+    }
+}
+FizzBuzz(15)
 
-// Crear un programa que pida al usuario un número y luego muestre si es un número perfecto o no. Un número perfecto es aquel que es igual a la suma de sus divisores propios.
+// Crear un programa que pida al usuario un número y luego muestre si es un número perfecto o no. Un número perfecto es aquel que es igual a la suma de sus divisores propios
+let numPerfecto= ()=>{
+    let num=parseInt(prompt(`ingrese un número`))
+    
+
+}
 
 // Crear un programa que pida al usuario un número y luego muestre su descomposición en factores primos.
 
