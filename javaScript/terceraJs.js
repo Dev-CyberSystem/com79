@@ -82,13 +82,13 @@ let legalidad = () => {
   let edad = anioActual - anioNacimiento;
   let validacion = edad >= 18;
 
-//   if (validacion === true) {
-//     alert(`Usted tiene ${edad} años y es mayor de edad`);
-//   } else {
-//     alert(`Usted tiene ${edad} años y es menor de edad`);
-//   }
+  //   if (validacion === true) {
+  //     alert(`Usted tiene ${edad} años y es mayor de edad`);
+  //   } else {
+  //     alert(`Usted tiene ${edad} años y es menor de edad`);
+  //   }
 
-validacion ? alert(`Usted tiene ${edad} años y es mayor de edad`) : alert(`Usted tiene ${edad} años y es menor de edad`);
+  validacion ? alert(`Usted tiene ${edad} años y es mayor de edad`) : alert(`Usted tiene ${edad} años y es menor de edad`);
 
 };
 // legalidad();
@@ -119,7 +119,7 @@ let numero1 = -12
 let valorAbsoluto = Math.abs(numero1)
 // console.log(valorAbsoluto)
 
-let numeros = [1,5,8,9,10,7]
+let numeros = [1, 5, 8, 9, 10, 7]
 let numMax = Math.max(...numeros)
 let numMin = Math.min(...numeros)
 console.log("numero maximo", numMin)
@@ -153,18 +153,18 @@ console.log(numeroAleatorio)
 // console.log("Tragamonedas" + " " + tragamonedas)
 
 let numerosAleatorios = () => {
-    return Math.floor(Math.random() * 7) + 1
+  return Math.floor(Math.random() * 7) + 1
 }
 
 let girarTragaMonedas = () => {
 
-    let numero1 = numerosAleatorios()
-    let numero2 = numerosAleatorios()
+  let numero1 = numerosAleatorios()
+  let numero2 = numerosAleatorios()
 
-    let resultadosTragaMonedas = document.getElementById("resultado")
-    resultadosTragaMonedas.textContent = `Resultado ${numero1} - ${numero2}`
+  let resultadosTragaMonedas = document.getElementById("resultado")
+  resultadosTragaMonedas.textContent = `Resultado ${numero1} - ${numero2}`
 
-    console.log(`${numero1} - ${numero2}`)
+  console.log(`${numero1} - ${numero2}`)
 }
 
 
