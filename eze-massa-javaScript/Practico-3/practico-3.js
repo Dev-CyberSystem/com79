@@ -81,7 +81,20 @@ const contarPalabras = () => {
 	alert(`La frase ${frase} tiene ${palabras} palabras`)
 }
 //Crear una función que tome un número como parámetro y devuelva "Positivo" si es mayor a cero, "Negativo" si es menor a cero o "Cero" si es igual a cero.
-
+const btnNumeroPositivo = document.getElementById('btnNumeroPositivo')
+btnNumeroPositivo.addEventListener('click', () => {
+	numeroPositivo()
+})
+const numeroPositivo = () => {
+	let numero = parseFloat(prompt('Ingresa un numero')) || 0
+	if (numero > 0) {
+		alert(`El numero ${numero} positivo`)
+	} else if (numero < 0) {
+		alert(`El numero ${numero} negativo`)
+	} else {
+		alert(`El numero ${numero} es cero`)
+	}
+}
 //Crear una función que tome un número como parámetro y devuelva "Par" si es divisible por 2 o "Impar" si no lo es.
 
 //Crear un programa que pida al usuario un número y luego muestre si es par o impar.
