@@ -37,8 +37,10 @@ btnCompararBooleanos.addEventListener('click', () => {
 })
 const compararBooleanos = () => {
 	let booleanoUno = true
-	let booleanoDos = false
-	alert(`El resultado de la comparacion de ${booleanoUno} y ${booleanoDos} es ${booleanoUno === booleanoDos}`)
+	let booleanoDos = true
+	booleanoUno === booleanoDos
+		? alert(`Los booleanos ${booleanoUno} y ${booleanoDos} son iguales`)
+		: alert(`Los booleanos ${booleanoUno} y ${booleanoDos} son diferentes`)
 }
 // Crea una funcion donde se declaren dos variables con valores booleanos y se compare si son diferentes, luego muestra el resultado en la consola.
 // Crea una funcion donde se declaren dos variables con valores numericos y se compare si el primero es mayor que el segundo, luego muestra el resultado en la consola.
