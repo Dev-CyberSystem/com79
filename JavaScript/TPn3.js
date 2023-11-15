@@ -24,9 +24,31 @@ let concTwoStr = () => {
 concTwoStr();
 
 // Crea una funcion donde se declaren dos variables con valores booleanos y se compare si son iguales, luego muestra el resultado en la consola.
+let boolEqComp = () => {
+    let valueD = true;
+    let valueE = false;
+    console.log(`Resultado ejercicio 4: ${valueD==valueE}`);
+};
+boolEqComp();
+
 // Crea una funcion donde se declaren dos variables con valores booleanos y se compare si son diferentes, luego muestra el resultado en la consola.
+let boolDifComp = () => {
+    let valueF = false;
+    let valueG = false;
+    console.log(`Resultado ejercicio 5: ${valueF!=valueG}`);
+};
+boolDifComp();
+
 // Crea una funcion donde se declaren dos variables con valores numericos y se compare si el primero es mayor que el segundo, luego muestra el resultado en la consola.
+let numBigComp = () => {
+    let valueH = 734;
+    let valueI = 652;
+    console.log(`Resultado ejercicio 6: ${valueH>valueI}`)
+}
+numBigComp();
+
 // Crea un programa que cuente el número de palabras en una frase proporcionada por el usuario. Una palabra se define como cualquier secuencia de caracteres separada por espacios en blanco.
+
 
 //Crear una función que tome un número como parámetro y devuelva "Positivo" si es mayor a cero, "Negativo" si es menor a cero o "Cero" si es igual a cero.
 
