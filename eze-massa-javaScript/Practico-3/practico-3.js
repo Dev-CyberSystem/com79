@@ -43,6 +43,17 @@ const compararBooleanos = () => {
 		: alert(`Los booleanos ${booleanoUno} y ${booleanoDos} son diferentes`)
 }
 // Crea una funcion donde se declaren dos variables con valores booleanos y se compare si son diferentes, luego muestra el resultado en la consola.
+const btnCompararBooleanosDiferentes = document.getElementById('btnCompararBooleanosDiferentes')
+btnCompararBooleanosDiferentes.addEventListener('click', () => {
+	compararBooleanosDiferentes()
+})
+const compararBooleanosDiferentes = () => {
+	let booleanoUno = true
+	let booleanoDos = false
+	booleanoUno != booleanoDos
+		? alert(`Los booleanos ${booleanoUno} y ${booleanoDos} son diferentes`)
+		: alert(`Los booleanos ${booleanoUno} y ${booleanoDos} son iguales`)
+}
 // Crea una funcion donde se declaren dos variables con valores numericos y se compare si el primero es mayor que el segundo, luego muestra el resultado en la consola.
 // Crea un programa que cuente el número de palabras en una frase proporcionada por el usuario. Una palabra se define como cualquier secuencia de caracteres separada por espacios en blanco.
 
