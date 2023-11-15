@@ -37,7 +37,7 @@ let numValF = 967;
 numValF --;
 numValF --;
 numValF --;
-console.log(numValF); //Se puede resumir lineas 35 al 38 con -console.log(numValF -= 3)-
+console.log(numValF); //Se puede resumir lineas 37 al 40 con -console.log(numValF -= 3)-
 document.write(`<hr> El resultado del quinto ejercicio (decremento) es: ${numValF}`);
 
 // Crea una variable que almacene una cadena de texto y utiliza el operador de concatenación (+) para agregar más texto al final de la cadena. Muestra el resultado en la consola.
