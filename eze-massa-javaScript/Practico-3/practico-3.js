@@ -96,15 +96,18 @@ const numeroPositivo = () => {
 	}
 }
 //Crear una función que tome un número como parámetro y devuelva "Par" si es divisible por 2 o "Impar" si no lo es.
-const btnParImpar = document.getElementById('btnParImpar')
-btnParImpar.addEventListener('click', () => {
-	parImpar()
+const btnParImparCinco = document.getElementById('btnParImparCinco')
+btnParImparCinco.addEventListener('click', () => {
+	parImpar(5)
 })
-const parImpar = () => {
-	let numero = parseFloat(prompt('Ingresa un numero')) || 0
+const parImpar = (numero) => {
 	numero % 2 === 0 ? alert(`El numero ${numero} es par`) : alert(`El numero ${numero} es impar`)
 }
 //Crear un programa que pida al usuario un número y luego muestre si es par o impar.
+const btnParImpar = document.getElementById('btnParImpar')
+btnParImpar.addEventListener('click', () => {
+	parImpar(parseFloat(prompt('Ingresa un numero')) || 0)
+})
 
 // Crear un programa que pida al usuario un número y luego muestre si es positivo, negativo o cero.
 
