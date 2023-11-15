@@ -31,7 +31,15 @@ const concatenarStrings = () => {
 	alert(resultado)
 }
 // Crea una funcion donde se declaren dos variables con valores booleanos y se compare si son iguales, luego muestra el resultado en la consola.
-
+const btnCompararBooleanos = document.getElementById('btnCompararBooleanos')
+btnCompararBooleanos.addEventListener('click', () => {
+	compararBooleanos()
+})
+const compararBooleanos = () => {
+	let booleanoUno = true
+	let booleanoDos = false
+	alert(`El resultado de la comparacion de ${booleanoUno} y ${booleanoDos} es ${booleanoUno === booleanoDos}`)
+}
 // Crea una funcion donde se declaren dos variables con valores booleanos y se compare si son diferentes, luego muestra el resultado en la consola.
 // Crea una funcion donde se declaren dos variables con valores numericos y se compare si el primero es mayor que el segundo, luego muestra el resultado en la consola.
 // Crea un programa que cuente el número de palabras en una frase proporcionada por el usuario. Una palabra se define como cualquier secuencia de caracteres separada por espacios en blanco.
