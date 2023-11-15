@@ -1,2 +1,0 @@
-var miVariable = "Hola, mundo!";
-console.log(miVariable);
