@@ -71,7 +71,15 @@ const compararMayor = () => {
 	}
 }
 // Crea un programa que cuente el número de palabras en una frase proporcionada por el usuario. Una palabra se define como cualquier secuencia de caracteres separada por espacios en blanco.
-
+const btnCantidadPalabras = document.getElementById('btnCantidadPalabras')
+btnCantidadPalabras.addEventListener('click', () => {
+	contarPalabras()
+})
+const contarPalabras = () => {
+	let frase = String(prompt('Ingresa una frase').trim())
+	let palabras = frase.split(' ').length
+	alert(`La frase ${frase} tiene ${palabras} palabras`)
+}
 //Crear una función que tome un número como parámetro y devuelva "Positivo" si es mayor a cero, "Negativo" si es menor a cero o "Cero" si es igual a cero.
 
 //Crear una función que tome un número como parámetro y devuelva "Par" si es divisible por 2 o "Impar" si no lo es.
