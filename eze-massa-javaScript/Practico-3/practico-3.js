@@ -55,6 +55,21 @@ const compararBooleanosDiferentes = () => {
 		: alert(`Los booleanos ${booleanoUno} y ${booleanoDos} son iguales`)
 }
 // Crea una funcion donde se declaren dos variables con valores numericos y se compare si el primero es mayor que el segundo, luego muestra el resultado en la consola.
+const btnCompararMayor = document.getElementById('btnCompararMayor')
+btnCompararMayor.addEventListener('click', () => {
+	compararMayor()
+})
+const compararMayor = () => {
+	let numeroUno = parseFloat(prompt('Ingresa el primer numero')) || 0
+	let numeroDos = parseFloat(prompt('Ingresa el segundo numero')) || 0
+	if (numeroUno === numeroDos) {
+		alert(`Los numeros ${numeroUno} y ${numeroDos} son iguales`)
+	} else if (numeroUno > numeroDos) {
+		alert(`El numero ${numeroUno} es mayor que ${numeroDos}`)
+	} else {
+		alert(`El numero ${numeroUno} no es mayour que ${numeroDos}`)
+	}
+}
 // Crea un programa que cuente el número de palabras en una frase proporcionada por el usuario. Una palabra se define como cualquier secuencia de caracteres separada por espacios en blanco.
 
 //Crear una función que tome un número como parámetro y devuelva "Positivo" si es mayor a cero, "Negativo" si es menor a cero o "Cero" si es igual a cero.
