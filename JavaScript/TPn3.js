@@ -3,10 +3,10 @@
 //Tareas
 
 // Crea una Funcion que reciba dos parametros y los reste, luego muestra el resultado en la consola.
-let subtTwoPar = (parA=parseInt(prompt(`Ejercicio 1 - Ingrese un número`)), parB=parseInt(prompt(`Ejercicio 1 - Ingrese otro número`))) => {
-    console.log(`Resultado ejercicio 1: ${parA-parB}`)
-};
-subtTwoPar();
+// let subtTwoPar = (parA=parseInt(prompt(`Ejercicio 1 - Ingrese un número`)), parB=parseInt(prompt(`Ejercicio 1 - Ingrese otro número`))) => {
+//     console.log(`Resultado ejercicio 1: ${parA-parB}`)
+// };
+// subtTwoPar();
 
 // Crea una funcion donde se declare una variable con el valor 5 y se le sume 10, luego muestra el resultado en la consola.
 let addNum = () => {
@@ -48,7 +48,13 @@ let numBigComp = () => {
 numBigComp();
 
 // Crea un programa que cuente el número de palabras en una frase proporcionada por el usuario. Una palabra se define como cualquier secuencia de caracteres separada por espacios en blanco.
-
+// let wordQuant = (phrase=prompt(`Ingrese sus nombres y apellidos completos por favor:`)) => {
+//     let wordCount = phrase.split(" ").length;
+//     let letterCount = phrase.split(" ").join("").length;
+//     console.log(`Resultado ejercicio 7 (palabras) es: ${wordCount}`);
+//     console.log(`Resultado ejercicio 7 bis (caracteres) es: ${letterCount}`);
+// }
+// wordQuant();
 
 //Crear una función que tome un número como parámetro y devuelva "Positivo" si es mayor a cero, "Negativo" si es menor a cero o "Cero" si es igual a cero.
 
