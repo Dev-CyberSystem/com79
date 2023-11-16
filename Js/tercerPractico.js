@@ -259,11 +259,30 @@ FizzBuzz(15)
 // Crear un programa que pida al usuario un número y luego muestre si es un número perfecto o no. Un número perfecto es aquel que es igual a la suma de sus divisores propios
 let numPerfecto= ()=>{
     let num=parseInt(prompt(`ingrese un número`))
-
-
+    let perfecto=0
+    for (let i=1 ; i<=num/2 && num%i==0 ; i++){
+        perfecto+=i
+    }
+    if (num==perfecto){
+        console.log(`es numero perfecto`)
+    }else{
+        console.log(`NO es perfecto`)
+    }
 }
+numPerfecto()
 
 // Crear un programa que pida al usuario un número y luego muestre su descomposición en factores primos.
+function descomposicionFactoresPrimos() {
+    let numeroUsuario = parseInt(prompt("Ingresa un número para descomponer en factores primos:"));
+    let factoresPrimos = [1];
+    while (numeroUsuario > 1) {
+        for(let i=2 ; numeroUsuario%i==0;i++){
+        factoresPrimos.push(i);
+        numeroUsuario /= i;
+        }
+    }
+}
+descomposicionFactoresPrimos()
 
 // Crear un programa que pida al usuario una fecha (día, mes y año) y luego muestre si es válida o no. Una fecha es válida si cumple con ciertas condiciones, como la cantidad de días en el mes y si es un año bisiesto o no.
 function fechaValida() {
