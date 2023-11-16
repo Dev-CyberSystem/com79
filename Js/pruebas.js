@@ -1,4 +1,4 @@
-1) Crea un programa que reciba un número del 1 al 12 y muestre el nombre del mes correspondiente.
+// 1) Crea un programa que reciba un número del 1 al 12 y muestre el nombre del mes correspondiente.
 // 2) Crea un programa que reciba un número del 1 al 7 y muestre el día de la semana correspondiente.
 // 3) Crea un programa que reciba un carácter y muestre si es una vocal o una consonante.
 // 4) Crea un programa que reciba un número del 1 al 5 y muestre el nombre del día de la semana correspondiente a esa posición en un arreglo.
