@@ -57,8 +57,32 @@ numBigComp();
 // wordQuant();
 
 //Crear una función que tome un número como parámetro y devuelva "Positivo" si es mayor a cero, "Negativo" si es menor a cero o "Cero" si es igual a cero.
+let filterFunc = (numberIn) => {
+    let tempData;
+    if (numberIn > 0) {
+        tempData = `Positivo`;
+    } else if (numberIn < 0) {
+        tempData = `Negativo`;
+    } else if (numberIn === 0) {
+        tempData = `Cero`;
+    } else {
+        tempData = `Ingrese un número por favor...`;
+    }
+    console.log(`Resultado ejercicio 8 (signo): ${tempData}`);
+}
+filterFunc();
 
 //Crear una función que tome un número como parámetro y devuelva "Par" si es divisible por 2 o "Impar" si no lo es.
+let evenOdd = (numberIn2) => {
+    if (numberIn2%2==0) {
+        console.log(`Par`);
+    } else if (numberIn2==undefined) {
+        console.log(`Ingrese un número por favor...`)
+    } else {
+        console.log(`Impar`);
+    }
+}
+evenOdd();
 
 //Crear un programa que pida al usuario un número y luego muestre si es par o impar.
 
