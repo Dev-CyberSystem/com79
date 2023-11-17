@@ -113,6 +113,13 @@
 // separadosComaNegativos()
 
 // Pedir al usuario que ingrese un número y mostrar en la consola todos los números impares desde el 1 hasta el número ingresado.
+let imparesHasta=()=>{
+    let numeroUsuario=parseInt(prompt(`ingrese un número`))
+    let arrayNumeros=[]
+    let i=1
+    while(i<=num)10
+    54
+}
 // Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola el número más pequeño de la serie.
 // Pedir al usuario que adivine un número generado aleatoriamente entre 1 y 100. Mostrar en la consola si el usuario adivinó o no el número y la cantidad de intentos que le tomó.
 // Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola la cantidad de números pares.
