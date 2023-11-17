@@ -104,13 +104,87 @@ console.log(`El número mayor es: ${numeroMayor}`)
 
 // Crear un programa que pida al usuario una contraseña y la valide según ciertas condiciones, como la longitud y la presencia de caracteres especiales.
 
+let contraseña = prompt("Por favor, ingrese su contraseña (la misma debe tener aunque uno, de los siguientes caracteres /[!#$*()_+:;?\\-]/)")
+
+if (contraseña.length < 6) {
+    console.log("La contraseña debe tener al menos 8 caracteres")
+} else {
+    let caracteresEspeciales = /[!#$*()_+:;?\\-]/
+
+    if (!contraseña.match (caracteresEspeciales)) {
+        console.log("La contraseña debe contener al menos un caracter especial");
+    } else {
+        console.log("Contraseña correcta");
+    }
+}
+
 // Crear un programa que pida al usuario una calificación y luego muestre si es aprobatoria o no (nota mínima para aprobar es 70).
 
+let nota = prompt("Por favor, ingrese su calificación:")
+nota = parseFloat(nota)
+
+if(nota >= 70){
+    console.log("Usted está aprobado!")
+} else{
+    console.log("Usted ha desaprobado")
+}
 // Crear una función que tome una cadena como parámetro y devuelva "Es un palíndromo" si la cadena es igual al revés, de lo contrario, devolver "No es un palíndromo".
 
 // Crear un programa que pida al usuario una letra y luego muestre si es una vocal o una consonante.
 
+let letra = prompt("Por favor, ingrese una letra:")
+letraEnMayuscula = letra.toUpperCase()
+
+switch (letraEnMayuscula) {
+    case "A":
+        console.log("La letra es una vocal")
+        break;
+    case "E":
+        console.log("La letra es una vocal")
+        break;
+    case "I":
+        console.log("La letra es una vocal")
+        break;
+    case "O":
+        console.log("La letra es una vocal")
+        break;
+    case "U":
+        console.log("La letra es una vocal")
+        break;
+    default:
+        console.log("La letra es una consonante")
+}
+
 // Crear un programa que pida al usuario un número del 1 al 7 y luego muestre el día de la semana correspondiente.
+
+let dia = prompt("Por favor, ingrese un número del 1 al 7:");
+dia = parseInt(dia);
+
+switch (dia) {
+    case 1:
+        console.log(`El número ${dia} corresponde al día lunes`)
+        break;
+    case 2:
+        console.log(`El número ${dia} corresponde al día martes`)
+        break;
+    case 3:
+        console.log(`El número ${dia} corresponde al día miércoles`)
+        break;
+    case 4:
+        console.log(`El número ${dia} corresponde al día jueves`)
+        break;
+    case 5:
+        console.log(`El número ${dia} corresponde al día viernes`)
+        break;
+    case 6:
+        console.log(`El número ${dia} corresponde al día sábado`)
+        break;
+    case 7:
+        console.log(`El número ${dia} corresponde al día domingo`)
+        break;
+    default:
+        console.log("número incorrecto")
+}
 
 // Crear un programa que pida al usuario un número y luego muestre si es primo o no.
 
