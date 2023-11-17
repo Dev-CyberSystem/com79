@@ -132,8 +132,9 @@ const mayorNumero = () => {
 const inputPassword = document.getElementById('inputPassword')
 const inputPasswordError = document.getElementById('inputPasswordError')
 const formPasswordSubmit = document.getElementById('formPasswordSubmit')
+const btnPasswordSubmit = document.getElementById('btnPasswordSubmit')
 
-formPasswordSubmit.addEventListener('click', ($event) => {
+btnPasswordSubmit.addEventListener('click', ($event) => {
 	$event.preventDefault()
 	validarPassword()
 })
@@ -159,6 +160,28 @@ const validarPassword = () => {
 	}
 }
 // Crear un programa que pida al usuario una calificación y luego muestre si es aprobatoria o no (nota mínima para aprobar es 70).
+const inputCalificacion = document.getElementById('inputCalificacion')
+const formCalificacion = document.getElementById('formCalificacion')
+const btnCalificacionSubmit = document.getElementById('btnCalificacionSubmit')
+
+btnCalificacionSubmit.addEventListener('click', ($event) => {
+	$event.preventDefault()
+	validarCalificacion()
+})
+
+const validarCalificacion = () => {
+	console.log()
+	if (inputCalificacion.value == '') {
+		alert('La calificación no puede estar vacía')
+	} else if (inputCalificacion.value < 0) {
+		alert('La calificación no puede ser negativa')
+	} else if (inputCalificacion.value < 70) {
+		alert('Desaprobaste! La calificación debe ser mayor o igual a 70')
+	} else {
+		alert('Aprobaste! La calificación debe ser mayor o igual a 70')
+		formCalificacion.submit()
+	}
+}
 
 //Crear una función que tome una cadena como parámetro y devuelva "Es un palíndromo" si la cadena es igual al revés, de lo contrario, devolver "No es un palíndromo".
 
