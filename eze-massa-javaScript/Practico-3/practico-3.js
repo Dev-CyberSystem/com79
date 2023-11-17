@@ -184,6 +184,23 @@ const validarCalificacion = () => {
 }
 
 //Crear una función que tome una cadena como parámetro y devuelva "Es un palíndromo" si la cadena es igual al revés, de lo contrario, devolver "No es un palíndromo".
+const btnRevertirPalabra = document.getElementById('btnRevertirPalabra')
+btnRevertirPalabra.addEventListener('click', () => {
+	let palabra = prompt('Ingresa una palabra')
+	if (palabra.length <= 2) {
+		alert('Ingrese al menos 3 caracteres')
+	} else {
+		esPalindromo(palabra)
+	}
+})
+function esPalindromo(palabra) {
+	let palabraInvertida = palabra.split('').reverse().join('')
+	if (palabra === palabraInvertida) {
+		alert(`La palabra ${palabra} es palindromo`)
+	} else {
+		alert(`La palabra ${palabra} no es palindromo`)
+	}
+}
 
 // Crear un programa que pida al usuario una letra y luego muestre si es una vocal o una consonante.
 
