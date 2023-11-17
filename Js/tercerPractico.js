@@ -415,14 +415,112 @@ let separadosComaNegativos=()=>{
     console.log(`hay ${cantidadNegativos.length} numeros negativos`)
 }
 separadosComaNegativos()
+
 // Pedir al usuario que ingrese un número y mostrar en la consola todos los números impares desde el 1 hasta el número ingresado.
+let imparesHasta=()=>{
+    let numeroUsuario=parseInt(prompt(`ingrese un número`))
+    let arrayNumeros=[]
+    let i=1
+    while(i<=numeroUsuario){
+        arrayNumeros.push(i)
+        i+=2
+    }
+    console.log(arrayNumeros)
+}
+imparesHasta()
+
 // Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola el número más pequeño de la serie.
+let separadosComaMinimo=()=>{
+    let ingreso=prompt(`ingrese numeros separados por coma`).trim()
+    let arrayNumeros=ingreso.split(",")
+    let minimo=Math.min(...arrayNumeros)
+    console.log(`el menor numero es ${minimo}`)
+}
+separadosComaMinimo()
+
 // Pedir al usuario que adivine un número generado aleatoriamente entre 1 y 100. Mostrar en la consola si el usuario adivinó o no el número y la cantidad de intentos que le tomó.
+let numeroAleatorio = Math.floor(Math.random() * 100) + 1;
+let number;
+let contador=1;
+
+while (number !== numeroAleatorio) {
+    number = parseInt(prompt("Ingresa un numero entre 1 y 100"));
+    if(number < numeroAleatorio){
+        console.log("El numero que ingresaste es mas chico")
+        contador++
+    } else if (number > numeroAleatorio){
+        console.log("El numero que ingresaste es mas grande")
+        contador++
+    } else {
+        console.log(`ganaste y te Tomo ${contador} intentos`)
+    }
+}
+
 // Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola la cantidad de números pares.
+let paresHasta=()=>{
+    let num=(prompt(`ingrese un número separado por coma`))
+    let arrayNumeros=num.split(",")
+    let numerosPares=[]
+    for (let i=0; i<arrayNumeros.length; i++){
+        let numero=parseInt(arrayNumeros[i])
+        if (numero%2==0){
+            numerosPares.push(numero)
+        }
+    }
+
+    console.log(`la cantidas de numeros pares es: ${numerosPares.length}`)
+}
+paresHasta()
+
 // Dado un array de números, escribir una función que retorne el número más grande del array.
+let arrayNumMax=[4, 5 ,6,7,8,9,10,12,14,15,18,16,-2]
+let maxNumArray=()=>{
+    numMax= Math.max(...arrayNumMax)
+    console.log(numMax)
+    return numMax
+}
+maxNumArray()
+
 // Dado un array de números, escribir una función que retorne un nuevo array con los números pares del array original.
+let arrayNumPares=[4, 5 ,6,7,8,9,10,12,14,15,18,16,-2]
+let paresArray=()=>{
+    paresArrayRetornados=[]
+    for (i=0; i<arrayNumPares.length;i++){
+        if(arrayNumPares[i]%2==0){
+            paresArrayRetornados.push(arrayNumPares[i])
+        }
+    }
+    console.log(paresArrayRetornados)
+    return paresArrayRetornados
+}
+paresArray()
+
 // Dado un array de números, escribir una función que retorne la suma de todos los números del array.
+let arrayNumSuma=[4, 5 ,6,7,8,9,10,12,14,15,18,16,-2]
+let sumaArray=()=>{
+    sumados=0
+    for (i=0; i<arrayNumSuma.length;i++){
+        sumados += arrayNumSuma[i]
+    }
+    console.log(sumados)
+    return sumados
+}
+sumaArray()
+
 // Dado un array de strings, escribir una función que retorne un nuevo array con todos los strings en mayúsculas.
+let arrayStringMayus=["V","c","D","e","F","g","J"]
+let arrayMayus = ()=>{
+    let soloMayus=[]
+    for (i=0 ; i<arrayStringMayus.length;i++){
+        if(arrayStringMayus[i].charCodeAt(0)>= 65 && arrayStringMayus[i].charCodeAt(0)<=90){
+            soloMayus.push(arrayStringMayus[i])
+        }
+    }
+    console.log(soloMayus)
+    return soloMayus
+}
+arrayMayus()
+
 // Dado un array de números y un número X, escribir una función que retorne un nuevo array con todos los números del array original que sean mayores que X.
 // Dado un array de números, escribir una función que retorne la suma de todos los números del array. Además, si algún número es mayor que 10, agregarlo a un nuevo array de "números grandes".
 // Dado un array de strings, escribir una función que retorne un nuevo array con todos los strings que tengan más de 5 caracteres.
