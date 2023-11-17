@@ -129,7 +129,35 @@ const mayorNumero = () => {
 	}
 }
 // Crear un programa que pida al usuario una contraseña y la valide según ciertas condiciones, como la longitud y la presencia de caracteres especiales.
+const inputPassword = document.getElementById('inputPassword')
+const inputPasswordError = document.getElementById('inputPasswordError')
+const formPasswordSubmit = document.getElementById('formPasswordSubmit')
 
+formPasswordSubmit.addEventListener('click', ($event) => {
+	$event.preventDefault()
+	validarPassword()
+})
+
+const validarPassword = () => {
+	if (inputPassword.value.length < 8 || inputPassword.value == '') {
+		inputPasswordError.innerHTML = 'La contraseña debe tener entre 8 y 20 caracteres'
+	} else if (inputPassword.value.length < 8) {
+		inputPasswordError.innerHTML = 'La contraseña debe tener al menos 8 caracteres'
+	} else if (inputPassword.value.length > 20) {
+		inputPasswordError.innerHTML = 'La contraseña debe tener menos de 20 caracteres'
+	} else if (!/[A-Z]/.test(inputPassword.value)) {
+		inputPasswordError.innerHTML = 'La contraseña debe tener al menos una letra mayúscula'
+	} else if (!/[a-z]/.test(inputPassword.value)) {
+		inputPasswordError.innerHTML = 'La contraseña debe tener al menos una letra minúscula'
+	} else if (!/\d/.test(inputPassword.value)) {
+		inputPasswordError.innerHTML = 'La contraseña debe tener al menos un número'
+	} else if (/[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/.test(inputPassword.value)) {
+		inputPasswordError.innerHTML = 'La contraseña no debe tener caracteres especiales'
+	} else {
+		alert('Contraseña correcta !')
+		formPasswordSubmit.submit()
+	}
+}
 // Crear un programa que pida al usuario una calificación y luego muestre si es aprobatoria o no (nota mínima para aprobar es 70).
 
 //Crear una función que tome una cadena como parámetro y devuelva "Es un palíndromo" si la cadena es igual al revés, de lo contrario, devolver "No es un palíndromo".
