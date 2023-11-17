@@ -109,10 +109,25 @@ btnParImpar.addEventListener('click', () => {
 	parImpar(parseFloat(prompt('Ingresa un numero')) || 0)
 })
 
+//Tarea duplicada
 // Crear un programa que pida al usuario un número y luego muestre si es positivo, negativo o cero.
 
 // Crear un programa que pida al usuario dos números y luego muestre cuál es el mayor de los dos.
-
+const btnMayorNumero = document.getElementById('btnMayorNumero')
+btnMayorNumero.addEventListener('click', () => {
+	alert(mayorNumero())
+})
+const mayorNumero = () => {
+	let numeroUno = parseFloat(prompt('Ingresa el primer numero')) || 0
+	let numeroDos = parseFloat(prompt('Ingresa el segundo numero')) || 0
+	if (numeroUno === numeroDos) {
+		return 'Los numeros son iguales'
+	} else if (numeroUno > numeroDos) {
+		return 'El mayor numero es ' + numeroUno
+	} else {
+		return 'El mayor numero es ' + numeroDos
+	}
+}
 // Crear un programa que pida al usuario una contraseña y la valide según ciertas condiciones, como la longitud y la presencia de caracteres especiales.
 
 // Crear un programa que pida al usuario una calificación y luego muestre si es aprobatoria o no (nota mínima para aprobar es 70).
