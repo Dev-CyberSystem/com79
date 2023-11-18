@@ -344,7 +344,27 @@ const esMayuscula = (letra) => {
 	}
 }
 //Crear una función que tome un número como parámetro y devuelva "Fizz" si es divisible por 3, "Buzz" si es divisible por 5 o "FizzBuzz" si es divisible por ambos. En cualquier otro caso, devolver el número.
-
+const btnNumDivisible = document.getElementById('btnNumDivisible')
+btnNumDivisible.addEventListener('click', () => {
+	let numero = prompt('Ingresa un numero')
+	const regExNumeros = /[0-9]/
+	if (!regExNumeros.test(numero)) {
+		alert('Error , solo se permiten numeros')
+	} else {
+		numeroDivisible(numero)
+	}
+})
+const numeroDivisible = (numero) => {
+	if (numero % 3 === 0 && numero % 5 === 0) {
+		alert(`FizzBuzz`)
+	} else if (numero % 3 === 0) {
+		alert(`Fizz`)
+	} else if (numero % 5 === 0) {
+		alert(`Buzz`)
+	} else {
+		alert(`${numero}`)
+	}
+}
 // Crear un programa que pida al usuario un número y luego muestre si es un número perfecto o no. Un número perfecto es aquel que es igual a la suma de sus divisores propios.
 
 // Crear un programa que pida al usuario un número y luego muestre su descomposición en factores primos.
