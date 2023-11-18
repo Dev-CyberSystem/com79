@@ -1,11 +1,3 @@
-let nombre = "Julian"
-let apellido = "Martin"
+let array = ["hola",2,true,[1,2,3],{nombre:"Juan"}]
 
-console.log (nombre)
-console.log (apellido)
-
-document.write (nombre)
-
-window.alert(nombre)
-
-alert(apellido)
+console.log(array[1],array[0])
