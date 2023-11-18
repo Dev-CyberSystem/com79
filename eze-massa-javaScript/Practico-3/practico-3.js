@@ -326,7 +326,23 @@ const mayorDeTres = (numerosArray) => {
 }
 
 // Crear un programa que pida al usuario una letra y luego muestre si es una letra mayúscula o minúscula.
-
+const btnMayOMin = document.getElementById('btnMayOMin')
+btnMayOMin.addEventListener('click', () => {
+	let letra = prompt('Ingresa una letra').trim().slice(0, 1)
+	const regExLetra = /[a-zA-Z]/
+	if (!regExLetra.test(letra)) {
+		alert('Error , solo se permiten letras')
+	} else {
+		esMayuscula(letra)
+	}
+})
+const esMayuscula = (letra) => {
+	if (letra === letra.toUpperCase()) {
+		alert(`La letra ${letra} es mayuscula`)
+	} else {
+		alert(`La letra ${letra} es minuscula`)
+	}
+}
 //Crear una función que tome un número como parámetro y devuelva "Fizz" si es divisible por 3, "Buzz" si es divisible por 5 o "FizzBuzz" si es divisible por ambos. En cualquier otro caso, devolver el número.
 
 // Crear un programa que pida al usuario un número y luego muestre si es un número perfecto o no. Un número perfecto es aquel que es igual a la suma de sus divisores propios.
