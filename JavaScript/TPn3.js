@@ -4,30 +4,30 @@
 
 // Crea una Funcion que reciba dos parametros y los reste, luego muestra el resultado en la consola.
 // let subtTwoPar = (parA=parseInt(prompt(`Ejercicio 1 - Ingrese un número`)), parB=parseInt(prompt(`Ejercicio 1 - Ingrese otro número`))) => {
-//     console.log(`Resultado ejercicio 1: ${parA-parB}`)
+//     console.log(`Resultado ejercicio 1 (resta): ${parA-parB}`)
 // };
 // subtTwoPar();
 
 // Crea una funcion donde se declare una variable con el valor 5 y se le sume 10, luego muestra el resultado en la consola.
 let addNum = () => {
     let valueA = 5;
-    console.log(`Resultado ejercicio 2: ${valueA+10}`)
-}; //también funciona abreviado con -let addNum = (valueA=5) => console.log(`Resultado ejercicio 2: ${valueA+10}`);-
+    console.log(`Resultado ejercicio 2 (suma): ${valueA+10}`)
+}; //también funciona abreviado con -let addNum = (valueA=5) => console.log(`Resultado ejercicio 2 (suma): ${valueA+10}`);-
 addNum();
 
 // Crea una funcion donde se declaren dos variables con valores en string y se concatenen, luego muestra el resultado en la consola.
 let concTwoStr = () => {
     let valueB = `River`;
     let valueC = `es pésimo ;)`;
-    console.log(`Resultado ejercicio 3: ${valueB} ${valueC}`)
-}; //También funciona con -let concTwoStr = (valueB=`River`,valueC=`es pésimo ;) ...`) => console.log(`Resultado ejercicio 3: ${valueB} ${valueC}`);-
+    console.log(`Resultado ejercicio 3 (concatenado): ${valueB} ${valueC}`)
+}; //También funciona con -let concTwoStr = (valueB=`River`,valueC=`es pésimo ;) ...`) => console.log(`Resultado ejercicio 3 (concatenado): ${valueB} ${valueC}`);-
 concTwoStr();
 
 // Crea una funcion donde se declaren dos variables con valores booleanos y se compare si son iguales, luego muestra el resultado en la consola.
 let boolEqComp = () => {
     let valueD = true;
     let valueE = false;
-    console.log(`Resultado ejercicio 4: ${valueD==valueE}`);
+    console.log(`Resultado ejercicio 4 (comparación): ${valueD==valueE}`);
 };
 boolEqComp();
 
@@ -35,7 +35,7 @@ boolEqComp();
 let boolDifComp = () => {
     let valueF = false;
     let valueG = false;
-    console.log(`Resultado ejercicio 5: ${valueF!=valueG}`);
+    console.log(`Resultado ejercicio 5 (diferente de): ${valueF!=valueG}`);
 };
 boolDifComp();
 
@@ -43,7 +43,7 @@ boolDifComp();
 let numBigComp = () => {
     let valueH = 734;
     let valueI = 652;
-    console.log(`Resultado ejercicio 6: ${valueH>valueI}`)
+    console.log(`Resultado ejercicio 6 (mayor que): ${valueH>valueI}`)
 }
 numBigComp();
 
@@ -74,21 +74,32 @@ filterFunc();
 
 //Crear una función que tome un número como parámetro y devuelva "Par" si es divisible por 2 o "Impar" si no lo es.
 let evenOdd = (numberIn2) => {
+    let state;
     if (numberIn2%2==0) {
-        console.log(`Par`);
+        state = `Par`;
     } else if (numberIn2==undefined) {
-        console.log(`Ingrese un número por favor...`)
+        state= `Ingrese un número por favor...`;
     } else {
-        console.log(`Impar`);
+        state = `Impar`;
     }
+    console.log(`Resultado ejercicio 9 (par-impar): ${state}`)
 }
 evenOdd();
 
-//Crear un programa que pida al usuario un número y luego muestre si es par o impar.
+//Crear un programa que pida al usuario un número y luego muestre si es par o impar. REPETIDO EJERCICIO 9
+// let userNumIn = parseInt(prompt(`Ingrese un número por favor:`));
 
-// Crear un programa que pida al usuario un número y luego muestre si es positivo, negativo o cero.
+
+// Crear un programa que pida al usuario un número y luego muestre si es positivo, negativo o cero. REPETIDO EJERCICIO 8
 
 // Crear un programa que pida al usuario dos números y luego muestre cuál es el mayor de los dos.
+let higherNum = (numA, numB) => {
+    numA = parseInt(prompt(`Por favor ingrese un número:`));
+    numB = parseInt(prompt(`Por favor ingrese otro número:`));
+    let compareNum = Math.max(numA, numB);
+    console.log(`Resultado ejercicio 10 (mayor): ${compareNum}`)
+}
+higherNum()
 
 // Crear un programa que pida al usuario una contraseña y la valide según ciertas condiciones, como la longitud y la presencia de caracteres especiales.
 
