@@ -239,7 +239,33 @@ const calcularDiaSemana = (diaNumero) => {
 	return dias[diaNumero]
 }
 // Crear un programa que pida al usuario un número y luego muestre si es primo o no.
+const btnPrimo = document.getElementById('btnPrimo')
+btnPrimo.addEventListener('click', () => {
+	let numero = prompt('Ingresa un numero')
+	const regExNumero = /[0-9]/
+	if (!regExNumero.test(numero)) {
+		alert('Error , solo se permiten numeros')
+	} else {
+		const esPrimo = calcularPrimo(numero)
+		if (esPrimo) {
+			alert(`El numero ${numero} es primo`)
+		} else {
+			alert(`El numero ${numero} no es primo`)
+		}
+	}
+})
 
+const calcularPrimo = (numero) => {
+	if (numero <= 1) {
+		return false
+	}
+	for (let i = 2; i < numero; i++) {
+		if (numero % i === 0) {
+			return false
+		}
+	}
+	return true
+}
 // Crear un programa que pida al usuario su edad y luego muestre si es mayor o menor de edad (18 años).
 
 // Crear un programa que pida al usuario dos números y luego muestre si su suma es mayor, menor o igual a 100.
