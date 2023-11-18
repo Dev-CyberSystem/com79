@@ -522,12 +522,120 @@ let arrayMayus = ()=>{
 arrayMayus()
 
 // Dado un array de números y un número X, escribir una función que retorne un nuevo array con todos los números del array original que sean mayores que X.
+let arrayNumerosX=[14,25,64,15,12,34,17,24]
+let numX= 15
+let numMayoresX=()=>{
+    let numMayorX=[]
+    for (let i=0 ; i<arrayNumerosX.length; i++){
+        if(arrayNumerosX[i]>numX){
+            numMayorX.push(arrayNumerosX[i])
+        }
+    }
+    console.log(numMayorX)
+    return numMayorX
+}
+numMayoresX()
+
 // Dado un array de números, escribir una función que retorne la suma de todos los números del array. Además, si algún número es mayor que 10, agregarlo a un nuevo array de "números grandes".
+let arraySumaMayores=[4, 5 ,6,7,8,9,10,12,14,15,18,16,-2]
+let sumaArrayLista=()=>{
+    sumados=0
+    nuevaLista=[]
+    for (i=0; i<arraySumaMayores.length;i++){
+        sumados += arraySumaMayores[i]
+        if (arraySumaMayores[i]>10){
+            nuevaLista.push(arraySumaMayores[i])
+        }
+    }
+    console.log(sumados)
+    console.log(nuevaLista)
+    return sumados, nuevaLista
+}
+sumaArrayLista()
+
 // Dado un array de strings, escribir una función que retorne un nuevo array con todos los strings que tengan más de 5 caracteres.
+let array5Caracteres=["trabajo", "computadora", "idea", "tiempo", "hola"]
+let cincoCaracteres=()=>{
+    arrayResultado=[]
+    for(let i=0 ; i<array5Caracteres.length; i++){
+        if(array5Caracteres[i].length>5){
+            arrayResultado.push(array5Caracteres[i])
+        }
+    }
+    console.log(arrayResultado)
+    return arrayResultado
+}
+cincoCaracteres()
+
 // Dado un array de strings, escribir una función que retorne un nuevo array con todos los strings que tengan más de 5 caracteres y que empiecen con la letra "a".
+let array5CaracteresA=["arandano", "computadora", "idea", "tiempo", "arboleda", "avioneta"]
+let cincoCaracteresA=()=>{
+    arrayResultado=[]
+    for(let i=0 ; i<array5CaracteresA.length; i++){
+        if(array5CaracteresA[i].length>5 && array5CaracteresA[i].startsWith("a")){
+            arrayResultado.push(array5CaracteresA[i])
+        }
+    }
+    console.log(arrayResultado)
+    return arrayResultado
+}
+cincoCaracteresA()
+
 // Dado un array de números y un número X, escribir una función que retorne un nuevo array con todos los números del array original que sean mayores que X. Además, cortar el array resultante para que tenga solamente los primeros 3 números.
+let arrayNumerosXcortar=[14,25,64,15,12,34,17,24]
+let numX2= 15
+let numMayoresXcortar=()=>{
+    let numMayorX=[]
+    for (let i=0 ; i<arrayNumerosXcortar.length; i++){
+        if(arrayNumerosXcortar[i]>numX2){
+            numMayorX.push(arrayNumerosXcortar[i])
+            if(numMayorX.length>3){
+                numMayorX.pop()
+            }
+        }
+    }
+    console.log(numMayorX)
+    return numMayorX
+}
+numMayoresXcortar()
+
 // Dado un array de números, escribir una función que retorne un nuevo array con todos los números del array original, pero sumándoles 1.
+let arrayNumeros1=[14,25,64,15,12,34,17,24]
+let arraySumados1=()=>{
+    nuevoArray=[]
+    for (i=0 ; i< arrayNumeros1.length; i++){
+        nuevoArray.push(arrayNumeros1[i]+1)
+    }
+    console.log(nuevoArray)
+    return nuevoArray
+}
+arraySumados1()
+
 // Dado un array de números, escribir una función que retorne un nuevo array con todos los números del array original menos el último.
+let menosUltimo=[14,25,64,15,12,34,17,24]
+let arrayMenosUltimo=()=>{
+    menosUltimo.pop()
+    console.log(menosUltimo)
+    return menosUltimo
+}
+arrayMenosUltimo()
+
 // Dado un array de números, escribir una función que retorne un nuevo array con todos los números del array original menos el primero y el último.
+let menosUltimoPrimero=[14,25,64,15,12,34,17,24]
+let arrayMenosUltimoPrimero=()=>{
+    menosUltimoPrimero.pop()
+    menosUltimoPrimero.shift()
+    console.log(menosUltimoPrimero)
+    return menosUltimoPrimero
+}
+arrayMenosUltimoPrimero()
+
 // Dado un array de números, escribir una función que retorne un nuevo array con todos los números del array original menos el número que se encuentre en la posición X.
+let menosPosicionX=[14,25,64,15,12,34,17,24]
+let PosX=3
+let arrayMenosPosicionX=()=>{
+    filtrado=menosPosicionX.filter((number,index) => index!=PosX)
+    console.log(filtrado)
+}
+arrayMenosPosicionX()
 
