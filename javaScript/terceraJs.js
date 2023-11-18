@@ -73,7 +73,7 @@ console.log(
 // 1- Escribir un programa
 // 2- Solicitar al usuario el año de nacimiento, parsear el resultado
 // 3- Calcular la edad de la persona. restar el año actual con el año de nacimiento.
-// 4- Validar si es o no mayor de edad.
+// 4-   r si es o no mayor de edad.
 // 5- Mostrar la edad en una cadena de texto.
 
 let legalidad = () => {

@@ -87,21 +87,50 @@ let evenOdd = (numberIn2) => {
 evenOdd();
 
 //Crear un programa que pida al usuario un número y luego muestre si es par o impar. REPETIDO EJERCICIO 9
-// let userNumIn = parseInt(prompt(`Ingrese un número por favor:`));
-
 
 // Crear un programa que pida al usuario un número y luego muestre si es positivo, negativo o cero. REPETIDO EJERCICIO 8
 
 // Crear un programa que pida al usuario dos números y luego muestre cuál es el mayor de los dos.
-let higherNum = (numA, numB) => {
-    numA = parseInt(prompt(`Por favor ingrese un número:`));
-    numB = parseInt(prompt(`Por favor ingrese otro número:`));
-    let compareNum = Math.max(numA, numB);
-    console.log(`Resultado ejercicio 10 (mayor): ${compareNum}`)
-}
-higherNum()
+// let higherNum = (numA, numB) => {
+//     numA = parseInt(prompt(`Por favor ingrese un número:`));
+//     numB = parseInt(prompt(`Por favor ingrese otro número:`));
+//     let compareNum = Math.max(numA, numB);
+//     console.log(`Resultado ejercicio 10 (mayor): ${compareNum}`)
+// }
+// higherNum()
 
 // Crear un programa que pida al usuario una contraseña y la valide según ciertas condiciones, como la longitud y la presencia de caracteres especiales.
+let tempInPass = prompt(`Ingrese su nueva contraseña por favor:`);
+const specChar = [`!`, `%`];
+// , `"`, `#`, `$`, `%`, `&`, `'`, `(`, `)`, `*`, `+`, `,`, `-`, `.`, `/`, `:`, `;`, `<`, `=`, `>`, `?`, `@`, `[`, ` \ ` , `]`, `^`, `_`, "`", `{`, `|`, `}`, `~`];
+let passLengthValidate = (8<=tempInPass.length) && (tempInPass.length<=64);
+let passSpecCharValidate = tempInPass.includes(specChar);
+let finalPass;
+
+// let lengthVal = (tempInPass) => {
+//     if (8<tempInPass.length<64)
+// }
+
+// let specCharVal = (tempInPass) => {
+//     tempInPass.includes(specChar) 
+// }
+console.log(passLengthValidate);
+console.log(passSpecCharValidate);
+
+
+let saveAndRespawn = (passLengthValidate, passSpecCharValidate) => {
+    if (passLengthValidate && passSpecCharValidate) {
+        finalPass = tempInPass;
+        alert(`Gracias, su contraseña ha sido guardada`);
+    } else if (passLengthValidate == false) {
+        alert(`Su contraseña debe ser mayor que 4 y menor que 62 caracteres`);
+        tempInPass;
+    } else if (passSpecCharValidate == false) {
+        alert(`Su contraseña debe contener al menos 1 caracter especial`);
+        tempInPass;
+    }
+}
+saveAndRespawn(passLengthValidate, passSpecCharValidate);
 
 // Crear un programa que pida al usuario una calificación y luego muestre si es aprobatoria o no (nota mínima para aprobar es 70).
 
