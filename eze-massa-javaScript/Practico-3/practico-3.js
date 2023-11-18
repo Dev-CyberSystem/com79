@@ -285,7 +285,27 @@ const esMayorDeEdad = (edad) => {
 	}
 }
 // Crear un programa que pida al usuario dos números y luego muestre si su suma es mayor, menor o igual a 100.
-
+const btnSumaCien = document.getElementById('btnSumaCien')
+btnSumaCien.addEventListener('click', () => {
+	let primerNumero = prompt('Ingresa un primer numero') || 0
+	let segundoNumero = prompt('Ingresa un segundo numero') || 0
+	const regExNumeros = /[0-9]/
+	if (!regExNumeros.test(primerNumero) || !regExNumeros.test(segundoNumero)) {
+		alert('Error , solo se permiten numeros')
+	} else {
+		sumaCien(primerNumero, segundoNumero)
+	}
+})
+const sumaCien = (primerNumero, segundoNumero) => {
+	let suma = parseFloat(primerNumero) + parseFloat(segundoNumero)
+	if (suma > 100) {
+		alert(`La suma ${suma} es mayor a 100`)
+	} else if (suma < 100) {
+		alert(`La suma ${suma} es menor a 100`)
+	} else {
+		alert(`La suma  ${suma} es igual a 100`)
+	}
+}
 // Crear un programa que pida al usuario tres números y luego muestre cuál es el mayor de los tres.
 
 // Crear un programa que pida al usuario una letra y luego muestre si es una letra mayúscula o minúscula.
