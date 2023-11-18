@@ -205,7 +205,7 @@ function esPalindromo(palabra) {
 // Crear un programa que pida al usuario una letra y luego muestre si es una vocal o una consonante.
 const btnVocalConsonante = document.getElementById('btnVocalConsonante')
 btnVocalConsonante.addEventListener('click', () => {
-	let letra = prompt('Ingresa una letra')
+	let letra = prompt('Ingresa una letra').trim()
 	const regExVocales = /[aeiou]/
 	if (regExVocales.test(letra)) {
 		alert(`La letra ${letra} es vocal`)
@@ -214,7 +214,30 @@ btnVocalConsonante.addEventListener('click', () => {
 	}
 })
 // Crear un programa que pida al usuario un número del 1 al 7 y luego muestre el día de la semana correspondiente.
+const btnDiaSemana = document.getElementById('btnDiaSemana')
+btnDiaSemana.addEventListener('click', () => {
+	let diaNumero = prompt('Ingresa un dia del 1 al 7')
+	const regExDia = /[1-7]/
+	if (!regExDia.test(diaNumero) || diaNumero < 1 || diaNumero > 7) {
+		alert('Error , solo se permiten numeros del 1 al 7')
+	} else {
+		let diaSemana = calcularDiaSemana(diaNumero)
+		alert(`El dia ${diaNumero} es ${diaSemana}`)
+	}
+})
 
+const dias = {
+	1: 'Lunes',
+	2: 'Martes',
+	3: 'Miercoles',
+	4: 'Jueves',
+	5: 'Viernes',
+	6: 'Sabado',
+	7: 'Domingo',
+}
+const calcularDiaSemana = (diaNumero) => {
+	return dias[diaNumero]
+}
 // Crear un programa que pida al usuario un número y luego muestre si es primo o no.
 
 // Crear un programa que pida al usuario su edad y luego muestre si es mayor o menor de edad (18 años).
