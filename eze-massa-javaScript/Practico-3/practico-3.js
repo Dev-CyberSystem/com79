@@ -203,7 +203,16 @@ function esPalindromo(palabra) {
 }
 
 // Crear un programa que pida al usuario una letra y luego muestre si es una vocal o una consonante.
-
+const btnVocalConsonante = document.getElementById('btnVocalConsonante')
+btnVocalConsonante.addEventListener('click', () => {
+	let letra = prompt('Ingresa una letra')
+	const regExVocales = /[aeiou]/
+	if (regExVocales.test(letra)) {
+		alert(`La letra ${letra} es vocal`)
+	} else {
+		alert(`La letra ${letra} es consonante`)
+	}
+})
 // Crear un programa que pida al usuario un número del 1 al 7 y luego muestre el día de la semana correspondiente.
 
 // Crear un programa que pida al usuario un número y luego muestre si es primo o no.
