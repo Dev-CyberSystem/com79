@@ -267,7 +267,23 @@ const calcularPrimo = (numero) => {
 	return true
 }
 // Crear un programa que pida al usuario su edad y luego muestre si es mayor o menor de edad (18 años).
-
+const btnMayorEdad = document.getElementById('btnMayorEdad')
+btnMayorEdad.addEventListener('click', () => {
+	let edad = prompt('Ingresa tu edad')
+	const regExEdad = /[0-9]/
+	if (!regExEdad.test(edad) || edad < 0) {
+		alert('Error , ingrese una edad valida')
+	} else {
+		esMayorDeEdad(edad)
+	}
+})
+const esMayorDeEdad = (edad) => {
+	if (edad >= 18) {
+		alert(`Eres mayor de edad`)
+	} else {
+		alert(`Eres menor de edad`)
+	}
+}
 // Crear un programa que pida al usuario dos números y luego muestre si su suma es mayor, menor o igual a 100.
 
 // Crear un programa que pida al usuario tres números y luego muestre cuál es el mayor de los tres.
