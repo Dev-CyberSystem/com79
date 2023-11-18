@@ -307,6 +307,23 @@ const sumaCien = (primerNumero, segundoNumero) => {
 	}
 }
 // Crear un programa que pida al usuario tres números y luego muestre cuál es el mayor de los tres.
+const btnMayorDeTres = document.getElementById('btnMayorDeTres')
+btnMayorDeTres.addEventListener('click', () => {
+	let primerNumero = prompt('Ingresa un primer numero') || 0
+	let segundoNumero = prompt('Ingresa un segundo numero') || 0
+	let tercerNumero = prompt('Ingresa un tercer numero') || 0
+	const regExNumeros = /[0-9]/
+	if (!regExNumeros.test(primerNumero) || !regExNumeros.test(segundoNumero) || !regExNumeros.test(tercerNumero)) {
+		alert('Error , solo se permiten numeros')
+	} else {
+		const numerosArray = [primerNumero, segundoNumero, tercerNumero]
+		mayorDeTres(numerosArray)
+	}
+})
+const mayorDeTres = (numerosArray) => {
+	let mayorNumero = Math.max(...numerosArray)
+	alert(`El numero mayor es ${mayorNumero}`)
+}
 
 // Crear un programa que pida al usuario una letra y luego muestre si es una letra mayúscula o minúscula.
 
