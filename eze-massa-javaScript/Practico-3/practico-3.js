@@ -398,5 +398,28 @@ function esNumeroPerfecto(numero) {
 }
 
 // Crear un programa que pida al usuario un número y luego muestre su descomposición en factores primos.
+const btnDescFactoresPrimos = document.getElementById('btnDescFactoresPrimos')
+btnDescFactoresPrimos.addEventListener('click', () => {
+	let numeroIngresado = parseFloat(prompt('Ingresa un numero'))
+	const regExNumeros = /[0-9]/
+	if (!regExNumeros.test(numeroIngresado)) {
+		alert('Error , ingrese un numero valido')
+	} else {
+		factoresPrimos(numeroIngresado)
+	}
+})
+function factoresPrimos(numero) {
+	let factor = 2
+	let descomposicion = []
 
+	while (numero > 1) {
+		if (numero % factor === 0) {
+			descomposicion.push(factor)
+			numero /= factor
+		} else {
+			factor++
+		}
+	}
+	alert(`La descomposición en factores primos del número ingresado es: ${descomposicion.join(' * ')}`)
+}
 // Crear un programa que pida al usuario una fecha (día, mes y año) y luego muestre si es válida o no. Una fecha es válida si cumple con ciertas condiciones, como la cantidad de días en el mes y si es un año bisiesto o no.
