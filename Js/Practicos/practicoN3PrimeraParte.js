@@ -551,4 +551,34 @@ console.log("-----------------------")
 //26) Crear un programa que pida al usuario una fecha (día, mes y año) y luego muestre si es válida o no. Una fecha es válida si cumple con ciertas condiciones, como la cantidad de días en el mes y si es un año bisiesto o no.
 console.log("-------Ejercicio 26-----------")
 
+let dia = parseInt(prompt("Ingrese el dia del 1 hasta 31: "))
+let mes = parseInt(prompt("Ingrese el mes del 1 hasta 12: "))
+let anio = parseInt(prompt("Ingrese el año: "))
+
+var date_regex = /^(0[1-9]|1[0-2])\/(0[1-9]|1\d|2\d|3[01])\/(0[1-9]|1[1-9]|2[1-9])$/;
+if(!date_regex.test(dia) && !date_regex.test(mes)&&!date_regex.test(anio) && dia>1 && dia<32 && mes>1 &&mes<12 && anio.length===4)
+{
+      alert(`La fecha ingresada es invalida.`)
+}
+else{
+      fechaValida(dia,mes, anio)
+}
+
+function fechaValida(dia,mes,anio)
+{
+   diasCalendario = [31,28,31,30,31,30,31,31,30,31,30,31];
+   if((anio % 4 === 0 && anio % 100!==0)|| anio%400 == 0)
+   {
+      diasCalendario[1]=29;
+   }
+  
+   if (mes >= 1 && mes <= 12 && dia >= 1 && dia <= diasCalendario[mes - 1]){
+      alert(`La fecha ingresada ${dia} - ${mes} - ${anio} es válida `);
+  } else {
+      alert(`La fecha ingresada ${dia} - ${mes} - ${anio} no es válida`);
+  }
+}
+
+fechaValida(dia,mes,anio)
+
 console.log("-----------------------")
