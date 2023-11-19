@@ -247,6 +247,7 @@ console.log("------------------")
 
 //12) Crear un programa que pida al usuario dos números y luego muestre cuál es el mayor de los dos.
 console.log("-------Ejercicio 12-----------")
+/*
 function numM(){
    let nu1 = parseInt(prompt("Ingrese el primer numero: "))
    let nu2 = parseInt(prompt("Ingrese el segundo numero: "))
@@ -265,9 +266,80 @@ function numM(){
    }
    
 }
-numM()
+numM()*/
 console.log("------------------")
 //13) Crear un programa que pida al usuario una contraseña y la valide según ciertas condiciones, como la longitud y la presencia de caracteres especiales.
+console.log("-------Ejercicio 13-----------")
+/*
+let contra = String(prompt("Ingresa una contraseña: "))
+
+function contraValida(contra)
+{
+      if(contra.length > 10)
+      {
+         if ((contra.match(/[A-z]/) || contra.match(/[A-Z]/)) && contra.match(/\d/)) {
+            
+            
+                 console.log("La contraseña es valida")
+            
+         }
+         else{
+            console.log("La contraseña no cumple con las caracteristicas especificadas de mayusculas")
+         }
+      }
+      else{
+         console.log("La contraseña no cumple con la longitud mayor a 10.")
+      }
+}
+contraValida(contra)*/
+console.log("------------------")
 //14) Crear un programa que pida al usuario una calificación y luego muestre si es aprobatoria o no (nota mínima para aprobar es 70).
+console.log("-------Ejercicio 14-----------")
+/*
+let califica = parseInt(prompt("Ingrese una calificacion en decimal por ejemplo 10 = 1 es desprobado y calificaciones mayor a 70 es Aprobado: "))
+
+function calificacion(califica)
+{
+   if( (califica >=70 && califica <=100))
+   {
+      console.log("La calificacion ingreso es mayor o igual a 70 esta aprobado")
+   }
+   else
+   {
+      console.log("La calificacion que ingresó no esta aprobado o no ingresó la calificacion en decimal.")
+   }
+}
+calificacion(califica)
+*/
+console.log("--------------------------")
+
+
 //15) Crear una función que tome una cadena como parámetro y devuelva "Es un palíndromo" si la cadena es igual al revés, de lo contrario, devolver "No es un palíndromo".
+console.log("-------Ejercicio 15-----------")
+/*
+let cadena1 = String(prompt("Ingrese una cadena para saber si es palidromo"))
+
+function palidromo1(cadena1){
+   const cadenaR = cadena1.split("").reverse().join("");
+   if(cadena1 === cadenaR)
+   {
+      console.log("Es palindromo.")
+   }
+   else
+   {
+      console.log("No es palindromo.")
+   }
+}
+palidromo1(cadena1)*/
+console.log("--------------------------")
 // 16) Crear un programa que pida al usuario una letra y luego muestre si es una vocal o una consonante.
+// 17) Crear un programa que pida al usuario un número del 1 al 7 y luego muestre el día de la semana correspondiente.
+// 18) Crear un programa que pida al usuario un número y luego muestre si es primo o no.
+// 19) Crear un programa que pida al usuario su edad y luego muestre si es mayor o menor de edad (18 años).
+// 20) Crear un programa que pida al usuario dos números y luego muestre si su suma es mayor, menor o igual a 100.
+//21)  Crear un programa que pida al usuario tres números y luego muestre cuál es el mayor de los tres.
+//22) Crear un programa que pida al usuario una letra y luego muestre si es una letra mayúscula o minúscula.
+//23) Crear una función que tome un número como parámetro y devuelva "Fizz" si es divisible por 3, "Buzz" si es divisible por 5 o "FizzBuzz" si es divisible por ambos. En cualquier otro caso, devolver el número.
+//24) Crear un programa que pida al usuario un número y luego muestre si es un número perfecto o no. Un número perfecto es aquel que es igual a la suma de sus divisores propios.
+//25) Crear un programa que pida al usuario un número y luego muestre su descomposición en factores primos.
+//26) Crear un programa que pida al usuario una fecha (día, mes y año) y luego muestre si es válida o no. Una fecha es válida si cumple con ciertas condiciones, como la cantidad de días en el mes y si es un año bisiesto o no.
