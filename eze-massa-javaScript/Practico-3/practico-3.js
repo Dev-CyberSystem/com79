@@ -423,3 +423,31 @@ function factoresPrimos(numero) {
 	alert(`La descomposición en factores primos del número ingresado es: ${descomposicion.join(' * ')}`)
 }
 // Crear un programa que pida al usuario una fecha (día, mes y año) y luego muestre si es válida o no. Una fecha es válida si cumple con ciertas condiciones, como la cantidad de días en el mes y si es un año bisiesto o no.
+const btnFechaValida = document.getElementById('btnFechaValida')
+btnFechaValida.addEventListener('click', () => {
+	const dia = parseFloat(prompt('Ingrese el día (entre 1 y 31):'))
+	const mes = parseFloat(prompt('Ingrese el mes (entre 1 y 12):'))
+	const anio = parseFloat(prompt('Ingrese el año:'))
+	if (isNaN(dia) || isNaN(mes) || isNaN(anio) || dia < 1 || mes < 1 || mes > 12) {
+		alert('Fecha inválida: por favor, ingrese valores numéricos válidos para día, mes y año.')
+		return
+	} else {
+		esFechaValida(dia, mes, anio)
+	}
+})
+
+const esFechaValida = (dia, mes, anio) => {
+	const diasPorMes = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+	if (esBisiesto(anio)) {
+		diasPorMes[1] = 29
+	}
+
+	if (dia > diasPorMes[mes - 1]) {
+		alert('Fecha inválida: el mes ingresado no tiene tantos días.')
+	} else {
+		alert(`La fecha ${dia}/${mes}/${anio} es valida.`)
+	}
+}
+function esBisiesto(anio) {
+	return (anio % 4 === 0 && anio % 100 !== 0) || anio % 400 === 0
+}
