@@ -74,4 +74,28 @@ let semanaArray=()=>{
 semanaArray()*/
 console.log("--------------------")
 // 5) Crea un programa que reciba una letra y muestre si es mayúscula o minúscula. 
+console.log("-------Ejercicio 5-----------")
+/*
+let regExNu = /[0-9]/ ///[A-Za-z]/
+let letra2 = String(prompt("Ingres una letra: "))
 
+if(!regExNu.test(letra2) &&letra2.length===1)
+{
+    if(letra2.match(/[a-z]/))
+    {
+        alert(`La letra es Miniscula: ${letra2}`)
+    }
+    else{
+        alert(`La letra es Mayuscula: ${letra2}`)
+    }
+}
+else{
+    alert(`Debe ingresar una letra.`)
+}*/
+console.log("--------------------")
+// 6) Crea un programa que reciba una nota del 0 al 10 y muestre la calificación correspondiente (suspenso, aprobado, notable, sobresaliente).
+console.log("-------Ejercicio 6-----------")
+
+
+
+console.log("--------------------")
