@@ -95,7 +95,42 @@ else{
 console.log("--------------------")
 // 6) Crea un programa que reciba una nota del 0 al 10 y muestre la calificación correspondiente (suspenso, aprobado, notable, sobresaliente).
 console.log("-------Ejercicio 6-----------")
+/*
+let cali = parseInt(prompt("Ingrese un numero del 1 al 10: "))
+let regexn= /[0-9]/ 
+let catNotas = ["suspenso","aprobado","notable","sobrealiente"]
 
-
-
+if(!regexn.test(cali))
+{
+    alert("Solo se permiten numeros.")
+}
+else{
+    calificacionN(cali)
+}
+function calificacionN(cali)
+{
+    if(cali<=10 && cali>0)
+    {
+    if(cali<5)
+    {
+        alert(`La calificacion correspondiente es ${catNotas[0]}`)
+    }
+    else if(cali<=6)
+    {
+        alert(`La calificacion correspondiente es ${catNotas[1]}`)
+    }
+    else if(cali<=8)
+    {
+        alert(`La calificacion correspondiente es ${catNotas[2]}`)
+    }
+    else
+    {
+        alert(`La calificacion correspondiente es ${catNotas[3]}`)
+    }
+    }
+    else{
+        alert("El numero 0 no corresponde a una calificacion")
+    }
+}
+calificacionN(cali)*/
 console.log("--------------------")
