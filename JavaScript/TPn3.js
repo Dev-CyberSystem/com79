@@ -5,7 +5,7 @@
 
 // Crea una Funcion que reciba dos parametros y los reste, luego muestra el resultado en la consola.
 // let subtTwoPar = (parA=parseInt(prompt(`Ejercicio 1 - Ingrese un número`)), parB=parseInt(prompt(`Ejercicio 1 - Ingrese otro número`))) => {
-//     console.log(`Resultado ejercicio 1 (resta): ${parA-parB}`)
+//     console.log(`Resultado ejercicio 1 (resta): ${parA-parB}`);
 // };
 // subtTwoPar();
 
@@ -13,7 +13,7 @@
 // Crea una funcion donde se declare una variable con el valor 5 y se le sume 10, luego muestra el resultado en la consola.
 let addNum = () => {
     let valueA = 5;
-    console.log(`Resultado ejercicio 2 (suma): ${valueA+10}`)
+    console.log(`Resultado ejercicio 2 (suma): ${valueA+10}`);
 }; //también funciona abreviado con -let addNum = (valueA=5) => console.log(`Resultado ejercicio 2 (suma): ${valueA+10}`);-
 addNum();
 
@@ -22,7 +22,7 @@ addNum();
 let concTwoStr = () => {
     let valueB = `River`;
     let valueC = `es pésimo ;)`;
-    console.log(`Resultado ejercicio 3 (concatenado): ${valueB} ${valueC}`)
+    console.log(`Resultado ejercicio 3 (concatenado): ${valueB} ${valueC}`);
 }; //También funciona con -let concTwoStr = (valueB=`River`,valueC=`es pésimo ;) ...`) => console.log(`Resultado ejercicio 3 (concatenado): ${valueB} ${valueC}`);-
 concTwoStr();
 
@@ -49,7 +49,7 @@ boolDifComp();
 let numBigComp = () => {
     let valueH = 734;
     let valueI = 652;
-    console.log(`Resultado ejercicio 6 (mayor que): ${valueH>valueI}`)
+    console.log(`Resultado ejercicio 6 (mayor que): ${valueH>valueI}`);
 }
 numBigComp();
 
@@ -91,7 +91,7 @@ let evenOdd = (numberIn2) => {
     } else {
         state = `Impar`;
     }
-    console.log(`Resultado ejercicio 9 (par-impar): ${state}`)
+    console.log(`Resultado ejercicio 9 (par-impar): ${state}`);
 }
 evenOdd();
 
@@ -106,9 +106,9 @@ evenOdd();
 //     numA = parseInt(prompt(`Por favor ingrese el primer número a comparar:`));
 //     numB = parseInt(prompt(`Por favor ingrese el segundo número a comparar:`));
 //     let compareNum = Math.max(numA, numB);
-//     console.log(`Resultado ejercicio 10 (mayor): ${compareNum}`)
+//     console.log(`Resultado ejercicio 10 (mayor): ${compareNum}`);
 // }
-// higherNum()
+// higherNum();
 
 
 // Crear un programa que pida al usuario una contraseña y la valide según ciertas condiciones, como la longitud y la presencia de caracteres especiales.
@@ -179,29 +179,43 @@ evenOdd();
 
 
 // Crear un programa que pida al usuario un número del 1 al 7 y luego muestre el día de la semana correspondiente.
-let filteredDayNum;
-const weekDays = [null, `Lunes`, `Martes`, `Miercoles`, `Jueves`, `Viernes`, `Sábado`, `Domingo`]
-let filterDayNum = () => {
-    let userInDayNum = prompt(`Por favor ingrese un número del 1 al 7:`).trim();
-    if (userInDayNum.match(/[1-7]/) && userInDayNum.length===1) {
-        filteredDayNum = parseInt(userInDayNum);
-    } else {
-        alert(`Por favor ingrese solo un número entre 1 y 7`);
-        filterDayNum();
-    }
-    console.log(filteredDayNum);
-}
-filterDayNum();
-let selectedDay = weekDays[filteredDayNum];
-alert(`El número ingresado (${filteredDayNum}) corresponde al día ${selectedDay}.`);
-console.log(`Resultado ejercicio 15 (seleccion día): ${selectedDay}`);
+// let filteredDayNum;
+// const weekDays = [null, `Lunes`, `Martes`, `Miercoles`, `Jueves`, `Viernes`, `Sábado`, `Domingo`]
+// let filterDayNum = () => {
+//     let userInDayNum = prompt(`Por favor ingrese un número del 1 al 7:`).trim();
+//     if (userInDayNum.match(/[1-7]/) && userInDayNum.length===1) {
+//         filteredDayNum = parseInt(userInDayNum);
+//     } else {
+//         alert(`Por favor ingrese solo un número entre 1 y 7`);
+//         filterDayNum();
+//     }
+// }
+// filterDayNum();
+// let selectedDay = weekDays[filteredDayNum];
+// alert(`El número ingresado (${filteredDayNum}) corresponde al día ${selectedDay}.`);
+// console.log(`Resultado ejercicio 15 (seleccion día): ${selectedDay}`);
 
 
 // Crear un programa que pida al usuario un número y luego muestre si es primo o no.
 
 // Crear un programa que pida al usuario su edad y luego muestre si es mayor o menor de edad (18 años).
+let adultCheck = () => {
+    let ageValidate;
+    let userAge = prompt(`Por favor ingrese su edad:`).trim();
+    if (userAge.match(/[0-9]/) && userAge.length<=3 && userAge!=1) {
+        ageValidate = userAge>=18;
+        alert(`Usted tiene ${userAge} años y es ${ageValidate ? `mayor de edad` : `menor de edad`}`);
+        console.log(`Resultado ejercicio 17: ${ageValidate ? `mayor de edad` : `menor de edad`} (${userAge} años)`);
+    } else {
+        alert(`Por favor ingrese su edad con digitos numéricos (2-999)`);
+        adultCheck();
+    }
+}
+adultCheck();
+
 
 // Crear un programa que pida al usuario dos números y luego muestre si su suma es mayor, menor o igual a 100.
+
 
 // Crear un programa que pida al usuario tres números y luego muestre cuál es el mayor de los tres.
 
