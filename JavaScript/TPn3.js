@@ -179,7 +179,22 @@ evenOdd();
 
 
 // Crear un programa que pida al usuario un número del 1 al 7 y luego muestre el día de la semana correspondiente.
-
+let filteredDayNum;
+const weekDays = [null, `Lunes`, `Martes`, `Miercoles`, `Jueves`, `Viernes`, `Sábado`, `Domingo`]
+let filterDayNum = () => {
+    let userInDayNum = prompt(`Por favor ingrese un número del 1 al 7:`).trim();
+    if (userInDayNum.match(/[1-7]/) && userInDayNum.length===1) {
+        filteredDayNum = parseInt(userInDayNum);
+    } else {
+        alert(`Por favor ingrese solo un número entre 1 y 7`);
+        filterDayNum();
+    }
+    console.log(filteredDayNum);
+}
+filterDayNum();
+let selectedDay = weekDays[filteredDayNum];
+alert(`El número ingresado (${filteredDayNum}) corresponde al día ${selectedDay}.`);
+console.log(`Resultado ejercicio 15 (seleccion día): ${selectedDay}`);
 
 
 // Crear un programa que pida al usuario un número y luego muestre si es primo o no.
