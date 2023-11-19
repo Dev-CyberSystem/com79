@@ -580,6 +580,16 @@ function mostrarNumerosHasta(numero) {
 	mostrarNumerosText.textContent = `Numeros del 1 al ${numero} son: ${numeros.join(', ')}`
 }
 // Pedir al usuario que ingrese una palabra y mostrar en la consola cada letra en minúsculas.
+const btnMinusculas = document.getElementById('btnMinusculas')
+const minusculasText = document.getElementById('minusculasText')
+btnMinusculas.addEventListener('click', () => {
+	let stringIngresado = prompt('Ingresa un string')
+	let stringMinusculas = []
+	for (let i = 0; i < stringIngresado.length; i++) {
+		stringMinusculas.push(stringIngresado[i].toLowerCase())
+	}
+	minusculasText.textContent = `El string en minúsculas es: ${stringMinusculas.join(', ')}`
+})
 // Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola el número más grande de la serie.
 // Pedir al usuario que ingrese una palabra y mostrar en la consola si la palabra es un palíndromo o no.
 // Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola la suma de los números pares.
