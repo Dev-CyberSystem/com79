@@ -162,30 +162,25 @@ evenOdd();
 
 
 // Crear un programa que pida al usuario una letra y luego muestre si es una vocal o una consonante.
-let filteredLetter;
-let filterLetter = () => {
-    let userInLetter = prompt(`Por favor introduzca una letra`).trim().toLowerCase();
-    if (userInLetter.length===1) {
-        filteredLetter = userInLetter;
-    } else {
-        alert(`Por favor introduzca una sola letra`)
-        filterLetter()
-    }
-    console.log(userInLetter);
-}
-filterLetter();
-
-console.log(filteredLetter);
-let vocalValidation = filteredLetter===`a`||filteredLetter===`e`||filteredLetter===`i`||filteredLetter===`o`||filteredLetter===`u`;
-console.log(vocalValidation);
-vocalValidation ? alert(`La letra "${filteredLetter}" es una vocal`) : alert(`La letra "${filteredLetter}" es una consonante`)
-// let vocalLetter = (filteredLetter) => {
-//     if (filteredLetter===a||filteredLetter===e||filteredLetter===i||filteredLetter===o||filteredLetter===u) {
-//         alert(`La letra "${filteredLetter}" es una vocal`)
+// let filteredLetter;
+// let filterLetter = () => {
+//     let userInLetter = prompt(`Por favor introduzca una letra`).trim().toLowerCase();
+//     if (userInLetter.match(/[a-z]/) && userInLetter.length===1) {
+//         filteredLetter = userInLetter;
+//     } else {
+//         alert(`Por favor introduzca una sola letra`);
+//         filterLetter();
 //     }
 // }
+// filterLetter();
+// let vocalValidation = filteredLetter.match(/[aeiou]/);
+// alert(`La letra "${filteredLetter}" es una ${vocalValidation ? `vocal` : `consonante`}.`);
+// console.log(`Resultado ejercicio 14 (vocal-consonante): "${filteredLetter}" es una ${vocalValidation ? `vocal` : `consonante`}.`);
+
 
 // Crear un programa que pida al usuario un número del 1 al 7 y luego muestre el día de la semana correspondiente.
+
+
 
 // Crear un programa que pida al usuario un número y luego muestre si es primo o no.
 
