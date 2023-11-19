@@ -557,7 +557,29 @@ btnMayusculas.addEventListener('click', () => {
 	}
 	mayusculasText.textContent = `El string en mayúsculas es: ${stringMayusculas.join(', ')}`
 })
+
 // Pedir al usuario que ingrese un número y mostrar en la consola los números del 1 al número ingresado.
+const btnMostrarNumeros = document.getElementById('btnMostrarNumeros')
+const mostrarNumerosText = document.getElementById('mostrarNumerosText')
+btnMostrarNumeros.addEventListener('click', () => {
+	let numeroIngresado = parseFloat(prompt('Ingresa un numero'))
+	const regExNumeros = /[0-9]/
+	if (!regExNumeros.test(numeroIngresado)) {
+		alert('Error , solo se permiten numeros')
+	} else if (numeroIngresado < 1) {
+		alert('Error , solo se permiten numeros mayores a 1')
+	} else {
+		mostrarNumerosHasta(numeroIngresado)
+	}
+})
+function mostrarNumerosHasta(numero) {
+	let numeros = []
+	for (let i = 1; i <= numero; i++) {
+		numeros.push(i)
+	}
+	mostrarNumerosText.textContent = `Numeros del 1 al ${numero} son: ${numeros.join(', ')}`
+}
+// Pedir al usuario que ingrese una palabra y mostrar en la consola cada letra en minúsculas.
 // Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola el número más grande de la serie.
 // Pedir al usuario que ingrese una palabra y mostrar en la consola si la palabra es un palíndromo o no.
 // Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola la suma de los números pares.
