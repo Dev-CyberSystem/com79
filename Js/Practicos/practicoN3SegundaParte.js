@@ -154,12 +154,25 @@ console.log("--------------------")
 // 8)Recorrer un string y mostrar en la consola cada letra en mayúsculas.
 console.log("-------Ejercicio 8-----------")
 
-let cadenaL = String(prompt("Ingrese una cadena: "))
+let cadenaL = prompt("Ingrese una cadena: ")
    let letritas = []
 
    for(let b=0;b<cadenaL.length;b++)
    {
-        letritas.push(cadenaL[i].toUpperCase())
+        letritas.push(cadenaL[b].toUpperCase())
    }
-   alert(`El string ingresado quedó de la siguiente manera ${letritas}`)
+   alert(`El string ingresado quedó de la siguiente manera ${letritas.join(` , `)}`)
+console.log("--------------------")
+// 9)Pedir al usuario que ingrese un número y mostrar en la consola los números del 1 al número ingresado.
+console.log("-------Ejercicio 9-----------")
+
+let numb2 = parseInt(prompt("Ingrese un numero para hacer un conteo al mismo: "))
+let numeroA = []
+
+for(let c=0;c<numb2;c++)
+{
+    numeroA.push(c)
+}
+alert(`Los numero son: ${numeroA.join(` , `)}`)
+
 console.log("--------------------")
