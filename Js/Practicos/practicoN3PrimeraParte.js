@@ -361,11 +361,90 @@ function semanaC(n7)
 semanaC(n7)*/
 console.log("-----------------------")
 // 18) Crear un programa que pida al usuario un número y luego muestre si es primo o no.
+console.log("-------Ejercicio 18-----------")
+/*
+let n6 = parseInt(prompt("Ingrese un numero para saber si es primo: "))
+
+function esPrimo(n6)
+{
+   if (n6 === 0 || n6 === 1 || n6 === 4) return console.log(`NO es primo ${n6}`);
+	for (let i = 2; i < n6 / 2; i++) {
+		if (n6 % i === 0) return console.log(`No es primo ${n6}`);
+	}
+   return console.log(`Es primo ${n6}`);
+}
+esPrimo(n6)*/
+console.log("-----------------------")
 
 // 19) Crear un programa que pida al usuario su edad y luego muestre si es mayor o menor de edad (18 años).
+console.log("-------Ejercicio 19-----------")
+/*
+function mayorDeEdad(){
+   let anioNac = parseInt (prompt("Ingrese su año de nacimiento: "))
+let anioActual = 2023
+let edad = anioActual - anioNac
+ let validacion = edad >= 18
+ if( validacion===true )
+ {
+   console.log(`Usted tiene ${edad} años y es mayor de edad`)
+ } 
+ else{
+   console.log(`Usted tiene ${edad} años y es menor de edad`)
+ } 
+}
+mayorDeEdad()
+*/
+console.log("-----------------------")
 // 20) Crear un programa que pida al usuario dos números y luego muestre si su suma es mayor, menor o igual a 100.
+console.log("-------Ejercicio 20-----------")
+/*
+let n8 = parseInt(prompt("Ingrese el primero numero para hacer la suma: "))
+let n9 = parseInt(prompt("Ingrese el segundo numero para hacer la suma: "))
+
+function sumaMa(n8,n9)
+{
+   let r = n8 + n9;
+         if(r>100)
+         {
+            console.log("El resultado es mayor a 100 y es: ",r)
+         }
+         else if(r<100)
+         {
+            console.log("El resultado es menor a 100 y es: ",r)
+         }
+         else
+         {
+            console.log("El resultado es igual a 100: ",r)
+         }
+}
+sumaMa(n8,n9)*/
+console.log("-----------------------")
 //21)  Crear un programa que pida al usuario tres números y luego muestre cuál es el mayor de los tres.
+console.log("-------Ejercicio 21-----------")
+/*
+let nu3 = parseInt(prompt("Ingrese el primero numero para comparar: "))
+let nu4 = parseInt(prompt("Ingrese el segundo numero para comparar: "))
+let nu5 = parseInt(prompt("Ingrese el tercer numero para comparar: "))
+
+function mayorTres(nu3,nu4,nu5)
+{
+   if(nu3 > nu4 && nu3 > nu5)
+   {
+      console.log(`El primero numero ${nu3} es mayor a ${nu4} y ${nu5}`)
+   }
+   else if(nu4>nu3 && nu4>nu5)
+   {
+      console.log(`El primero numero ${nu4} es mayor a ${nu3} y ${nu5}`)
+   }
+   else{
+      console.log(`El primero numero ${nu5} es mayor a ${nu3} y ${nu4}`)
+   }
+
+}
+mayorTres(nu3,nu4,nu5)*/
+console.log("-----------------------")
 //22) Crear un programa que pida al usuario una letra y luego muestre si es una letra mayúscula o minúscula.
+
 //23) Crear una función que tome un número como parámetro y devuelva "Fizz" si es divisible por 3, "Buzz" si es divisible por 5 o "FizzBuzz" si es divisible por ambos. En cualquier otro caso, devolver el número.
 //24) Crear un programa que pida al usuario un número y luego muestre si es un número perfecto o no. Un número perfecto es aquel que es igual a la suma de sus divisores propios.
 //25) Crear un programa que pida al usuario un número y luego muestre su descomposición en factores primos.
