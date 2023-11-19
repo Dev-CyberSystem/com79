@@ -547,6 +547,16 @@ btnNumerosPares.addEventListener('click', () => {
 	numerosParesText.textContent = `Numeros pares del 2 al 20 son: ${numerosPares.join(', ')}`
 })
 // Recorrer un string y mostrar en la consola cada letra en mayúsculas.
+const btnMayusculas = document.getElementById('btnMayusculas')
+const mayusculasText = document.getElementById('mayusculasText')
+btnMayusculas.addEventListener('click', () => {
+	let stringIngresado = prompt('Ingresa un string')
+	let stringMayusculas = []
+	for (let i = 0; i < stringIngresado.length; i++) {
+		stringMayusculas.push(stringIngresado[i].toUpperCase())
+	}
+	mayusculasText.textContent = `El string en mayúsculas es: ${stringMayusculas.join(', ')}`
+})
 // Pedir al usuario que ingrese un número y mostrar en la consola los números del 1 al número ingresado.
 // Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola el número más grande de la serie.
 // Pedir al usuario que ingrese una palabra y mostrar en la consola si la palabra es un palíndromo o no.
