@@ -454,7 +454,35 @@ function esBisiesto(anio) {
 
 //Segunda tanda de tareas
 // 1) Crea un programa que reciba un número del 1 al 12 y muestre el nombre del mes correspondiente.
-
+const btnMesNumeroANombre = document.getElementById('btnMesNumeroANombre')
+btnMesNumeroANombre.addEventListener('click', () => {
+	let numeroIngresado = parseFloat(prompt('Ingresa un numero del 1 al 12'))
+	const regExNumeros = /[0-9]/
+	if (!regExNumeros.test(numeroIngresado)) {
+		alert('Error , solo se permiten numeros')
+	} else if (numeroIngresado < 1 || numeroIngresado > 12) {
+		alert('Error , solo se permiten numeros del 1 al 12')
+	} else {
+		mesNumeroANombre(numeroIngresado)
+	}
+})
+const meses = {
+	1: 'Enero',
+	2: 'Febrero',
+	3: 'Marzo',
+	4: 'Abril',
+	5: 'Mayo',
+	6: 'Junio',
+	7: 'Julio',
+	8: 'Agosto',
+	9: 'Septiembre',
+	10: 'Octubre',
+	11: 'Noviembre',
+	12: 'Diciembre',
+}
+const mesNumeroANombre = (numero) => {
+	alert(`El mes ${numero} es ${meses[numero]}`)
+}
 // 2) Crea un programa que reciba un número del 1 al 7 y muestre el día de la semana correspondiente.
 // 3) Crea un programa que reciba un carácter y muestre si es una vocal o una consonante.
 // 4) Crea un programa que reciba un número del 1 al 5 y muestre el nombre del día de la semana correspondiente a esa posición en un arreglo.
