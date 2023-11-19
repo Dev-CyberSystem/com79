@@ -507,7 +507,32 @@ const diaSemanaArreglo = (numero) => {
 }
 //TAREA DUPLICADA MAS ARRIBA
 // 5) Crea un programa que reciba una letra y muestre si es mayúscula o minúscula.
+
 // 6) Crea un programa que reciba una nota del 0 al 10 y muestre la calificación correspondiente (suspenso, aprobado, notable, sobresaliente).
+const btnNotaACalificacion = document.getElementById('btnNotaACalificacion')
+btnNotaACalificacion.addEventListener('click', () => {
+	let numeroIngresado = parseFloat(prompt('Ingresa un numero del 0 al 10'))
+	const regExNumeros = /[0-9]/
+	if (!regExNumeros.test(numeroIngresado)) {
+		alert('Error , solo se permiten numeros')
+	} else if (numeroIngresado < 0 || numeroIngresado > 10) {
+		alert('Error , solo se permiten numeros del 0 al 10')
+	} else {
+		notaACalificacion(numeroIngresado)
+	}
+})
+
+function notaACalificacion(nota) {
+	if (nota >= 0 && nota <= 6) {
+		alert(`La calificación es suspenso`)
+	} else if (nota >= 7 && nota <= 8) {
+		alert(`La calificación es aprobado`)
+	} else if (nota == 9) {
+		alert(`La calificación es notable`)
+	} else {
+		alert(`La calificación es sobresaliente`)
+	}
+}
 // Imprimir los números pares del 2 al 20 en la consola.
 // Recorrer un string y mostrar en la consola cada letra en mayúsculas.
 // Pedir al usuario que ingrese un número y mostrar en la consola los números del 1 al número ingresado.
