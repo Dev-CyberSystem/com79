@@ -444,8 +444,58 @@ function mayorTres(nu3,nu4,nu5)
 mayorTres(nu3,nu4,nu5)*/
 console.log("-----------------------")
 //22) Crear un programa que pida al usuario una letra y luego muestre si es una letra mayúscula o minúscula.
-
+console.log("-------Ejercicio 22-----------")
+/*
+function letraMM()
+{
+   let letra3 = prompt("Ingrese una letra: ")
+   var regex = new RegExp("^[a-zA-Z ]+$");
+   if(letra3.length === 1 && regex.test(letra3))
+   {
+      console.log(`La letra es: ${letra3}`)
+   }
+   else
+   {
+      console.log("La letra que ingreso supera la especificaciones establecidas: ")
+   }
+}
+letraMM()*/
+console.log("-----------------------")
 //23) Crear una función que tome un número como parámetro y devuelva "Fizz" si es divisible por 3, "Buzz" si es divisible por 5 o "FizzBuzz" si es divisible por ambos. En cualquier otro caso, devolver el número.
+console.log("-------Ejercicio 23-----------")
+/*
+let nm = parseInt(prompt("Ingresar un numero para saber si es divisible en 3 o 5 : "))
+function divisibleFizz(nm)
+{
+      if(nm%3===0 && nm%5===0)
+      {
+         console.log("FizzBuzz")
+      }
+      else if(nm%3===0)
+      {
+         console.log("Fizz")
+      }
+      else if(nm%5===0)
+      {
+         console.log("Buzz")
+      }
+      else
+      {
+         console.log(`El numero ${nm} no es divisible en 3 o 5. `)
+      }
+}
+divisibleFizz(nm)*/
+console.log("-----------------------")
 //24) Crear un programa que pida al usuario un número y luego muestre si es un número perfecto o no. Un número perfecto es aquel que es igual a la suma de sus divisores propios.
+console.log("-------Ejercicio 24-----------")
+
+
+console.log("-----------------------")
 //25) Crear un programa que pida al usuario un número y luego muestre su descomposición en factores primos.
+console.log("-------Ejercicio 25-----------")
+
+console.log("-----------------------")
 //26) Crear un programa que pida al usuario una fecha (día, mes y año) y luego muestre si es válida o no. Una fecha es válida si cumple con ciertas condiciones, como la cantidad de días en el mes y si es un año bisiesto o no.
+console.log("-------Ejercicio 26-----------")
+
+console.log("-----------------------")
