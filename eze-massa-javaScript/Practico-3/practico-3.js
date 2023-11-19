@@ -533,7 +533,19 @@ function notaACalificacion(nota) {
 		alert(`La calificación es sobresaliente`)
 	}
 }
+
 // Imprimir los números pares del 2 al 20 en la consola.
+const btnNumerosPares = document.getElementById('btnNumerosPares')
+const numerosParesText = document.getElementById('numerosParesText')
+btnNumerosPares.addEventListener('click', () => {
+	let numerosPares = []
+	for (let i = 2; i <= 20; i++) {
+		if (i % 2 === 0) {
+			numerosPares.push(i)
+		}
+	}
+	numerosParesText.textContent = `Numeros pares del 2 al 20 son: ${numerosPares.join(', ')}`
+})
 // Recorrer un string y mostrar en la consola cada letra en mayúsculas.
 // Pedir al usuario que ingrese un número y mostrar en la consola los números del 1 al número ingresado.
 // Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola el número más grande de la serie.
