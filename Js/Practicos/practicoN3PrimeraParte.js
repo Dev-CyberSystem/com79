@@ -488,12 +488,65 @@ divisibleFizz(nm)*/
 console.log("-----------------------")
 //24) Crear un programa que pida al usuario un número y luego muestre si es un número perfecto o no. Un número perfecto es aquel que es igual a la suma de sus divisores propios.
 console.log("-------Ejercicio 24-----------")
+/*
+let nu10 = parseInt(prompt("Ingrese un numero para saber si es perfecto: "))
+function perfecto(nu10)
+{
+   let resul = 0
+   for (p = 1; p < nu10; i++) {                             
+      if (nu10 % i == 0) {
+          resul = resul + p;   
+      }
+  }
+  if (resul === nu10) {
+   alert(`El numero es perfecto: ${nu10}`)
+  } 
+  else{
+   alert(`El numero NO es perfecto: ${nu10}`)
+  }
+}
 
-
+perfecto(nu10)*/
 console.log("-----------------------")
 //25) Crear un programa que pida al usuario un número y luego muestre su descomposición en factores primos.
 console.log("-------Ejercicio 25-----------")
+/*
+let nm2 = parseInt(prompt("Ingrese un numero: "))
+const regExN = /[0-9]/
+ if(!regExN.test(nm2))
+      {
+         alert(`El valor ingresado no es un numero ${nm2}`)
+      }
+      else{
+        descomponerPrimos(nm2)  
+      }
 
+
+function esPrimoM(nm2)
+{
+   if (nm2 === 0 || nm2 === 1 || nm2 === 4) return console.log(`NO es primo ${nm2}`);
+	for (let f = 2; f < nm2 / 2; f++) {
+		if (nm2 % f === 0) return console.log(`No es primo ${nm2}`);
+	}
+   return console.log(`Es primo ${nm2}`);
+}
+function descomponerPrimos(nm2)
+ {
+      if(esPrimoM(nm2)) return [nm2];
+      let p = [];
+      let value = nm2;
+      for(let t = 2; t <= Math.floor(nm2/2); t++) {
+        if(esPrimoM(t)) {
+          while(value % t === 0) {
+            value = value / t;
+            p.push(t);
+          }
+        }
+      }
+      return p.join(`-`);
+}
+      
+*/
 console.log("-----------------------")
 //26) Crear un programa que pida al usuario una fecha (día, mes y año) y luego muestre si es válida o no. Una fecha es válida si cumple con ciertas condiciones, como la cantidad de días en el mes y si es un año bisiesto o no.
 console.log("-------Ejercicio 26-----------")
