@@ -134,3 +134,32 @@ function calificacionN(cali)
 }
 calificacionN(cali)*/
 console.log("--------------------")
+
+// 7)Imprimir los números pares del 2 al 20 en la consola.
+console.log("-------Ejercicio 7-----------")
+/*
+let numeroArray = []
+
+for(let a=2; a<=20; a++)
+{
+    if(a % 2 ===0)
+    {
+        numeroArray.push(a);
+    }
+}
+console.log(`Los numero pares: ${numeroArray.join(` , `)}`)
+
+*/
+console.log("--------------------")
+// 8)Recorrer un string y mostrar en la consola cada letra en mayúsculas.
+console.log("-------Ejercicio 8-----------")
+
+let cadenaL = String(prompt("Ingrese una cadena: "))
+   let letritas = []
+
+   for(let b=0;b<cadenaL.length;b++)
+   {
+        letritas.push(cadenaL[i].toUpperCase())
+   }
+   alert(`El string ingresado quedó de la siguiente manera ${letritas}`)
+console.log("--------------------")
