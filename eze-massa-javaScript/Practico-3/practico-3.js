@@ -483,9 +483,29 @@ const meses = {
 const mesNumeroANombre = (numero) => {
 	alert(`El mes ${numero} es ${meses[numero]}`)
 }
+//TAREA DUPLICADA MAS ARRIBA
 // 2) Crea un programa que reciba un número del 1 al 7 y muestre el día de la semana correspondiente.
+//TAREA DUPLICADA MAS ARRIBA
 // 3) Crea un programa que reciba un carácter y muestre si es una vocal o una consonante.
+
 // 4) Crea un programa que reciba un número del 1 al 5 y muestre el nombre del día de la semana correspondiente a esa posición en un arreglo.
+const btnDiaSemanaArreglo = document.getElementById('btnDiaSemanaArreglo')
+btnDiaSemanaArreglo.addEventListener('click', () => {
+	let numeroIngresado = parseFloat(prompt('Ingresa un numero del 1 al 5'))
+	const regExNumeros = /[0-9]/
+	if (!regExNumeros.test(numeroIngresado)) {
+		alert('Error , solo se permiten numeros')
+	} else if (numeroIngresado < 1 || numeroIngresado > 5) {
+		alert('Error , solo se permiten numeros del 1 al 5')
+	} else {
+		diaSemanaArreglo(numeroIngresado)
+	}
+})
+const diasArreglo = ['Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes']
+const diaSemanaArreglo = (numero) => {
+	alert(`El dia ${numero} es ${diasArreglo[numero - 1]}`)
+}
+//TAREA DUPLICADA MAS ARRIBA
 // 5) Crea un programa que reciba una letra y muestre si es mayúscula o minúscula.
 // 6) Crea un programa que reciba una nota del 0 al 10 y muestre la calificación correspondiente (suspenso, aprobado, notable, sobresaliente).
 // Imprimir los números pares del 2 al 20 en la consola.

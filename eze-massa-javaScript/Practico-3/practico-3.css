@@ -6,3 +6,9 @@ form {
 	gap: 10px;
 	border: 1px solid black;
 }
+
+div {
+	width: 50%;
+	height: 1px;
+	background-color: green;
+}
