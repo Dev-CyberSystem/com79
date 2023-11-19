@@ -2,11 +2,13 @@
 
 //Tareas
 
+
 // Crea una Funcion que reciba dos parametros y los reste, luego muestra el resultado en la consola.
 // let subtTwoPar = (parA=parseInt(prompt(`Ejercicio 1 - Ingrese un número`)), parB=parseInt(prompt(`Ejercicio 1 - Ingrese otro número`))) => {
 //     console.log(`Resultado ejercicio 1 (resta): ${parA-parB}`)
 // };
 // subtTwoPar();
+
 
 // Crea una funcion donde se declare una variable con el valor 5 y se le sume 10, luego muestra el resultado en la consola.
 let addNum = () => {
@@ -14,6 +16,7 @@ let addNum = () => {
     console.log(`Resultado ejercicio 2 (suma): ${valueA+10}`)
 }; //también funciona abreviado con -let addNum = (valueA=5) => console.log(`Resultado ejercicio 2 (suma): ${valueA+10}`);-
 addNum();
+
 
 // Crea una funcion donde se declaren dos variables con valores en string y se concatenen, luego muestra el resultado en la consola.
 let concTwoStr = () => {
@@ -23,6 +26,7 @@ let concTwoStr = () => {
 }; //También funciona con -let concTwoStr = (valueB=`River`,valueC=`es pésimo ;) ...`) => console.log(`Resultado ejercicio 3 (concatenado): ${valueB} ${valueC}`);-
 concTwoStr();
 
+
 // Crea una funcion donde se declaren dos variables con valores booleanos y se compare si son iguales, luego muestra el resultado en la consola.
 let boolEqComp = () => {
     let valueD = true;
@@ -30,6 +34,7 @@ let boolEqComp = () => {
     console.log(`Resultado ejercicio 4 (comparación): ${valueD==valueE}`);
 };
 boolEqComp();
+
 
 // Crea una funcion donde se declaren dos variables con valores booleanos y se compare si son diferentes, luego muestra el resultado en la consola.
 let boolDifComp = () => {
@@ -39,6 +44,7 @@ let boolDifComp = () => {
 };
 boolDifComp();
 
+
 // Crea una funcion donde se declaren dos variables con valores numericos y se compare si el primero es mayor que el segundo, luego muestra el resultado en la consola.
 let numBigComp = () => {
     let valueH = 734;
@@ -46,6 +52,7 @@ let numBigComp = () => {
     console.log(`Resultado ejercicio 6 (mayor que): ${valueH>valueI}`)
 }
 numBigComp();
+
 
 // Crea un programa que cuente el número de palabras en una frase proporcionada por el usuario. Una palabra se define como cualquier secuencia de caracteres separada por espacios en blanco.
 // let wordQuant = (phrase=prompt(`Ingrese sus nombres y apellidos completos por favor:`)) => {
@@ -55,6 +62,7 @@ numBigComp();
 //     console.log(`Resultado ejercicio 7 bis (caracteres) es: ${letterCount}`);
 // }
 // wordQuant();
+
 
 //Crear una función que tome un número como parámetro y devuelva "Positivo" si es mayor a cero, "Negativo" si es menor a cero o "Cero" si es igual a cero.
 let filterFunc = (numberIn) => {
@@ -72,6 +80,7 @@ let filterFunc = (numberIn) => {
 }
 filterFunc();
 
+
 //Crear una función que tome un número como parámetro y devuelva "Par" si es divisible por 2 o "Impar" si no lo es.
 let evenOdd = (numberIn2) => {
     let state;
@@ -86,57 +95,95 @@ let evenOdd = (numberIn2) => {
 }
 evenOdd();
 
-//Crear un programa que pida al usuario un número y luego muestre si es par o impar. REPETIDO EJERCICIO 9
 
-// Crear un programa que pida al usuario un número y luego muestre si es positivo, negativo o cero. REPETIDO EJERCICIO 8
+//Crear un programa que pida al usuario un número y luego muestre si es par o impar. COMPLETADO EN EJERCICIO 9 !!
+
+// Crear un programa que pida al usuario un número y luego muestre si es positivo, negativo o cero. COMPLETADO EN EJERCICIO 8 !!
+
 
 // Crear un programa que pida al usuario dos números y luego muestre cuál es el mayor de los dos.
 // let higherNum = (numA, numB) => {
-//     numA = parseInt(prompt(`Por favor ingrese un número:`));
-//     numB = parseInt(prompt(`Por favor ingrese otro número:`));
+//     numA = parseInt(prompt(`Por favor ingrese el primer número a comparar:`));
+//     numB = parseInt(prompt(`Por favor ingrese el segundo número a comparar:`));
 //     let compareNum = Math.max(numA, numB);
 //     console.log(`Resultado ejercicio 10 (mayor): ${compareNum}`)
 // }
 // higherNum()
 
+
 // Crear un programa que pida al usuario una contraseña y la valide según ciertas condiciones, como la longitud y la presencia de caracteres especiales.
-let tempInPass = prompt(`Ingrese su nueva contraseña por favor:`);
-const specChar = [`!`, `%`];
-// , `"`, `#`, `$`, `%`, `&`, `'`, `(`, `)`, `*`, `+`, `,`, `-`, `.`, `/`, `:`, `;`, `<`, `=`, `>`, `?`, `@`, `[`, ` \ ` , `]`, `^`, `_`, "`", `{`, `|`, `}`, `~`];
-let passLengthValidate = (8<=tempInPass.length) && (tempInPass.length<=64);
-let passSpecCharValidate = tempInPass.includes(specChar);
-let finalPass;
-
-// let lengthVal = (tempInPass) => {
-//     if (8<tempInPass.length<64)
+// let finalPass;
+// let passValidation = () => {
+//     let tempInPass = prompt(`Ingrese su nueva contraseña por favor:`);
+//     let passLengthValidate = 8<=tempInPass.length && tempInPass.length<=32;
+//     let passSpecCharValidate = tempInPass.includes(`~`)||tempInPass.includes(`@`)||tempInPass.includes(`_`)||tempInPass.includes(`/`)||tempInPass.includes(`+`)||tempInPass.includes(`:`);
+//     if (passLengthValidate && passSpecCharValidate) {
+//         finalPass = tempInPass;
+//         alert(`Gracias, su contraseña ha sido guardada`);
+//     } else if (tempInPass == ``) {
+//         alert(`Su contraseña no puede estar vacia`);
+//         passValidation();
+//     } else if (passLengthValidate == false) {
+//         alert(`Su contraseña debe ser mayor que 4 y menor que 32 caracteres`);
+//         passValidation();
+//     } else if (passSpecCharValidate == false) {
+//         alert(`Su contraseña debe contener al menos 1 caracter especial:  ~ @ _ / + :`);
+//         passValidation();
+//     }
 // }
+// passValidation();
+// console.log(`Resultado ejercicio 11 (validación): ${finalPass}`);
 
-// let specCharVal = (tempInPass) => {
-//     tempInPass.includes(specChar) 
-// }
-console.log(passLengthValidate);
-console.log(passSpecCharValidate);
-
-
-let saveAndRespawn = (passLengthValidate, passSpecCharValidate) => {
-    if (passLengthValidate && passSpecCharValidate) {
-        finalPass = tempInPass;
-        alert(`Gracias, su contraseña ha sido guardada`);
-    } else if (passLengthValidate == false) {
-        alert(`Su contraseña debe ser mayor que 4 y menor que 62 caracteres`);
-        tempInPass;
-    } else if (passSpecCharValidate == false) {
-        alert(`Su contraseña debe contener al menos 1 caracter especial`);
-        tempInPass;
-    }
-}
-saveAndRespawn(passLengthValidate, passSpecCharValidate);
 
 // Crear un programa que pida al usuario una calificación y luego muestre si es aprobatoria o no (nota mínima para aprobar es 70).
+// let userRatingApproved;
+// let ratingChecked = () => {
+//     let userRating = parseInt(prompt(`Por favor ingrese su calificación en una escala del 0 al 100`));
+//     if (userRating>0 && userRating<100) {
+//         userRatingApproved = userRating;
+//     } else {
+//         alert(`Solo se permiten números positivos entre 0 y 100`);
+//         ratingChecked();
+//     }
+// }
+// ratingChecked();
+// let validation = userRatingApproved >= 70;
+// validation ? alert(`Gracias por su calificación (${userRatingApproved}/100), la misma es aprobatoria`) : alert(`Gracias por su calificación (${userRatingApproved}/100), la misma es desaprobatoria`);
+// console.log(`Resultado ejercicio 12 (calificador): ${userRatingApproved}`);
+
 
 //Crear una función que tome una cadena como parámetro y devuelva "Es un palíndromo" si la cadena es igual al revés, de lo contrario, devolver "No es un palíndromo".
+// let userInChain = prompt(`Por favor ingrese un palíndromo`).trim().toUpperCase();
+// let stdChain = userInChain.split("");
+// let invChain = [...stdChain].reverse();
+// let validationChain = stdChain.join("")===invChain.join("");
+// validationChain ? alert(`"${userInChain}" Es un palíndromo`) : alert(`"${userInChain}" No es un palíndromo`);
+// console.log(`Resultado ejercicio 13 (palíndromo): ${validationChain}`);
+
 
 // Crear un programa que pida al usuario una letra y luego muestre si es una vocal o una consonante.
+let filteredLetter;
+let filterLetter = () => {
+    let userInLetter = prompt(`Por favor introduzca una letra`).trim().toLowerCase();
+    if (userInLetter.length===1) {
+        filteredLetter = userInLetter;
+    } else {
+        alert(`Por favor introduzca una sola letra`)
+        filterLetter()
+    }
+    console.log(userInLetter);
+}
+filterLetter();
+
+console.log(filteredLetter);
+let vocalValidation = filteredLetter===`a`||filteredLetter===`e`||filteredLetter===`i`||filteredLetter===`o`||filteredLetter===`u`;
+console.log(vocalValidation);
+vocalValidation ? alert(`La letra "${filteredLetter}" es una vocal`) : alert(`La letra "${filteredLetter}" es una consonante`)
+// let vocalLetter = (filteredLetter) => {
+//     if (filteredLetter===a||filteredLetter===e||filteredLetter===i||filteredLetter===o||filteredLetter===u) {
+//         alert(`La letra "${filteredLetter}" es una vocal`)
+//     }
+// }
 
 // Crear un programa que pida al usuario un número del 1 al 7 y luego muestre el día de la semana correspondiente.
 
