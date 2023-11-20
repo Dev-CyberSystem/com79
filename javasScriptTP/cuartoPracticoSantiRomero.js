@@ -309,14 +309,26 @@ function Primo(num) {
   return true;
 }
 
-function verificarPrimo() {
-  const numero = parseInt(prompt("Ingresa un número mayor que 1: "));
+//function verificarPrimo() {
+  //const numero = parseInt(prompt("Ingresa un número mayor que 1: "));
   
-  if (Primo(numero)) {
-      console.log(`${numero} es un número primo.`);
+ // if (Primo(numero)) { console.log(`${numero} es un número primo.`);
+ // } else {
+  //console.log(`${numero} no es un número primo.`);}}
+
+//verificarPrimo();
+
+//verificando si es mayor
+
+function verificarEdad() {
+  const edad = parseInt(prompt("Por favor, ingresa tu edad: "));
+  
+  if (edad >= 18) {
+      console.log("Eres legal.");
   } else {
-      console.log(`${numero} no es un número primo.`);
+      console.log("No eres legal.");
   }
 }
 
-verificarPrimo();
+verificarEdad();
+
