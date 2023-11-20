@@ -621,6 +621,17 @@ btnSumaParesSerie.addEventListener('click', () => {
 	}
 })
 // Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola la cantidad de números negativos.
+const btnNumeroNegativosSerie = document.getElementById('btnNumeroNegativosSerie')
+btnNumeroNegativosSerie.addEventListener('click', () => {
+	const serieNumeros = prompt('Ingresa una serie de números separados por coma:')
+	const numerosArray = serieNumeros.split(',').map(Number)
+	if (numerosArray.some(isNaN)) {
+		alert('Por favor, asegúrate de ingresar solo números separados por coma.')
+	} else {
+		const numeroNegativos = numerosArray.filter((numero) => numero < 0).length
+		alert(`La cantidad de números negativos es: ${numeroNegativos}`)
+	}
+})
 // Pedir al usuario que ingrese un número y mostrar en la consola todos los números impares desde el 1 hasta el número ingresado.
 // Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola el número más pequeño de la serie.
 // Pedir al usuario que adivine un número generado aleatoriamente entre 1 y 100. Mostrar en la consola si el usuario adivinó o no el número y la cantidad de intentos que le tomó.
