@@ -370,6 +370,7 @@ retonarArrayM()*/
 console.log("--------------------")
 // 22)Dado un array de números y un número X, escribir una función que retorne un nuevo array con todos los números del array original que sean mayores que X.
 console.log("-------Ejercicio 22-----------")
+/*
 let arrayN10 = [2,3,4,5,6,10,12,23,3,4,40,32,22,21,20]
 let numX = 11
 
@@ -385,9 +386,28 @@ function arrayNX(){
     }
     alert(`[${arrayOr}]`)
  }
-arrayNX()
+arrayNX()*/
 console.log("--------------------")
 // 23)Dado un array de números, escribir una función que retorne la suma de todos los números del array. Además, si algún número es mayor que 10, agregarlo a un nuevo array de "números grandes".
+console.log("-------Ejercicio 23-----------")
+let arrayN11 = [0,33,4,21,33,45,35,32,41,60,222,37,4,2,5,8,9,2,111,11,1,22]
+
+function sumaYarray()
+{
+        let sumaArray1 =0
+        let arrayN12 =[]
+        for(let j=0;j<arrayN11.length;j++)
+        {
+            sumaArray1+=arrayN11[j]
+            if(arrayN11[j]>10)
+            {
+                arrayN12.push(arrayN11[j])
+            }
+        }
+        alert(`La suma del Array es: [${sumaArray1}] y la numero array mayores a 10 es: [${arrayN12}]`)  
+}
+sumaYarray()
+console.log("--------------------")
 // 24)Dado un array de strings, escribir una función que retorne un nuevo array con todos los strings que tengan más de 5 caracteres.
 // 25)Dado un array de strings, escribir una función que retorne un nuevo array con todos los strings que tengan más de 5 caracteres y que empiecen con la letra "a".
 // 26)Dado un array de números y un número X, escribir una función que retorne un nuevo array con todos los números del array original que sean mayores que X. Además, cortar el array resultante para que tenga solamente los primeros 3 números.
