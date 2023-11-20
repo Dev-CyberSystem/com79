@@ -317,6 +317,7 @@ arrayNumMayor()*/
 console.log("--------------------")
 // 19)Dado un array de números, escribir una función que retorne un nuevo array con los números pares del array original.
 console.log("-------Ejercicio 19-----------")
+/*
 let arrayN23 = [0,5,60.40,34,12,43,3,2,200,34,5,3,6,8,34,32,345,63,2,1,8,16,50,7]
 
 function retornarParesArray()
@@ -331,10 +332,42 @@ function retornarParesArray()
     }
     alert(`El numero array de numeros pares es: [${paresArrayN}]`)
 }
-retornarParesArray()
+retornarParesArray()*/
 console.log("--------------------")
 // 20)Dado un array de números, escribir una función que retorne la suma de todos los números del array.
+console.log("-------Ejercicio 20-----------")
+/*
+let arrayNM = [0,5,60,40,34,12,43,3,2,200,34,5,3,6,8,34,32,345,63,2,1,8,16,50,7,11]
+
+function retonarSumaArray()
+{
+    let sumaArray=0
+    for(let j=0;j<arrayNM.length;j++)
+    {
+        sumaArray+=arrayNM[j]
+    }
+    alert(`La suma del Array es: [${sumaArray}]`)
+}
+retonarSumaArray()*/
+console.log("--------------------")
 // 21)Dado un array de strings, escribir una función que retorne un nuevo array con todos los strings en mayúsculas.
+console.log("-------Ejercicio 21-----------")
+/*
+let arrayCadena = [`hola`,`como`,`edad`,`nombre`,`chau`]
+
+function retonarArrayM()
+{
+    let arrayNMY 
+    
+    for(let j=0;j<=arrayCadena.length;j++)
+    {   
+       //arrayCadena[j].toUpperCase()
+        arrayNMY.push(arrayCadena[j])
+    }
+    alert(`El array quedó: [${arrayNMY}]`)
+}
+retonarArrayM()*/
+console.log("--------------------")
 // 22)Dado un array de números y un número X, escribir una función que retorne un nuevo array con todos los números del array original que sean mayores que X.
 // 23)Dado un array de números, escribir una función que retorne la suma de todos los números del array. Además, si algún número es mayor que 10, agregarlo a un nuevo array de "números grandes".
 // 24)Dado un array de strings, escribir una función que retorne un nuevo array con todos los strings que tengan más de 5 caracteres.
