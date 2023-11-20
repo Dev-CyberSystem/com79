@@ -331,21 +331,41 @@ function Primo(num) {
 //verificarEdad();
 
 //sumando 2 números 
-function Sumamos() {
-  const num1 = parseFloat(prompt("Ingresa el primer número: "));
-  const num2 = parseFloat(prompt("Ingresa el segundo número: "));
+//function Sumamos() {
+ // const num1 = parseFloat(prompt("Ingresa el primer número: "));
+ // const num2 = parseFloat(prompt("Ingresa el segundo número: "));
   
-  const suma = num1 + num2;
+ // const suma = num1 + num2;
   
-  if (suma > 100) {
-      console.log(`La suma de ${num1} y ${num2} es mayor a 100.`);
-  } else if (suma < 100) {
-      console.log(`La suma de ${num1} y ${num2} es menor a 100.`);
-  } else {
-      console.log(`La suma de ${num1} y ${num2} es igual a 100.`);
-  }
+ // if (suma > 100) {
+  //    console.log(`La suma de ${num1} y ${num2} es mayor a 100.`);
+//  } else if (suma < 100) {
+//      console.log(`La suma de ${num1} y ${num2} es menor a 100.`);
+//  } else {
+//      console.log(`La suma de ${num1} y ${num2} es igual a 100.`);
+ // }}
+
+//Sumamos();
+// el hermano mayor de los 3
+
+function encontrarMayor() {
+    const num1 = parseFloat(prompt("Ingresa el primer hermano: "));
+    const num2 = parseFloat(prompt("Ingresa el segundo hermano: "));
+    const num3 = parseFloat(prompt("Ingresa el tercer hermano: "));
+    
+    let mayor = num1;
+
+    if (num2 > mayor) {
+        mayor = num2;
+    }
+    if (num3 > mayor) {
+        mayor = num3;
+    }
+
+    console.log(`El mayor de los tres hermanos (${num1}, ${num2}, ${num3}) es: ${mayor}`);
 }
 
-Sumamos();
+encontrarMayor();
+
 
 
