@@ -369,6 +369,24 @@ function retonarArrayM()
 retonarArrayM()*/
 console.log("--------------------")
 // 22)Dado un array de números y un número X, escribir una función que retorne un nuevo array con todos los números del array original que sean mayores que X.
+console.log("-------Ejercicio 22-----------")
+let arrayN10 = [2,3,4,5,6,10,12,23,3,4,40,32,22,21,20]
+let numX = 11
+
+function arrayNX(){
+    let arrayOr =[]
+
+    for (let i = 0; i< arrayN10.length; i++) 
+    {
+        if(arrayN10[i]>numX)
+        {
+            arrayOr.push(arrayN10[i])
+        }
+    }
+    alert(`[${arrayOr}]`)
+ }
+arrayNX()
+console.log("--------------------")
 // 23)Dado un array de números, escribir una función que retorne la suma de todos los números del array. Además, si algún número es mayor que 10, agregarlo a un nuevo array de "números grandes".
 // 24)Dado un array de strings, escribir una función que retorne un nuevo array con todos los strings que tengan más de 5 caracteres.
 // 25)Dado un array de strings, escribir una función que retorne un nuevo array con todos los strings que tengan más de 5 caracteres y que empiecen con la letra "a".
