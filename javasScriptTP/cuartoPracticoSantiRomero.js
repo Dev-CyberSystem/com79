@@ -409,25 +409,54 @@ function Primo(num) {
 
  //Número perfect..... 
 
- function esNumeroPerfecto(numero) {
-  let sumaDivisores = 0;
+ //function esNumeroPerfecto(numero) {
+//  let sumaDivisores = 0;
+//  for (let i = 1; i < numero; i++) {
+  //    if (numero % i === 0) {
+    //      sumaDivisores += i;  }    }
 
-  for (let i = 1; i < numero; i++) {
-      if (numero % i === 0) {
-          sumaDivisores += i;
+ // return sumaDivisores === numero;}
+
+//function NumeroPerfecto() {
+  //const numero = parseInt(prompt("Ingresa un número: "));
+//if (esNumeroPerfecto(numero)) {
+ //     console.log(`${numero} es un número perfecto.`);
+ // } else {
+  //    console.log(`${numero} no es un número perfecto.`);}}
+//NumeroPerfecto();
+
+//Descomposición de un número
+
+function obtenerFactoresPrimos(numero) {
+  let factor = 2;
+  let factores = [];
+
+  while (numero > 1) {
+      if (numero % factor === 0) {
+          factores.push(factor);
+          numero /= factor;
+      } else {
+          factor++;
       }
   }
 
-  return sumaDivisores === numero;
+  return factores;
 }
 
-function NumeroPerfecto() {
-  const numero = parseInt(prompt("Ingresa un número: "));
+function mostrarDescomposicion() {
+  const num = parseInt(prompt("Ingresa un número para descomponer: "));
 
-  if (esNumeroPerfecto(numero)) {
-      console.log(`${numero} es un número perfecto.`);
+  if (isNaN(num) || num <= 1) {
+      console.log("Por favor, ingresa un número entero mayor que 1.");
+      return;
+  }
+
+  const factoresPrimos = obtenerFactoresPrimos(num);
+  if (factoresPrimos.length === 1) {
+      console.log(`${num} es un número primo.`);
   } else {
-      console.log(`${numero} no es un número perfecto.`);
+      console.log(`La descomposición en factores primos de ${num} es: ${factoresPrimos.join(' * ')}`);
   }
 }
-NumeroPerfecto();
+
+mostrarDescomposicion();
