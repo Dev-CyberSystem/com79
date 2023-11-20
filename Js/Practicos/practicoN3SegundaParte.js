@@ -248,8 +248,8 @@ let numerosImpares=()=>
 numerosImpares()*/
 console.log("--------------------")
 // 15)Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola el número más pequeño de la serie.
-console.log("-------Ejercicio 14-----------")
-
+console.log("-------Ejercicio 15-----------")
+/*
 let numeroSeparadosComa=()=>
 {
     let serieEnt3 = prompt(`Ingrese los numeros separados por coma`).trim()
@@ -258,10 +258,51 @@ let numeroSeparadosComa=()=>
 
     console.log(`El numero más pequeño es: ${menorN}`)
 }
-numeroSeparadosComa()
+numeroSeparadosComa()*/
 console.log("--------------------")
 // 16)Pedir al usuario que adivine un número generado aleatoriamente entre 1 y 100. Mostrar en la consola si el usuario adivinó o no el número y la cantidad de intentos que le tomó.
+console.log("-------Ejercicio 16-----------")
+/*
+let numeroAleatorio = Math.floor(Math.random()*100) +1;
+
+let c = 0;
+ let numb4;
+ while(numb4 !== numeroAleatorio)
+ {
+    numb4 = parseInt(prompt("Ingresa un numero entre 1 y 100"));
+    if(numb4<numeroAleatorio)
+    {
+        alert(`El numero ${numb4} es mas chico`)
+        c++
+    }else if(numb4 > numeroAleatorio)
+    {
+        alert(`El numero  ${numb4} es mas grande`)
+        c++
+    }else{
+        alert(`Ganaste`)
+    }
+ }*/
+ console.log("--------------------")
 // 17)Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola la cantidad de números pares.
+console.log("-------Ejercicio 17-----------")
+/*
+let serieSeparadosPares=()=>
+{
+    let serieEnt4 = prompt(`Ingrese los numeros separados por coma`).trim()
+    let arrayNum4 = serieEnt4.split(",")
+    let arrayPares = []
+    
+    for(let g=0;g<arrayNum4.length;g++)
+    {
+        if(arrayNum4[g]%2===0)
+        {
+              arrayPares.push(arrayNum4[g])
+        }
+    }
+    console.log(`La cantidad de numeros pares: ${arrayPares.join(`-`)}`)
+}
+serieSeparadosPares()*/
+console.log("--------------------")
 // 18)Dado un array de números, escribir una función que retorne el número más grande del array.
 // 19)Dado un array de números, escribir una función que retorne un nuevo array con los números pares del array original.
 // 20)Dado un array de números, escribir una función que retorne la suma de todos los números del array.
