@@ -440,5 +440,4 @@ function function26() {
     console.log('Fecha no válida. Por favor, ingrese una fecha válida.');
   }
 };
-
-function26();
+//function26();
