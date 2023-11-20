@@ -304,7 +304,35 @@ let serieSeparadosPares=()=>
 serieSeparadosPares()*/
 console.log("--------------------")
 // 18)Dado un array de números, escribir una función que retorne el número más grande del array.
+console.log("-------Ejercicio 18-----------")
+/*
+let arrayN22 = [0,5,43,3,2,200,34,5,3,6,8,34,32,345,63,2,1,7]
+
+function arrayNumMayor()
+{
+    let numMay = Math.max(...arrayN22)
+    alert(`El numero mayor del array es: ${numMay}`)
+}
+arrayNumMayor()*/
+console.log("--------------------")
 // 19)Dado un array de números, escribir una función que retorne un nuevo array con los números pares del array original.
+console.log("-------Ejercicio 19-----------")
+let arrayN23 = [0,5,60.40,34,12,43,3,2,200,34,5,3,6,8,34,32,345,63,2,1,8,16,50,7]
+
+function retornarParesArray()
+{
+    let paresArrayN =[]
+    for(let s=0;s<arrayN23.length;s++)
+    {
+        if(arrayN23[s]%2===0)
+        {
+              paresArrayN.push(arrayN23[s])
+        }
+    }
+    alert(`El numero array de numeros pares es: [${paresArrayN}]`)
+}
+retornarParesArray()
+console.log("--------------------")
 // 20)Dado un array de números, escribir una función que retorne la suma de todos los números del array.
 // 21)Dado un array de strings, escribir una función que retorne un nuevo array con todos los strings en mayúsculas.
 // 22)Dado un array de números y un número X, escribir una función que retorne un nuevo array con todos los números del array original que sean mayores que X.
