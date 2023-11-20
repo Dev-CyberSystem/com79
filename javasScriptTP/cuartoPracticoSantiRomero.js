@@ -427,7 +427,7 @@ function Primo(num) {
 
 //Descomposición de un número
 
-function obtenerFactoresPrimos(numero) {
+/*function obtenerFactoresPrimos(numero) {
   let factor = 2;
   let factores = [];
 
@@ -459,4 +459,32 @@ function mostrarDescomposicion() {
   }
 }
 
-mostrarDescomposicion();
+mostrarDescomposicion();*/
+
+//anio bisiesto
+function esFechaValida(dia, mes, anio) {
+
+  const esBisiesto = (anio % 4 === 0 && anio % 100 !== 0) || (anio % 400 === 0);
+
+
+  const diasPorMes = [31, (esBisiesto ? 29 : 28), 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+
+  
+  return (mes >= 1 && mes <= 12) && (dia >= 1 && dia <= diasPorMes[mes - 1]);
+}
+
+
+
+function verificarFecha() {
+  const dia = parseInt(prompt("Ingresa el día: "));
+  const mes = parseInt(prompt("Ingresa el mes: "));
+  const anio = parseInt(prompt("Ingresa el año: "));
+
+  if (esFechaValida(dia, mes, anio)) {
+      console.log(`La fecha ${dia}/${mes}/${anio} es válida.`);
+  } else {
+      console.log(`La fecha ${dia}/${mes}/${anio} no es válida.`);
+  }
+}
+
+verificarFecha();

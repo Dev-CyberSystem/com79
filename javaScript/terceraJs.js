@@ -193,8 +193,8 @@ let girarTragaMonedas = () => {
 // Crear un programa que pida al usuario una letra y luego muestre si es una letra mayúscula o minúscula.
 //Crear una función que tome un número como parámetro y devuelva "Fizz" si es divisible por 3, "Buzz" si es divisible por 5 o "FizzBuzz" si es divisible por ambos. En cualquier otro caso, devolver el número.
 // Crear un programa que pida al usuario un número y luego muestre si es un número perfecto o no. Un número perfecto es aquel que es igual a la suma de sus divisores propios.
-
-
-
 // Crear un programa que pida al usuario un número y luego muestre su descomposición en factores primos.
+
+
+
 // Crear un programa que pida al usuario una fecha (día, mes y año) y luego muestre si es válida o no. Una fecha es válida si cumple con ciertas condiciones, como la cantidad de días en el mes y si es un año bisiesto o no.
