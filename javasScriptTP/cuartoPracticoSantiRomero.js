@@ -320,15 +320,32 @@ function Primo(num) {
 
 //verificando si es mayor
 
-function verificarEdad() {
-  const edad = parseInt(prompt("Por favor, ingresa tu edad: "));
+//function verificarEdad() {
+//  const edad = parseInt(prompt("Por favor, ingresa tu edad: "));
   
-  if (edad >= 18) {
-      console.log("Eres legal.");
+  //if (edad >= 18) {
+ //     console.log("Eres legal.");
+  //} else {
+ //     console.log("No eres legal.");}}
+
+//verificarEdad();
+
+//sumando 2 números 
+function Sumamos() {
+  const num1 = parseFloat(prompt("Ingresa el primer número: "));
+  const num2 = parseFloat(prompt("Ingresa el segundo número: "));
+  
+  const suma = num1 + num2;
+  
+  if (suma > 100) {
+      console.log(`La suma de ${num1} y ${num2} es mayor a 100.`);
+  } else if (suma < 100) {
+      console.log(`La suma de ${num1} y ${num2} es menor a 100.`);
   } else {
-      console.log("No eres legal.");
+      console.log(`La suma de ${num1} y ${num2} es igual a 100.`);
   }
 }
 
-verificarEdad();
+Sumamos();
+
 
