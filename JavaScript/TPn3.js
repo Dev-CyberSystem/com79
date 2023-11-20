@@ -199,25 +199,63 @@ evenOdd();
 // Crear un programa que pida al usuario un número y luego muestre si es primo o no.
 
 // Crear un programa que pida al usuario su edad y luego muestre si es mayor o menor de edad (18 años).
-let adultCheck = () => {
-    let ageValidate;
-    let userAge = prompt(`Por favor ingrese su edad:`).trim();
-    if (userAge.match(/[0-9]/) && userAge.length<=3 && userAge!=1) {
-        ageValidate = userAge>=18;
-        alert(`Usted tiene ${userAge} años y es ${ageValidate ? `mayor de edad` : `menor de edad`}`);
-        console.log(`Resultado ejercicio 17: ${ageValidate ? `mayor de edad` : `menor de edad`} (${userAge} años)`);
-    } else {
-        alert(`Por favor ingrese su edad con digitos numéricos (2-999)`);
-        adultCheck();
-    }
-}
-adultCheck();
+// let adultCheck = () => {
+//     let ageValidate;
+//     let userAge = prompt(`Por favor ingrese su edad:`).trim();
+//     if (userAge.match(/[0-9]/) && userAge.length<=3 && userAge!=1) {
+//         ageValidate = userAge>=18;
+//         alert(`Usted tiene ${userAge} años y es ${ageValidate ? `mayor de edad` : `menor de edad`}`);
+//         console.log(`Resultado ejercicio 17 (mayor de edad): ${ageValidate ? `mayor de edad` : `menor de edad`} (${userAge} años)`);
+//     } else {
+//         alert(`Por favor ingrese su edad con digitos numéricos (2-999)`);
+//         adultCheck();
+//     }
+// }
+// adultCheck();
 
 
 // Crear un programa que pida al usuario dos números y luego muestre si su suma es mayor, menor o igual a 100.
+// let passedNumA;
+// let passedNumB;
+// let validateNumA = () => {
+//     let userInNumA = prompt(`Por favor ingrese un número de dos dígitos máximo:`).trim();
+//     if (userInNumA.match(/[0-9]/) && userInNumA.length<=2) {
+//         passedNumA = parseInt(userInNumA);
+//     } else {
+//         alert(`Por favor ingrese un máximo de dos dígitos`);
+//         validateNumA();
+//     }
+// }
+// validateNumA();
+// let validateNumB = () => {
+//     let userInNumB = prompt(`Por favor ingrese otro número de dos dígitos máximo:`).trim();
+//     if (userInNumB.match(/[0-9]/) && userInNumB.length<=2) {
+//         passedNumB = parseInt(userInNumB);
+//     } else {
+//         alert(`Por favor ingrese un máximo de dos dígitos`);
+//         validateNumB();
+//     }
+// }
+// validateNumB();
+// let addNumAB = passedNumA + passedNumB;
+// let validationState;
+// let equalLowerHigher = () => {
+//     if (addNumAB>100) {
+//         validationState = `mayor`;
+//     } else if (addNumAB<100) {
+//         validationState = `menor`;
+//     } else {
+//         validationState = `igual`;
+//     }
+// }
+// equalLowerHigher();
+// alert(`La suma de los números ingresados es ${validationState} que 100`);
+// console.log(`Resultado ejercicio 18 (igual menor mayor): "${passedNumA}" más "${passedNumB}" es ${validationState} que 100`);
 
 
 // Crear un programa que pida al usuario tres números y luego muestre cuál es el mayor de los tres.
+
+
 
 // Crear un programa que pida al usuario una letra y luego muestre si es una letra mayúscula o minúscula.
 
