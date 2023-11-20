@@ -348,24 +348,46 @@ function Primo(num) {
 //Sumamos();
 // el hermano mayor de los 3
 
-function encontrarMayor() {
-    const num1 = parseFloat(prompt("Ingresa el primer hermano: "));
-    const num2 = parseFloat(prompt("Ingresa el segundo hermano: "));
-    const num3 = parseFloat(prompt("Ingresa el tercer hermano: "));
+//function encontrarMayor() {
+  //  const num1 = parseFloat(prompt("Ingresa el primer hermano: "));
+   // const num2 = parseFloat(prompt("Ingresa el segundo hermano: "));
+  //  const num3 = parseFloat(prompt("Ingresa el tercer hermano: "));
     
-    let mayor = num1;
+//    let mayor = num1;
 
-    if (num2 > mayor) {
-        mayor = num2;
-    }
-    if (num3 > mayor) {
-        mayor = num3;
-    }
+//    if (num2 > mayor) {
+//        mayor = num2;  }
+ //   if (num3 > mayor) {
+ //       mayor = num3;  }
 
-    console.log(`El mayor de los tres hermanos (${num1}, ${num2}, ${num3}) es: ${mayor}`);
+ //   console.log(`El mayor de los tres hermanos (${num1}, ${num2}, ${num3}) es: ${mayor}`);
+//}
+
+//encontrarMayor();
+
+//MAYUSCULA minuscula
+
+function verificarLetra() {
+  const letra = prompt("Ingresa una letra: ");
+
+  if (letra.length !== 1) {
+      console.log("Por favor, ingresa solo una letra.");
+      return;
+  }
+
+  const esMayuscula = letra === letra.toUpperCase();
+  const esMinuscula = letra === letra.toLowerCase();
+
+  if (esMayuscula) {
+      console.log(`La letra "${letra}" es mayúscula.`);
+  } else if (esMinuscula) {
+      console.log(`La letra "${letra}" es minúscula.`);
+  } else {
+      console.log(`"${letra}" no es una letra válida.`);
+  }
 }
 
-encontrarMayor();
+verificarLetra();
 
 
 
