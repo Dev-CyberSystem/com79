@@ -191,6 +191,7 @@ console.log("--------------------")
 
 // 12)Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola la suma de los números pares.
 console.log("-------Ejercicio 12-----------")
+/*
 let serieSeparados=()=>
 {
     let serieEnt = prompt(`Ingrese los numeros separados por coma`).trim()
@@ -205,9 +206,25 @@ let serieSeparados=()=>
     }
     alert(`La suma pares es ${sumaPar}`)
 }
-serieSeparados()
+serieSeparados()*/
 console.log("--------------------")
 // 13)Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola la cantidad de números negativos.
 console.log("-------Ejercicio 13-----------")
+let serieSeperadosNegativos=()=>
+{
+    let serieEnt2 = prompt(`Ingrese los numeros separados por coma`).trim()
+    let arrayNum2 = serieEnt2.split(`,`)
+    let arrayNeg = []
+
+    for(let h=0; h<arrayNum2.length;h++)
+    {
+            if(arrayNum2[h]<0)
+            {
+                arrayNeg.push(arrayNum2[h])
+            }
+    }
+    console.log(`Los numeros negativos ${arrayNeg.join(` , `)}`)
+}
+serieSeperadosNegativos()
 
 console.log("--------------------")
