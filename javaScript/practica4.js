@@ -52,3 +52,37 @@ diasLaborales()*/
 // 5) Crea un programa que reciba una letra y muestre si es mayúscula o minúscula.
 // []
 // ||
+// 6) Crea un programa que reciba una nota del 0 al 10 y muestre la calificación correspondiente (suspenso, aprobado, notable, sobresaliente).
+
+/*function estadoAlumno(){
+    let nota= prompt("Ingrese la nota");
+    if (nota > 0 & nota <=5) {
+        console.log("Suspenso");
+    }
+    else if (nota>5 & nota <=7) {
+    console.log("Aprobado");
+}
+    else if (nota>7 & nota <=9){
+        console.log("Notable");
+    }
+    else if (nota>9 & nota <=10){
+        console.log("Sobresaliente")
+    }
+    else {
+        console.log("Ingrese una nota válida, los valores permitidos son del 0 al 10")
+    }
+}
+estadoAlumno();
+*/
+
+// 7 Imprimir los números pares del 2 al 20 en la consola.
+/*
+for (n=1; n<=10; n++) {
+    console.log(n*2);
+}
+*/
+// 8 Recorrer un string y mostrar en la consola cada letra en mayúsculas.
+
+let palabraAzar= (prompt("Ingrese una palabra en minúsculas").toUpperCase());
+console.log(palabraAzar);
+
