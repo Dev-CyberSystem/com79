@@ -19,7 +19,7 @@ mesesAnio()*/
  semana();
  */
 
- // 3) Crea un programa que reciba un carácter y muestre si es una vocal o una consonante.
+ // 3) ** Crea un programa que reciba un carácter y muestre si es una vocal o una consonante.
 // []
 // ||
 
@@ -49,9 +49,14 @@ abecedario();*/
 }
 diasLaborales()*/
 
-// 5) Crea un programa que reciba una letra y muestre si es mayúscula o minúscula.
+// 5)** Crea un programa que reciba una letra y muestre si es mayúscula o minúscula.
+
+
+
 // []
 // ||
+
+
 // 6) Crea un programa que reciba una nota del 0 al 10 y muestre la calificación correspondiente (suspenso, aprobado, notable, sobresaliente).
 
 /*function estadoAlumno(){
@@ -83,6 +88,15 @@ for (n=1; n<=10; n++) {
 */
 // 8 Recorrer un string y mostrar en la consola cada letra en mayúsculas.
 
-let palabraAzar= (prompt("Ingrese una palabra en minúsculas").toUpperCase());
-console.log(palabraAzar);
+//let palabraAzar= (prompt("Ingrese una palabra en minúsculas").toUpperCase());
+//console.log(palabraAzar);
 
+//9  Pedir al usuario que ingrese un número y mostrar en la consola los números del 1 al número ingresado.
+
+
+/*let numeroMenor = prompt("Ingrese un numero")
+ while (numeroMenor >= 1) {
+         console.log(numeroMenor);
+       numeroMenor--;
+     }
+*/
