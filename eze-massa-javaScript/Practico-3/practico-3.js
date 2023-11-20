@@ -603,8 +603,23 @@ btnNumeroMasGrandeSerie.addEventListener('click', () => {
 	}
 })
 
+//TAREA REPEDITA MAS ARRIBA
 // Pedir al usuario que ingrese una palabra y mostrar en la consola si la palabra es un palíndromo o no.
+
 // Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola la suma de los números pares.
+const btnSumaParesSerie = document.getElementById('btnSumaParesSerie')
+btnSumaParesSerie.addEventListener('click', () => {
+	const serieNumeros = prompt('Ingresa una serie de números separados por coma:')
+	const numerosArray = serieNumeros.split(',').map(Number)
+	if (numerosArray.some(isNaN)) {
+		alert('Por favor, asegúrate de ingresar solo números separados por coma.')
+	} else {
+		const sumaPares = numerosArray
+			.filter((numero) => numero % 2 === 0)
+			.reduce((acumulador, numero) => acumulador + numero, 0)
+		alert(`La suma de los números pares es: ${sumaPares}`)
+	}
+})
 // Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola la cantidad de números negativos.
 // Pedir al usuario que ingrese un número y mostrar en la consola todos los números impares desde el 1 hasta el número ingresado.
 // Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola el número más pequeño de la serie.
