@@ -254,7 +254,42 @@ evenOdd();
 
 
 // Crear un programa que pida al usuario tres números y luego muestre cuál es el mayor de los tres.
-
+// let passedNumC;
+// let passedNumD;
+// let passedNumE;
+// let validateNumC = () => {
+//     let oneOfThreeNum = prompt(`Por favor ingrese el primer número (1 de 3) para comparar:`).trim();
+//     if (oneOfThreeNum.match(/[0-9]/)) {
+//         passedNumC = parseInt(oneOfThreeNum);
+//     } else {
+//         alert(`Por favor ingrese solo números`);
+//         validateNumC();
+//     }
+// }
+// validateNumC();
+// let validateNumD = () => {
+//     let twoOfThreeNum = prompt(`Por favor ingrese el segundo número (2 de 3) para comparar:`).trim();
+//     if (twoOfThreeNum.match(/[0-9]/)) {
+//         passedNumD = parseInt(twoOfThreeNum);
+//     } else {
+//         alert(`Por favor ingrese solo números`);
+//         validateNumD();
+//     }
+// }
+// validateNumD();
+// let validateNumE = () => {
+//     let threeOfThreeNum = prompt(`Por favor ingrese el tercer número (3 de 3) para comparar:`).trim();
+//     if (threeOfThreeNum.match(/[0-9]/)) {
+//         passedNumE = parseInt(threeOfThreeNum);
+//     } else {
+//         alert(`Por favor ingrese solo números`);
+//         validateNumE();
+//     }
+// }
+// validateNumE();
+// let compareThreeNum = Math.max(passedNumC, passedNumD, passedNumE);
+// alert(`El mayor de los números ingresados es "${compareThreeNum}"`);
+// console.log(`Resultado ejercicio 19 (mayor de tres): "${compareThreeNum}" es el mayor`);
 
 
 // Crear un programa que pida al usuario una letra y luego muestre si es una letra mayúscula o minúscula.
