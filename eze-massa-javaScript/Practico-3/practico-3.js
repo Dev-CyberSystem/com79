@@ -633,6 +633,29 @@ btnNumeroNegativosSerie.addEventListener('click', () => {
 	}
 })
 // Pedir al usuario que ingrese un número y mostrar en la consola todos los números impares desde el 1 hasta el número ingresado.
+const btnNumerosImpares = document.getElementById('btnNumerosImpares')
+const numerosImparesText = document.getElementById('numerosImparesText')
+btnNumerosImpares.addEventListener('click', () => {
+	const numeroIngresado = parseFloat(prompt('Ingrese un numro'))
+	const regExNumeros = /[0-9]/
+	if (!regExNumeros.test(numeroIngresado)) {
+		alert('Error , solo se permiten numeros')
+	} else if (numeroIngresado < 1) {
+		alert('Error , solo se permiten numeros desde el 1')
+	} else {
+		mostrarImpares(numeroIngresado)
+	}
+})
+
+function mostrarImpares(numero) {
+	let numeros = []
+	for (let i = 1; i <= numero; i++) {
+		if (i % 2 != 0) {
+			numeros.push(i)
+		}
+	}
+	numerosImparesText.textContent = [...numeros]
+}
 // Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola el número más pequeño de la serie.
 // Pedir al usuario que adivine un número generado aleatoriamente entre 1 y 100. Mostrar en la consola si el usuario adivinó o no el número y la cantidad de intentos que le tomó.
 // Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola la cantidad de números pares.
