@@ -263,36 +263,60 @@ mayorQue();
 
 //dia de la semana
 
-let numeroDia = parseInt(prompt("ingrese un número del 1 al 7"))
+//let numeroDia = parseInt(prompt("ingrese un número del 1 al 7"))
 
 
 
-switch (numeroDia) {
-  case 1:
-    dia = "Lunes";
-    break;
-  case 2:
-    dia = "Martes";
-    break;
-  case 3:
-    dia = "Miércoles";
-    break;
-  case 4:
-    dia = "Jueves";
-    break;
-  case 5:
-    dia = "Viernes";
-    break;
-  case 6:
-    dia = "Sábado";
-    break;
-  case 7:
-    dia = "Domingo";
-    break;
-  default:
-    dia = "Número inválido";
-    break;
+//switch (numeroDia) {
+  //case 1:
+ //   dia = "Lunes";
+ //   break;
+ // case 2:
+ //   dia = "Martes";
+ //   break;
+  //case 3:
+   // dia = "Miércoles";
+    //break;
+  //case 4:
+   // dia = "Jueves";
+   // break;
+  //case 5:
+  //  dia = "Viernes";
+   // break;
+ // case 6:
+   // dia = "Sábado";
+ //   break;
+  //case 7:
+    //dia = "Domingo";
+ //   break;
+ // default:
+  // dia = "Número inválido";
+    //break;}
+
+//console.log(`El número ${numeroDia} es el día  ${dia}`);
+
+//números primos.
+
+function Primo(num) {
+  if (num <= 1) {
+      return false;
+  }
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+      if (num % i === 0) {
+          return false;
+      }
+  }
+  return true;
 }
 
-console.log(`El número ${numeroDia} es el día  ${dia}`);
+function verificarPrimo() {
+  const numero = parseInt(prompt("Ingresa un número mayor que 1: "));
+  
+  if (Primo(numero)) {
+      console.log(`${numero} es un número primo.`);
+  } else {
+      console.log(`${numero} no es un número primo.`);
+  }
+}
 
+verificarPrimo();

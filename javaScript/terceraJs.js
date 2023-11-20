@@ -186,6 +186,9 @@ let girarTragaMonedas = () => {
 //Crear una función que tome una cadena como parámetro y devuelva "Es un palíndromo" si la cadena es igual al revés, de lo contrario, devolver "No es un palíndromo".
 // Crear un programa que pida al usuario una letra y luego muestre si es una vocal o una consonante.
 // Crear un programa que pida al usuario un número del 1 al 7 y luego muestre el día de la semana correspondiente.
+
+
+
 // Crear un programa que pida al usuario un número y luego muestre si es primo o no.
 // Crear un programa que pida al usuario su edad y luego muestre si es mayor o menor de edad (18 años).
 // Crear un programa que pida al usuario dos números y luego muestre si su suma es mayor, menor o igual a 100.
