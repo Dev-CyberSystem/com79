@@ -293,6 +293,25 @@ evenOdd();
 
 
 // Crear un programa que pida al usuario una letra y luego muestre si es una letra mayúscula o minúscula.
+let passedLetter;
+let caseState;
+let validateInLetter = () => {
+    let inLetter = prompt(`Por favor ingrese una letra:`).trim();
+    if (inLetter.match(/[a-z]/) && inLetter.length===1) {
+        passedLetter = inLetter;
+        caseState = true;
+    } else if (inLetter.match(/[A-Z]/) && inLetter.length===1) {
+        passedLetter = inLetter;
+        caseState = false;
+    } else {
+        alert(`Por favor ingrese solo un caracter no numérico`);
+        validateInLetter();
+    }
+}
+validateInLetter();
+alert(`La letra ingresada "${passedLetter}" es una letra ${caseState ? `minúscula` : `mayúscula`}.`);
+console.log(`Resultado ejercicio 20 (minúscula mayúscula): "${passedLetter}" es ${caseState ? `minúscula` : `mayúscula`}`);
+
 
 //Crear una función que tome un número como parámetro y devuelva "Fizz" si es divisible por 3, "Buzz" si es divisible por 5 o "FizzBuzz" si es divisible por ambos. En cualquier otro caso, devolver el número.
 
