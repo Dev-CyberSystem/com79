@@ -367,27 +367,50 @@ function Primo(num) {
 
 //MAYUSCULA minuscula
 
-function verificarLetra() {
-  const letra = prompt("Ingresa una letra: ");
+//function verificarLetra() {
+//  const letra = prompt("Ingresa una letra: ");
+//  if (letra.length !== 1) {
+//      console.log("Por favor, ingresa solo una letra.");
+ //     return; }
 
-  if (letra.length !== 1) {
-      console.log("Por favor, ingresa solo una letra.");
-      return;
+  //const esMayuscula = letra === letra.toUpperCase();
+  //const esMinuscula = letra === letra.toLowerCase();
+
+ // if (esMayuscula) {
+ 
+    //     console.log(`La letra "${letra}" es mayúscula.`);
+ // } else if (esMinuscula) {
+ //     console.log(`La letra "${letra}" es minúscula.`);
+//  } else {
+//      console.log(`"${letra}" no es una letra válida.`); }
+      //}
+
+//verificarLetra();
+
+//fiizBuzz
+function fizzBuzz(numero) {
+  if (numero % 3 === 0 && numero % 5 === 0) {
+      return "FizzBuzz";
+  } else if (numero % 3 === 0) {
+      return "Fizz";
+  } else if (numero % 5 === 0) {
+      return "Buzz";
+  } else (numero % 2 === 0); {
+      return "el número no es divisble en ninguno";
   }
-
-  const esMayuscula = letra === letra.toUpperCase();
-  const esMinuscula = letra === letra.toLowerCase();
-
-  if (esMayuscula) {
-      console.log(`La letra "${letra}" es mayúscula.`);
-  } else if (esMinuscula) {
-      console.log(`La letra "${letra}" es minúscula.`);
-  } else {
-      console.log(`"${letra}" no es una letra válida.`);
-  }
+    
+    
 }
 
-verificarLetra();
+function probarFizzBuzz() {
+  const numero = parseInt(prompt("Ingresa un número: "));
+
+  const resultado = fizzBuzz(numero);
+  console.log(`El resultado para el número ${numero} es: ${resultado}`);
+}
+
+probarFizzBuzz();
+
 
 
 
