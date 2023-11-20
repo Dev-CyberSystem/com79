@@ -210,6 +210,7 @@ serieSeparados()*/
 console.log("--------------------")
 // 13)Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola la cantidad de números negativos.
 console.log("-------Ejercicio 13-----------")
+/*
 let serieSeperadosNegativos=()=>
 {
     let serieEnt2 = prompt(`Ingrese los numeros separados por coma`).trim()
@@ -225,6 +226,40 @@ let serieSeperadosNegativos=()=>
     }
     console.log(`Los numeros negativos ${arrayNeg.join(` , `)}`)
 }
-serieSeperadosNegativos()
+serieSeperadosNegativos()*/
 
 console.log("--------------------")
+
+// 14)Pedir al usuario que ingrese un número y mostrar en la consola todos los números impares desde el 1 hasta el número ingresado.
+console.log("-------Ejercicio 14-----------")
+
+let numerosImpares=()=>
+{
+        let numb3 = parseInt(prompt("Ingrese un numero por favor: "))
+        let contarImpares=[];
+        for (let l = 1; l < numb3; l++) {
+        if ((l % 2) !== 0) {
+            contarImpares.push(l)
+        }
+    }
+    return alert(`Los numeros impares son: ${contarImpares.join(` - `)}`);
+    }
+
+numerosImpares()
+console.log("--------------------")
+// 15)Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola el número más pequeño de la serie.
+// 16)Pedir al usuario que adivine un número generado aleatoriamente entre 1 y 100. Mostrar en la consola si el usuario adivinó o no el número y la cantidad de intentos que le tomó.
+// 17)Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola la cantidad de números pares.
+// 18)Dado un array de números, escribir una función que retorne el número más grande del array.
+// 19)Dado un array de números, escribir una función que retorne un nuevo array con los números pares del array original.
+// 20)Dado un array de números, escribir una función que retorne la suma de todos los números del array.
+// 21)Dado un array de strings, escribir una función que retorne un nuevo array con todos los strings en mayúsculas.
+// 22)Dado un array de números y un número X, escribir una función que retorne un nuevo array con todos los números del array original que sean mayores que X.
+// 23)Dado un array de números, escribir una función que retorne la suma de todos los números del array. Además, si algún número es mayor que 10, agregarlo a un nuevo array de "números grandes".
+// 24)Dado un array de strings, escribir una función que retorne un nuevo array con todos los strings que tengan más de 5 caracteres.
+// 25)Dado un array de strings, escribir una función que retorne un nuevo array con todos los strings que tengan más de 5 caracteres y que empiecen con la letra "a".
+// 26)Dado un array de números y un número X, escribir una función que retorne un nuevo array con todos los números del array original que sean mayores que X. Además, cortar el array resultante para que tenga solamente los primeros 3 números.
+// 27)Dado un array de números, escribir una función que retorne un nuevo array con todos los números del array original, pero sumándoles 1.
+// 28)Dado un array de números, escribir una función que retorne un nuevo array con todos los números del array original menos el último.
+// 29)Dado un array de números, escribir una función que retorne un nuevo array con todos los números del array original menos el primero y el último.
+// 30)Dado un array de números, escribir una función que retorne un nuevo array con todos los números del array original menos el número que se encuentre en la posición X.
