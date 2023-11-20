@@ -232,7 +232,7 @@ console.log("--------------------")
 
 // 14)Pedir al usuario que ingrese un número y mostrar en la consola todos los números impares desde el 1 hasta el número ingresado.
 console.log("-------Ejercicio 14-----------")
-
+/*
 let numerosImpares=()=>
 {
         let numb3 = parseInt(prompt("Ingrese un numero por favor: "))
@@ -245,9 +245,21 @@ let numerosImpares=()=>
     return alert(`Los numeros impares son: ${contarImpares.join(` - `)}`);
     }
 
-numerosImpares()
+numerosImpares()*/
 console.log("--------------------")
 // 15)Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola el número más pequeño de la serie.
+console.log("-------Ejercicio 14-----------")
+
+let numeroSeparadosComa=()=>
+{
+    let serieEnt3 = prompt(`Ingrese los numeros separados por coma`).trim()
+    let arrayNum3 = serieEnt3.split(`,`)
+    let menorN = Math.min(...arrayNum3)
+
+    console.log(`El numero más pequeño es: ${menorN}`)
+}
+numeroSeparadosComa()
+console.log("--------------------")
 // 16)Pedir al usuario que adivine un número generado aleatoriamente entre 1 y 100. Mostrar en la consola si el usuario adivinó o no el número y la cantidad de intentos que le tomó.
 // 17)Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola la cantidad de números pares.
 // 18)Dado un array de números, escribir una función que retorne el número más grande del array.
