@@ -388,29 +388,46 @@ function Primo(num) {
 //verificarLetra();
 
 //fiizBuzz
-function fizzBuzz(numero) {
-  if (numero % 3 === 0 && numero % 5 === 0) {
-      return "FizzBuzz";
-  } else if (numero % 3 === 0) {
-      return "Fizz";
-  } else if (numero % 5 === 0) {
-      return "Buzz";
-  } else (numero % 2 === 0); {
-      return "el número no es divisble en ninguno";
+//function fizzBuzz(numero) {
+//  if (numero % 3 === 0 && numero % 5 === 0) {
+//      return "FizzBuzz";
+ // } else if (numero % 3 === 0) {
+ //     return "Fizz";
+//  } else if (numero % 5 === 0) {
+  //    return "Buzz";
+//  } else (numero % 2 === 0); {
+//      return "el número no es divisble en ninguno";}}
+
+//function probarFizzBuzz() {
+//  const numero = parseInt(prompt("Ingresa un número: "));
+// const resultado = fizzBuzz(numero)
+//  console.log(`El resultado para el número ${numero} es: ${resultado}`)}
+
+//probarFizzBuzz()
+
+
+
+ //Número perfect..... 
+
+ function esNumeroPerfecto(numero) {
+  let sumaDivisores = 0;
+
+  for (let i = 1; i < numero; i++) {
+      if (numero % i === 0) {
+          sumaDivisores += i;
+      }
   }
-    
-    
+
+  return sumaDivisores === numero;
 }
 
-function probarFizzBuzz() {
+function NumeroPerfecto() {
   const numero = parseInt(prompt("Ingresa un número: "));
 
-  const resultado = fizzBuzz(numero);
-  console.log(`El resultado para el número ${numero} es: ${resultado}`);
+  if (esNumeroPerfecto(numero)) {
+      console.log(`${numero} es un número perfecto.`);
+  } else {
+      console.log(`${numero} no es un número perfecto.`);
+  }
 }
-
-probarFizzBuzz();
-
-
-
-
+NumeroPerfecto();
