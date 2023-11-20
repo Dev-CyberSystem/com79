@@ -197,7 +197,7 @@ function function16() {
 
 // Crear un programa que pida al usuario un número del 1 al 7 y luego muestre el día de la semana correspondiente.
 function function17() {
-  i = prompt("Ingrese un numero del 1 al 7: ");
+  i = parseInt(prompt("Ingrese un numero del 1 al 7: "));
   switch (i) {
     case 1:
       console.log("Lunes");
@@ -225,7 +225,7 @@ function function17() {
       break;
   }
 }
-//function17();
+function17();
 
 // Crear un programa que pida al usuario un número y luego muestre si es primo o no.
 function numeroPrimo(num) {
