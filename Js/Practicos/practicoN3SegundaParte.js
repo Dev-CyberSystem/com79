@@ -9,7 +9,7 @@
 // 8)Recorrer un string y mostrar en la consola cada letra en mayúsculas.
 // 9)Pedir al usuario que ingrese un número y mostrar en la consola los números del 1 al número ingresado.
 // 10)Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola el número más grande de la serie.
-// 11)Pedir al usuario que ingrese una palabra y mostrar en la consola si la palabra es un palíndromo o no.
+// 11)Pedir al usuario que ingrese una palabra y mostrar en la consola si la palabra es un palíndromo o no. DUPLICADO EN LA PARTE 1
 // 12)Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola la suma de los números pares.
 // 13)Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola la cantidad de números negativos.
 // 14)Pedir al usuario que ingrese un número y mostrar en la consola todos los números impares desde el 1 hasta el número ingresado.
@@ -178,12 +178,36 @@ alert(`Los numero son: ${numeroA.join(` , `)}`)*/
 console.log("--------------------")
 // 10)Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola el número más grande de la serie.
 console.log("-------Ejercicio 10-----------")
-
+/*
 let numeroSeparados=()=>{
     let cantidadN=prompt(`ingrese numeros separados por coma`).trim()
     let arrayN=cantidadN.split(",")
     let elMayor= Math.max(...arrayN)
     alert(`El numero más grande es: ${elMayor}`)
 }
-numeroSeparados()
+numeroSeparados()*/
+console.log("--------------------")
+// EL 11 Duplicado
+
+// 12)Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola la suma de los números pares.
+console.log("-------Ejercicio 12-----------")
+let serieSeparados=()=>
+{
+    let serieEnt = prompt(`Ingrese los numeros separados por coma`).trim()
+    let arrayNum = serieEnt.split(",")
+    let sumaPar=0
+    for(let f=0;f<arrayNum.length;f++)
+    {
+        if(arrayNum[f]%2===0)
+        {
+                sumaPar+=parseInt(arrayNum[f])
+        }
+    }
+    alert(`La suma pares es ${sumaPar}`)
+}
+serieSeparados()
+console.log("--------------------")
+// 13)Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola la cantidad de números negativos.
+console.log("-------Ejercicio 13-----------")
+
 console.log("--------------------")
