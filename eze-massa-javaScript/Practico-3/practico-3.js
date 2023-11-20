@@ -591,6 +591,18 @@ btnMinusculas.addEventListener('click', () => {
 	minusculasText.textContent = `El string en minúsculas es: ${stringMinusculas.join(', ')}`
 })
 // Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola el número más grande de la serie.
+const btnNumeroMasGrandeSerie = document.getElementById('btnNumeroMasGrandeSerie')
+btnNumeroMasGrandeSerie.addEventListener('click', () => {
+	const serieNumeros = prompt('Ingresa una serie de números separados por coma:')
+	const numerosArray = serieNumeros.split(',').map(Number)
+	if (numerosArray.some(isNaN)) {
+		alert('Por favor, asegúrate de ingresar solo números separados por coma.')
+	} else {
+		const numeroMasGrande = Math.max(...numerosArray)
+		alert(`El número más grande de la serie es: ${numeroMasGrande}`)
+	}
+})
+
 // Pedir al usuario que ingrese una palabra y mostrar en la consola si la palabra es un palíndromo o no.
 // Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola la suma de los números pares.
 // Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola la cantidad de números negativos.
