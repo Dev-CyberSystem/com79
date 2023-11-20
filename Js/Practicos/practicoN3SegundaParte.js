@@ -431,10 +431,29 @@ arrayCadena5()*/
 console.log("--------------------")
 // 25)Dado un array de strings, escribir una función que retorne un nuevo array con todos los strings que tengan más de 5 caracteres y que empiecen con la letra "a".
 console.log("-------Ejercicio 25-----------")
+/*
+let cadenaLet=["aLojaa","aaaaaaaa","sapo","tres","perro","salto","ana","amarillo","tucumán", "aranceles" ]
 
+function arrayCadena5A()
+{
+    let arrayRC1 = []
 
+    for(let j=0;j<cadenaLet.length;j++)
+    {
+        if(cadenaLet[j].length>5 && cadenaLet[j].startsWith("a"))
+        {
+            arrayRC1.push(cadenaLet[j])
+        }
+    }
+    alert(`[${arrayRC1}]`)
+}
+arrayCadena5A()
+*/
 console.log("--------------------")
 // 26)Dado un array de números y un número X, escribir una función que retorne un nuevo array con todos los números del array original que sean mayores que X. Además, cortar el array resultante para que tenga solamente los primeros 3 números.
+console.log("-------Ejercicio 26-----------")
+
+console.log("--------------------")
 // 27)Dado un array de números, escribir una función que retorne un nuevo array con todos los números del array original, pero sumándoles 1.
 // 28)Dado un array de números, escribir una función que retorne un nuevo array con todos los números del array original menos el último.
 // 29)Dado un array de números, escribir una función que retorne un nuevo array con todos los números del array original menos el primero y el último.
