@@ -858,5 +858,33 @@ function numerosArrayMenosUltimo(arregloNumeros) {
 	alert(`Los numeros de la serie ${arregloNumeros} menos el ultimo son: ${arrayNumerosMenosUltimo}`)
 }
 // Dado un array de números, escribir una función que retorne un nuevo array con todos los números del array original menos el primero y el último.
-
+const btnNumerosArrayMenosPrimeroYUltimo = document.getElementById('btnNumerosArrayMenosPrimeroYUltimo')
+btnNumerosArrayMenosPrimeroYUltimo.addEventListener('click', () => {
+	const serieNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+	numerosArrayMenosPrimeroYUltimo(serieNumeros)
+})
+function numerosArrayMenosPrimeroYUltimo(arregloNumeros) {
+	const arrayNumerosMenosPrimeroYUltimo = arregloNumeros.slice(1, -1)
+	alert(`Los numeros de la serie ${arregloNumeros} menos el primero y el último: ${arrayNumerosMenosPrimeroYUltimo}`)
+}
 // Dado un array de números, escribir una función que retorne un nuevo array con todos los números del array original menos el número que se encuentre en la posición X.
+const btnEliminarNumeroArray = document.getElementById('btnEliminarNumeroArray')
+btnEliminarNumeroArray.addEventListener('click', () => {
+	const serieNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+	const numeroIngresado = parseInt(prompt('Ingrese una posicion a eliminar:'))
+	const regExNumeros = /[0-9]/
+	if (!regExNumeros.test(numeroIngresado)) {
+		alert('Error , solo se permiten numeros')
+	} else {
+		eliminarNumeroArray(serieNumeros, numeroIngresado)
+	}
+})
+function eliminarNumeroArray(array, posicion) {
+	if (posicion < 0 || posicion >= array.length) {
+		alert('La posición está fuera del rango del array.')
+	} else {
+		const copiaArray = array.slice()
+		copiaArray.splice(posicion, 1)
+		alert(`Los numeros de la serie ${array} menos el indice indicado son: ${copiaArray}`)
+	}
+}
