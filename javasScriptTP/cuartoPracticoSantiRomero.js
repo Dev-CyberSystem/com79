@@ -594,7 +594,7 @@ switch (mesesDelAnio) {
   //dia de la semana
 
   
-var diaSemana = prompt("Ingresa un número del 1 al 5:");
+/*var diaSemana = prompt("Ingresa un número del 1 al 5:");
 diaSemana = parseInt(diaSemana);
 
 function obtenerDiaSemana(numero) {
@@ -609,4 +609,27 @@ function obtenerDiaSemana(numero) {
 }
 
 var diaCorrespondiente = obtenerDiaSemana(diaSemana);
-console.log("El día correspondiente es: " + diaCorrespondiente);
+console.log("El día correspondiente es: " + diaCorrespondiente);*/
+
+
+//MAYUSCULA minuscula
+
+function verificarLetra() {
+  const letra = prompt("Ingresa una letra: ");
+  if (letra.length !== 1) {
+    console.log("Por favor, ingresa solo una letra.");
+     return; }
+
+  const esMayuscula = letra === letra.toUpperCase();
+  const esMinuscula = letra === letra.toLowerCase();
+
+  if (esMayuscula) {
+ 
+        console.log(`La letra "${letra}" es mayúscula.`);
+   } else if (esMinuscula) {
+      console.log(`La letra "${letra}" es minúscula.`);
+   } else {
+     console.log(`"${letra}" no es una letra válida.`); }
+      }
+
+verificarLetra();
