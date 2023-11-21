@@ -789,6 +789,16 @@ function sumayGrandesArray(arregloNumeros) {
 	alert(`Los numeros de la serie ${arregloNumeros} mayores a 10 son: ${arrayNumerosGrandes}`)
 }
 // Dado un array de strings, escribir una función que retorne un nuevo array con todos los strings que tengan más de 5 caracteres.
+const btnArrayStringMayorACinco = document.getElementById('btnArrayStringMayorACinco')
+btnArrayStringMayorACinco.addEventListener('click', () => {
+	const letras = ['casa', 'telefono', 'aristoteles', 'biblioteca', 'faro', 'futbol', 'hola', 'tubo']
+	arrayStringMayorACinco(letras)
+})
+function arrayStringMayorACinco(letras) {
+	alert(
+		`Los strings de la serie: ${letras} con 5 caracteres o más son: ${letras.filter((string) => string.length >= 5)}`
+	)
+}
 // Dado un array de strings, escribir una función que retorne un nuevo array con todos los strings que tengan más de 5 caracteres y que empiecen con la letra "a".
 // Dado un array de números y un número X, escribir una función que retorne un nuevo array con todos los números del array original que sean mayores que X. Además, cortar el array resultante para que tenga solamente los primeros 3 números.
 // Dado un array de números, escribir una función que retorne un nuevo array con todos los números del array original, pero sumándoles 1.
