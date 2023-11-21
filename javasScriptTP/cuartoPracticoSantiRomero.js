@@ -664,11 +664,20 @@ verificarLetra();*/
       
       //todas MAYUSCULAS
 
-      const palabra = prompt("Ingresa una palabra:");
+      /*const palabra = prompt("Ingresa una palabra:");
 
       for (let i = 0; i < palabra.length; i++) {
        const letraMayus = palabra[i].toUpperCase();
        console.log(letraMayus);
-       }
+       }*/
+
+       //desde 0 hasta el seleccionado
+
+       const numeroIngresado = parseInt(prompt("Ingresa un número:"));
+
+        for (let i = 0; i <= numeroIngresado; i++) {
+        console.log(i);
+         }
+
 
 
