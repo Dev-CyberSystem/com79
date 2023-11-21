@@ -751,6 +751,25 @@ function arrayAMayusculas(letras) {
 	alert(`Los strings de la serie ${letras} en mayúsculas son: ${letras.map((string) => string.toUpperCase())}`)
 }
 // Dado un array de números y un número X, escribir una función que retorne un nuevo array con todos los números del array original que sean mayores que X.
+const btnNumerosMayoresAIngresado = document.getElementById('btnNumerosMayoresAIngresado')
+btnNumerosMayoresAIngresado.addEventListener('click', () => {
+	const serieNumeros = [1, 2, 3, 4, 5, 6, 7, 8]
+	const numeroIngresado = prompt('Ingresa un número:')
+	const regExNumeros = /[0-9]/
+	if (!regExNumeros.test(numeroIngresado)) {
+		alert('Error , solo se permiten numeros')
+	} else {
+		numerosMayoresAIngresado(serieNumeros, numeroIngresado)
+	}
+})
+function numerosMayoresAIngresado(arregloNumeros, numeroIngresado) {
+	let arregloNumerosMayores = arregloNumeros.filter((numero) => numero > numeroIngresado)
+	if (arregloNumerosMayores.length === 0) {
+		alert(`No hay elementos en la serie que cumplan la condicion`)
+	} else {
+		alert(`Los numeros de la serie ${arregloNumeros} mayores a ${numeroIngresado} son: ${arregloNumerosMayores}`)
+	}
+}
 // Dado un array de números, escribir una función que retorne la suma de todos los números del array. Además, si algún número es mayor que 10, agregarlo a un nuevo array de "números grandes".
 // Dado un array de strings, escribir una función que retorne un nuevo array con todos los strings que tengan más de 5 caracteres.
 // Dado un array de strings, escribir una función que retorne un nuevo array con todos los strings que tengan más de 5 caracteres y que empiecen con la letra "a".
