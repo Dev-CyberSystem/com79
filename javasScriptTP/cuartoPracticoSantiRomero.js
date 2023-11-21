@@ -565,7 +565,7 @@ switch (mesesDelAnio) {
    //Consonante o vocal
 
   
-  let vocales = prompt("ingrese una letra").toUpperCase().trim();
+  /*let vocales = prompt("ingrese una letra").toUpperCase().trim();
 
   switch (vocales) {
     case "A":
@@ -589,5 +589,24 @@ switch (mesesDelAnio) {
           break; 
       default:
         console.log("Es una consonante");
-        break;}
+        break;}*/
+
+  //dia de la semana
+
   
+var diaSemana = prompt("Ingresa un número del 1 al 5:");
+diaSemana = parseInt(diaSemana);
+
+function obtenerDiaSemana(numero) {
+  var diasSemana = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes"];
+
+  if (numero >= 1 && numero <= 5) {
+    var diaCorrespondiente = diasSemana[numero - 1];
+    return diaCorrespondiente;
+  } else {
+    return "Por favor, ingresa un número válido del 1 al 5.";
+  }
+}
+
+var diaCorrespondiente = obtenerDiaSemana(diaSemana);
+console.log("El día correspondiente es: " + diaCorrespondiente);
