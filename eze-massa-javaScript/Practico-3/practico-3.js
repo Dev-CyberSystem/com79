@@ -657,6 +657,17 @@ function mostrarImpares(numero) {
 	numerosImparesText.textContent = [...numeros]
 }
 // Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola el número más pequeño de la serie.
+const btnMenorNumeroSerie = document.getElementById('btnMenorNumeroSerie')
+btnMenorNumeroSerie.addEventListener('click', () => {
+	const serieNumeros = prompt('Ingresa una serie de números separados por coma:')
+	const numerosArray = serieNumeros.split(',').map(Number)
+	if (numerosArray.some(isNaN)) {
+		alert('Por favor, asegúrate de ingresar solo números separados por coma.')
+	} else {
+		const numeroMasPequenio = Math.min(...numerosArray)
+		alert(`El número más pequeño de la serie es: ${numeroMasPequenio}`)
+	}
+})
 // Pedir al usuario que adivine un número generado aleatoriamente entre 1 y 100. Mostrar en la consola si el usuario adivinó o no el número y la cantidad de intentos que le tomó.
 // Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola la cantidad de números pares.
 // Dado un array de números, escribir una función que retorne el número más grande del array.
