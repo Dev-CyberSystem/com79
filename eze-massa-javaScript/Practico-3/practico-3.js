@@ -813,6 +813,30 @@ function arrayStringMayorACincoYA(letras) {
 	)
 }
 // Dado un array de números y un número X, escribir una función que retorne un nuevo array con todos los números del array original que sean mayores que X. Además, cortar el array resultante para que tenga solamente los primeros 3 números.
+const btnPrimerosTresMayores = document.getElementById('btnPrimerosTresMayores')
+btnPrimerosTresMayores.addEventListener('click', () => {
+	const serieNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+	const numeroIngresado = prompt('Ingresa un número:')
+	const regExNumeros = /[0-9]/
+	if (!regExNumeros.test(numeroIngresado)) {
+		alert('Error , solo se permiten numeros')
+	} else {
+		primerosTresMayores(serieNumeros, numeroIngresado)
+	}
+})
+function primerosTresMayores(arregloNumeros, numeroIngresado) {
+	let arrayNumerosMayores = arregloNumeros.filter((numero) => numero > numeroIngresado)
+	if (arrayNumerosMayores.length === 0) {
+		alert(`No hay elementos en la serie que cumplan la condicion`)
+	} else {
+		alert(
+			`Los primeros 3 numeros de la serie ${arregloNumeros} mayores a ${numeroIngresado} son: ${arrayNumerosMayores.slice(
+				0,
+				3
+			)}`
+		)
+	}
+}
 // Dado un array de números, escribir una función que retorne un nuevo array con todos los números del array original, pero sumándoles 1.
 // Dado un array de números, escribir una función que retorne un nuevo array con todos los números del array original menos el último.
 // Dado un array de números, escribir una función que retorne un nuevo array con todos los números del array original menos el primero y el último.
