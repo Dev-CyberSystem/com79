@@ -669,6 +669,37 @@ btnMenorNumeroSerie.addEventListener('click', () => {
 	}
 })
 // Pedir al usuario que adivine un número generado aleatoriamente entre 1 y 100. Mostrar en la consola si el usuario adivinó o no el número y la cantidad de intentos que le tomó.
+const btnAdivinarNumero = document.getElementById('btnAdivinarNumero')
+btnAdivinarNumero.addEventListener('click', () => {
+	const numeroAleatorio = Math.floor(Math.random() * 100) + 1
+	console.log(numeroAleatorio)
+	let numeroIngresado
+	let intentos = 1
+
+	while (numeroAleatorio != numeroIngresado) {
+		numeroIngresado = parseInt(prompt('Ingrese su numero'))
+		comprobarGano(numeroAleatorio, numeroIngresado, intentos)
+		intentos++
+	}
+})
+function comprobarGano(numeroAleatorio, numeroIngresado, intentos) {
+	const regExNumeros = /[0-9]/
+	if (!regExNumeros.test(numeroIngresado)) {
+		alert('Error , solo se permiten numeros')
+	} else if (numeroIngresado < 1 || numeroIngresado > 100) {
+		alert('Error , solo se permiten numeros entre 1 y 100')
+	} else {
+		if (numeroIngresado == numeroAleatorio) {
+			alert(`Acertaste! en ${intentos} intentos , el numero era ${numeroIngresado} `)
+		} else {
+			if (numeroAleatorio > numeroIngresado) {
+				alert(`Intento: ${intentos}, el numero ingresado es menor al aleatorio`)
+			} else {
+				alert(`Intento: ${intentos}, el numero ingresado es mayor al aleatorio`)
+			}
+		}
+	}
+}
 // Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola la cantidad de números pares.
 // Dado un array de números, escribir una función que retorne el número más grande del array.
 // Dado un array de números, escribir una función que retorne un nuevo array con los números pares del array original.
