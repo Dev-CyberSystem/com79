@@ -701,6 +701,17 @@ function comprobarGano(numeroAleatorio, numeroIngresado, intentos) {
 	}
 }
 // Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola la cantidad de números pares.
+const btnNumerosParesHasta = document.getElementById('btnNumerosParesHasta')
+btnNumerosParesHasta.addEventListener('click', () => {
+	const serieNumeros = prompt('Ingresa una serie de números separados por coma:')
+	const numerosArray = serieNumeros.split(',').map(Number)
+	if (numerosArray.some(isNaN)) {
+		alert('Por favor, asegúrate de ingresar solo números separados por coma.')
+	} else {
+		const numeroPares = numerosArray.filter((numero) => numero % 2 == 0).length
+		alert(`La cantidad de números pares es: ${numeroPares}`)
+	}
+})
 // Dado un array de números, escribir una función que retorne el número más grande del array.
 // Dado un array de números, escribir una función que retorne un nuevo array con los números pares del array original.
 // Dado un array de números, escribir una función que retorne la suma de todos los números del array.
