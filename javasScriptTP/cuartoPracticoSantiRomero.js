@@ -536,7 +536,7 @@ switch (mesesDelAnio) {
 }
  console.log(`El número ${mesesDelAnio} es el mes ${mes}`)*/
 
-let diaDeLaSemana = parseInt(prompt("Ingrese un número del 1 al 7"))
+/*let diaDeLaSemana = parseInt(prompt("Ingrese un número del 1 al 7"))
    switch (diaDeLaSemana) {
     case 1:
       dia = "Lunes";
@@ -560,4 +560,34 @@ let diaDeLaSemana = parseInt(prompt("Ingrese un número del 1 al 7"))
       dia = "Domingo";
       break;
    }
-   console.log(`El número ${diaDeLaSemana} es el dia ${dia}`)
+   console.log(`El número ${diaDeLaSemana} es el dia ${dia}`)*/
+
+   //Consonante o vocal
+
+  
+  let vocales = prompt("ingrese una letra").toUpperCase().trim();
+
+  switch (vocales) {
+    case "A":
+    case "E":
+    case "I":
+    case "O":
+    case "U":
+     console.log("Es una vocal");
+     break;
+    case "1":
+      case "2":
+      case "3":
+      case "4":
+      case "5":   
+      case "6":
+      case "7":
+      case "8":
+      case "9":
+      case "0":
+          console.log("No es una letra"); 
+          break; 
+      default:
+        console.log("Es una consonante");
+        break;}
+  
