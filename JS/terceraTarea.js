@@ -86,7 +86,7 @@ if (numeroUsuario < 0) {
     console.log("Su número es negativo")
 } else if (numeroUsuario === 0){
   console.log("Su número es 0")
-} else{
+} else {
     console.log("Su número es positivo")
 }
 
@@ -104,14 +104,14 @@ console.log(`El número mayor es: ${numeroMayor}`)
 
 // Crear un programa que pida al usuario una contraseña y la valide según ciertas condiciones, como la longitud y la presencia de caracteres especiales.
 
-let contraseña = prompt("Por favor, ingrese su contraseña (la misma debe tener aunque uno, de los siguientes caracteres /[!#$*()_+:;?\\-]/)")
+let contrasena = prompt("Por favor, ingrese su contraseña (la misma debe tener aunque uno, de los siguientes caracteres /[!#$*()_+:;?\\-]/)")
 
-if (contraseña.length < 6) {
+if (contrasena.length < 6) {
     console.log("La contraseña debe tener al menos 8 caracteres")
 } else {
     let caracteresEspeciales = /[!#$*()_+:;?\\-]/
 
-    if (!contraseña.match (caracteresEspeciales)) {
+    if (!contrasena.match (caracteresEspeciales)) {
         console.log("La contraseña debe contener al menos un caracter especial");
     } else {
         console.log("Contraseña correcta");
@@ -125,7 +125,7 @@ nota = parseFloat(nota)
 
 if(nota >= 70){
     console.log("Usted está aprobado!")
-} else{
+} else {
     console.log("Usted ha desaprobado")
 }
 // Crear una función que tome una cadena como parámetro y devuelva "Es un palíndromo" si la cadena es igual al revés, de lo contrario, devolver "No es un palíndromo".
@@ -190,11 +190,63 @@ switch (dia) {
 
 // Crear un programa que pida al usuario su edad y luego muestre si es mayor o menor de edad (18 años).
 
+let edadUsuario = prompt("Ingrese su edad:")
+edadUsuario = parseInt(edadUsuario)
+
+if (edadUsuario >= 18) {
+    console.log("Usted es mayor de edad")
+} else {
+    console.log("Usted es menor de edad")
+}
+
 // Crear un programa que pida al usuario dos números y luego muestre si su suma es mayor, menor o igual a 100.
+
+let numIngresado = prompt("Ingrese un número:")
+numIngresado = parseInt(numIngresado)
+
+let numeroIngresado = prompt("Ingrese un 2do. número:")
+numeroIngresado = parseInt(numeroIngresado)
+
+let resultNum = numIngresado + numeroIngresado
+
+if (resultNum == 100) {
+    console.log("El resultado de sumar los dos números que ingreso es igual a 100")
+} else if (resultNum <= 100){
+    console.log("El resultado de sumar los dos números que ingreso es menor a 100")
+} else {
+    console.log("El resultado de sumar los dos números que ingreso es mayor a 100")
+}
 
 // Crear un programa que pida al usuario tres números y luego muestre cuál es el mayor de los tres.
 
+let numUno = prompt("Ingrese un número:")
+numUno = parseInt(numUno)
+
+let numDos = prompt("Ingrese un 2do. número:")
+numDos = parseInt(numDos)
+
+let numTres = prompt("Ingrese un 3er. número:")
+numTres = parseInt(numTres)
+
+if (numUno > numDos && numTres){
+    console.log(numUno + " es el mayor")
+} else if (numDos > numUno && numTres){
+    console.log(numDos + " es el mayor")
+} else{
+    console.log(numTres + " es el mayor")
+}
+
 // Crear un programa que pida al usuario una letra y luego muestre si es una letra mayúscula o minúscula.
+
+let letraIngresada = prompt("Ingrese una letra:")
+
+if (letraIngresada === letraIngresada.toUpperCase()) {
+    console.log("La letra ingresada es mayúscula.")
+} else if (letraIngresada === letraIngresada.toLowerCase()) {
+    console.log("La letra ingresada es minúscula.")
+} else {
+    console.log("Por favor, ingrese una letra.")
+}
 
 //Crear una función que tome un número como parámetro y devuelva "Fizz" si es divisible por 3, "Buzz" si es divisible por 5 o "FizzBuzz" si es divisible por ambos. En cualquier otro caso, devolver el número.
 
@@ -251,11 +303,47 @@ switch (mes) {
 }
 
 // Crea un programa que reciba un número del 1 al 5 y muestre el nombre del día de la semana correspondiente a esa posición en un arreglo.
-// Crea un programa que reciba una letra y muestre si es mayúscula o minúscula.
+
+let numeroSemana = parseInt(prompt("Ingrese un número del 1 al 5:"))
+let diaSemana = ["lunes", "martes", "miércoles", "jueves", "viernes"]
+
+if (numeroSemana >= 1 && numeroSemana <= 5) {
+    console.log(`El número ${numeroSemana} corresponde al día ${diaSemana[numeroSemana - 1]}`);
+} else {
+    console.log("Ingrese un número válido del 1 al 5");
+}
+
 // Crea un programa que reciba una nota del 0 al 10 y muestre la calificación correspondiente (suspenso, aprobado, notable, sobresaliente).
+
+let numNota = parseInt(prompt("Ingrese su nota:"))
+
+if (numNota < 4){
+    console.log("Su nota esta suspenso")
+} else if (numNota >= 4 && numNota <= 6){
+    console.log("Usted esta aprobado")
+} else if(numNota >=7 && numNota == 8){
+    console.log("Usted está aprobado y su nota se considera como: notable")
+}else if (numNota >= 9 && numNota == 10){
+    console.log("Usted está aprobado y su nota se considera como: sobresaliente")
+} else{
+    console.log("Ingrese una nota válida")
+}
+
 // Imprimir los números pares del 2 al 20 en la consola.
+
+for (let i = 2; i <= 20; i += 2) {
+    console.log(i);
+}
+
 // Recorrer un string y mostrar en la consola cada letra en mayúsculas.
 // Pedir al usuario que ingrese un número y mostrar en la consola los números del 1 al número ingresado.
+
+let numIngresar = parseInt(prompt("Ingrese un número:"))
+
+for (let i = 1; i <= numIngresar; i ++) {
+    console.log(i);
+}
+
 // Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola el número más grande de la serie.
 // Pedir al usuario que ingrese una palabra y mostrar en la consola si la palabra es un palíndromo o no.
 // Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola la suma de los números pares.
@@ -264,6 +352,7 @@ switch (mes) {
 // Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola el número más pequeño de la serie.
 // Pedir al usuario que adivine un número generado aleatoriamente entre 1 y 100. Mostrar en la consola si el usuario adivinó o no el número y la cantidad de intentos que le tomó.
 // Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola la cantidad de números pares.
+
 // Dado un array de números, escribir una función que retorne el número más grande del array.
 // Dado un array de números, escribir una función que retorne un nuevo array con los números pares del array original.
 // Dado un array de números, escribir una función que retorne la suma de todos los números del array.
