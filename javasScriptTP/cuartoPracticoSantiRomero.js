@@ -635,7 +635,7 @@ console.log("El día correspondiente es: " + diaCorrespondiente);*/
 verificarLetra();*/
 
 //notas de examen
-  let notas =prompt("Ingrese un número del 0 al 10")
+ /* let notas =prompt("Ingrese un número del 0 al 10")
    switch (notas) {
     case "0":
     case "1":
@@ -655,6 +655,10 @@ verificarLetra();*/
       break;
     case "10":
       console.log("Sobresaliente")
-      break;}
-
+      break;}*/
+      // de 2 en 2
+      for (let i = 2; i <= 20; i += 2) {
+        console.log(i);
+      }
       
+
