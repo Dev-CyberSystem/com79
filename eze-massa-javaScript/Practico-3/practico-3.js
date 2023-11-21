@@ -838,6 +838,15 @@ function primerosTresMayores(arregloNumeros, numeroIngresado) {
 	}
 }
 // Dado un array de números, escribir una función que retorne un nuevo array con todos los números del array original, pero sumándoles 1.
+const btnNumerosArrayMasUno = document.getElementById('btnNumerosArrayMasUno')
+btnNumerosArrayMasUno.addEventListener('click', () => {
+	const serieNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+	numerosArrayMasUno(serieNumeros)
+})
+function numerosArrayMasUno(arregloNumeros) {
+	const arrayNumerosMasUno = arregloNumeros.map((numero) => numero + 1)
+	alert(`Los numeros de la serie ${arregloNumeros} mas 1 son: ${arrayNumerosMasUno}`)
+}
 // Dado un array de números, escribir una función que retorne un nuevo array con todos los números del array original menos el último.
 // Dado un array de números, escribir una función que retorne un nuevo array con todos los números del array original menos el primero y el último.
 // Dado un array de números, escribir una función que retorne un nuevo array con todos los números del array original menos el número que se encuentre en la posición X.
