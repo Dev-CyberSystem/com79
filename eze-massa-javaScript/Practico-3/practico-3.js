@@ -848,5 +848,15 @@ function numerosArrayMasUno(arregloNumeros) {
 	alert(`Los numeros de la serie ${arregloNumeros} mas 1 son: ${arrayNumerosMasUno}`)
 }
 // Dado un array de números, escribir una función que retorne un nuevo array con todos los números del array original menos el último.
+const btnNumerosArrayMenosUltimo = document.getElementById('btnNumerosArrayMenosUltimo')
+btnNumerosArrayMenosUltimo.addEventListener('click', () => {
+	const serieNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+	numerosArrayMenosUltimo(serieNumeros)
+})
+function numerosArrayMenosUltimo(arregloNumeros) {
+	const arrayNumerosMenosUltimo = arregloNumeros.slice(0, -1)
+	alert(`Los numeros de la serie ${arregloNumeros} menos el ultimo son: ${arrayNumerosMenosUltimo}`)
+}
 // Dado un array de números, escribir una función que retorne un nuevo array con todos los números del array original menos el primero y el último.
+
 // Dado un array de números, escribir una función que retorne un nuevo array con todos los números del array original menos el número que se encuentre en la posición X.
