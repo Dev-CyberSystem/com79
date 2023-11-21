@@ -478,6 +478,7 @@ arrayCortado3()*/
 console.log("--------------------")
 // 27)Dado un array de números, escribir una función que retorne un nuevo array con todos los números del array original, pero sumándoles 1.
 console.log("-------Ejercicio 27-----------")
+/*
 let arrayN8 = [12,1,2,3,4,5,6,7,8,9]
 
 function sumaAElementos()
@@ -490,7 +491,24 @@ function sumaAElementos()
         alert(`[${arrayN7}]`)
 }
 sumaAElementos()
+*/
 console.log("--------------------")
 // 28)Dado un array de números, escribir una función que retorne un nuevo array con todos los números del array original menos el último.
+console.log("-------Ejercicio 28-----------")
+
+let arrayN5 = [2,3,4,6,43,23,40,44,21,15,10,1111]
+
+function eliminarAultimo()
+{
+    let arrayNX1=[]
+    for(let k=0;k<arrayN5.length;k++)
+        {
+            arrayNX1.push(arrayN5[k])
+        }
+        arrayNX1.pop()
+        alert(`[${arrayNX1}]`)
+}
+eliminarAultimo()
+console.log("--------------------")
 // 29)Dado un array de números, escribir una función que retorne un nuevo array con todos los números del array original menos el primero y el último.
 // 30)Dado un array de números, escribir una función que retorne un nuevo array con todos los números del array original menos el número que se encuentre en la posición X.
