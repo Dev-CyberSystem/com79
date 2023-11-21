@@ -491,7 +491,7 @@ verificarFecha();*/
  
 //meses del anio
 
-let mesesDelAnio = parseInt(prompt("ingrese un número del 1 al 12"))
+/*let mesesDelAnio = parseInt(prompt("ingrese un número del 1 al 12"))
 
 switch (mesesDelAnio) {
   case 1: 
@@ -534,6 +534,30 @@ switch (mesesDelAnio) {
     mes = "inexistente";
     break;
 }
- console.log(`El número ${mesesDelAnio} es el mes ${mes}`)
+ console.log(`El número ${mesesDelAnio} es el mes ${mes}`)*/
 
-
+let diaDeLaSemana = parseInt(prompt("Ingrese un número del 1 al 7"))
+   switch (diaDeLaSemana) {
+    case 1:
+      dia = "Lunes";
+      break;
+    case 2:
+      dia = "Martes";
+      break;
+      case 3:
+        dia = "Miercoles";
+        break;
+    case 4:
+      dia = "jueves";
+      break;
+    case 5:
+      dia = "Viernes";
+      break;
+    case 6:
+      dia = "Sabado";
+      break;
+    case 7:
+      dia = "Domingo";
+      break;
+   }
+   console.log(`El número ${diaDeLaSemana} es el dia ${dia}`)
