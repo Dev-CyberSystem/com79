@@ -713,7 +713,25 @@ btnNumerosParesHasta.addEventListener('click', () => {
 	}
 })
 // Dado un array de números, escribir una función que retorne el número más grande del array.
+const btnNumeroMasGrandeArray = document.getElementById('btnNumeroMasGrandeArray')
+const numeroMasGrandeArrayText = document.getElementById('numeroMasGrandeArrayText')
+btnNumeroMasGrandeArray.addEventListener('click', () => {
+	const serieNumeros = [1, 2, 3, 4, 5, 6, 7, 8]
+	numeroMasGrandeArray(serieNumeros)
+})
+function numeroMasGrandeArray(arregloNumeros) {
+	alert(`El numero mas grade de la serie ${arregloNumeros} es: ${Math.max(...arregloNumeros)}`)
+}
 // Dado un array de números, escribir una función que retorne un nuevo array con los números pares del array original.
+const btnNumerosParesArray = document.getElementById('btnNumerosParesArray')
+btnNumerosParesArray.addEventListener('click', () => {
+	const serieNumeros = [1, 2, 3, 4, 5, 6, 7, 8]
+	numerosParesArray(serieNumeros)
+})
+function numerosParesArray(arregloNumeros) {
+	const numerosPares = arregloNumeros.filter((numero) => numero % 2 == 0)
+	alert(`Los numeros pares de la serie ${arregloNumeros} son: ${numerosPares}`)
+}
 // Dado un array de números, escribir una función que retorne la suma de todos los números del array.
 // Dado un array de strings, escribir una función que retorne un nuevo array con todos los strings en mayúsculas.
 // Dado un array de números y un número X, escribir una función que retorne un nuevo array con todos los números del array original que sean mayores que X.
