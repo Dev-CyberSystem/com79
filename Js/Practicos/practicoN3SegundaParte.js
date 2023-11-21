@@ -511,6 +511,8 @@ function eliminarAultimo()
 eliminarAultimo()*/
 console.log("--------------------")
 // 29)Dado un array de números, escribir una función que retorne un nuevo array con todos los números del array original menos el primero y el último.
+console.log("-------Ejercicio 29-----------")
+/*
 let arrayN6 = [2,3,4,6,43,23,40,44,21,15,10,11,34,12,43,5]
 
 function primeroYult()
@@ -524,6 +526,29 @@ function primeroYult()
         arrayNX2.shift()
         alert(`[${arrayNX2}]`)
 }
-primeroYult()
-
+primeroYult()*/
+console.log("--------------------")
 // 30)Dado un array de números, escribir una función que retorne un nuevo array con todos los números del array original menos el número que se encuentre en la posición X.
+console.log("-------Ejercicio 30-----------")
+/*
+let arrayN4 = [2,3,4,6,43,23,40,44,21,15,10,11,34,12,43,5,7]
+let posicionX = 7
+
+function posicionXeliminado()
+{
+    let arrayNX3=[]
+    
+    for(let l=0;l<arrayN4.length;l++)
+        {
+            arrayNX3.push(arrayN4[l])
+            if(l === posicionX)
+            {
+                arrayNX3.splice(l,1)
+            }
+           
+        }
+     
+        alert(`[${arrayNX3}]`)
+}
+posicionXeliminado()*/
+console.log("--------------------")
