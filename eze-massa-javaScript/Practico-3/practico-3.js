@@ -800,6 +800,18 @@ function arrayStringMayorACinco(letras) {
 	)
 }
 // Dado un array de strings, escribir una función que retorne un nuevo array con todos los strings que tengan más de 5 caracteres y que empiecen con la letra "a".
+const btnArrayStringMayorACincoYA = document.getElementById('btnArrayStringMayorACincoYA')
+btnArrayStringMayorACincoYA.addEventListener('click', () => {
+	const letras = ['casa', 'auto', 'aristoteles', 'biblioteca', 'faro', 'futbol', 'hola', 'arquitecto']
+	arrayStringMayorACincoYA(letras)
+})
+function arrayStringMayorACincoYA(letras) {
+	alert(
+		`Los strings de la serie: ${letras} con 5 caracteres o más y que empiecen con la letra "a" son: ${letras
+			.filter((string) => string.length >= 5)
+			.filter((string) => string[0] === 'a')}`
+	)
+}
 // Dado un array de números y un número X, escribir una función que retorne un nuevo array con todos los números del array original que sean mayores que X. Además, cortar el array resultante para que tenga solamente los primeros 3 números.
 // Dado un array de números, escribir una función que retorne un nuevo array con todos los números del array original, pero sumándoles 1.
 // Dado un array de números, escribir una función que retorne un nuevo array con todos los números del array original menos el último.
