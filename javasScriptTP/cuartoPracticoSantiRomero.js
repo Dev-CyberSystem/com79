@@ -614,7 +614,7 @@ console.log("El día correspondiente es: " + diaCorrespondiente);*/
 
 //MAYUSCULA minuscula
 
-function verificarLetra() {
+/*function verificarLetra() {
   const letra = prompt("Ingresa una letra: ");
   if (letra.length !== 1) {
     console.log("Por favor, ingresa solo una letra.");
@@ -632,4 +632,29 @@ function verificarLetra() {
      console.log(`"${letra}" no es una letra válida.`); }
       }
 
-verificarLetra();
+verificarLetra();*/
+
+//notas de examen
+  let notas =prompt("Ingrese un número del 0 al 10")
+   switch (notas) {
+    case "0":
+    case "1":
+    case "2":
+    case "3":
+    case "4":
+      console.log("Aplazado")
+      break;
+    case "5":
+    case "6":
+    case "7":
+      console.log("Aprobado")
+      break;
+    case "8":
+    case "9":
+      console.log("Notable")
+      break;
+    case "10":
+      console.log("Sobresaliente")
+      break;}
+
+      
