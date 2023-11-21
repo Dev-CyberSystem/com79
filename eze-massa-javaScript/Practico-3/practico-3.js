@@ -742,6 +742,14 @@ function sumaNumerosArray(arregloNumeros) {
 	alert(`La suma de los numeros de la serie ${arregloNumeros} es: ${arregloNumeros.reduce((a, b) => a + b)}`)
 }
 // Dado un array de strings, escribir una función que retorne un nuevo array con todos los strings en mayúsculas.
+const btnArrayAMayusculas = document.getElementById('btnArrayAMayusculas')
+btnArrayAMayusculas.addEventListener('click', () => {
+	const letras = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+	arrayAMayusculas(letras)
+})
+function arrayAMayusculas(letras) {
+	alert(`Los strings de la serie ${letras} en mayúsculas son: ${letras.map((string) => string.toUpperCase())}`)
+}
 // Dado un array de números y un número X, escribir una función que retorne un nuevo array con todos los números del array original que sean mayores que X.
 // Dado un array de números, escribir una función que retorne la suma de todos los números del array. Además, si algún número es mayor que 10, agregarlo a un nuevo array de "números grandes".
 // Dado un array de strings, escribir una función que retorne un nuevo array con todos los strings que tengan más de 5 caracteres.
