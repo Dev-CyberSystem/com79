@@ -656,9 +656,19 @@ verificarLetra();*/
     case "10":
       console.log("Sobresaliente")
       break;}*/
+
       // de 2 en 2
-      for (let i = 2; i <= 20; i += 2) {
+     /* for (let i = 2; i <= 20; i += 2) {
         console.log(i);
-      }
+      }*/
       
+      //todas MAYUSCULAS
+
+      const palabra = prompt("Ingresa una palabra:");
+
+      for (let i = 0; i < palabra.length; i++) {
+       const letraMayus = palabra[i].toUpperCase();
+       console.log(letraMayus);
+       }
+
 
