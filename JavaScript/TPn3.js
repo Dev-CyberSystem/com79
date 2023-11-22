@@ -2,6 +2,8 @@
 
 //Tareas
 
+// LOS EJERCICIOS CON PROMPT FUERON COMENTADOS PARA MINIMIZAR LA MOLESTIA, DESCOMENTE PARA PROBAR !!!
+
 // Crea una Funcion que reciba dos parametros y los reste, luego muestra el resultado en la consola.
 // let subtTwoPar = (parA=parseInt(prompt(`Ejercicio 1 - Ingrese un número`)), parB=parseInt(prompt(`Ejercicio 1 - Ingrese otro número`))) => {
 //     console.log(`Resultado ejercicio 1 (resta): ${parA-parB}`);
@@ -567,23 +569,23 @@ console.log(arrayPhrase);
 // RESUELTO EN EJERCICIO 13 1ra tanda!!
 
 // 12) Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola la suma de los números pares.
-let userInNumE = prompt(
-  `Por favor ingrese varios números separados por comas:`
-).split(",");
-let amountNum = userInNumE.length;
-let evenNum = [];
-let total = 0;
-let iT = 0;
-for (iT; iT <= amountNum - 1; iT++) {
-  if (userInNumE[iT] % 2 === 0) {
-    evenNum.push(userInNumE[iT]);
-  }
-}
-let iT2 = 0;
-for (iT2; iT2<=evenNum.length-1; iT2++) {
-    total += Number(evenNum[iT2]);
-}
-console.log(`La suma de los numeros pares ingresados es: ${total}`);
+// let userInNumE = prompt(
+//   `Por favor ingrese varios números separados por comas:`
+// ).split(",");
+// let amountNum = userInNumE.length;
+// let evenNum = [];
+// let total = 0;
+// let iT = 0;
+// for (iT; iT <= amountNum - 1; iT++) {
+//   if (userInNumE[iT] % 2 === 0) {
+//     evenNum.push(userInNumE[iT]);
+//   }
+// }
+// let iT2 = 0;
+// for (iT2; iT2<=evenNum.length-1; iT2++) {
+//     total += Number(evenNum[iT2]);
+// }
+// console.log(`La suma de los numeros pares ingresados es: ${total}`);
 
 
 // 13) Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola la cantidad de números negativos.
