@@ -708,13 +708,33 @@ for (let i = 1; i <= numeroIngresado; i++) {
 //el mas pequeño 
 
 
-const numeros = prompt("Ingrese números separados por la coma:");
+/*const numeros = prompt("Ingrese números separados por la coma:");
 
 const numerosArray = numeros.split(",").map(num => parseFloat(num.trim()));
 
 const numeroMasPequeno = Math.min(...numerosArray);
 
-console.log(`El número más pequeño es el : ${numeroMasPequeno}`);
+console.log(`El número más pequeño es el : ${numeroMasPequeno}`);*/
+
+//adivina adivinador
+const numeroAleatorio = Math.floor(Math.random() * 100) + 1;
+
+let intentos = 0;
+let adivinado = false;
+
+while (!adivinado) {
+    const numeroUsuario = parseInt(prompt("Adivina el número (entre 1 y 100):"));
+
+    if (numeroUsuario === numeroAleatorio) {
+        adivinado = true;
+    } else {
+        intentos++;
+        alert("¡Intenta de nuevo! Ese no es el número.");
+    }
+}
+
+console.log(`¡Felicidades! Adivinaste el número ${numeroAleatorio} en ${intentos} intentos.`);
+
 
 
 
