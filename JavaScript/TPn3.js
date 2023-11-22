@@ -550,16 +550,20 @@ console.log(arrayPhrase);
 
 
 // 9) Pedir al usuario que ingrese un número y mostrar en la consola los números del 1 al número ingresado.
-let userInNumC = parseInt(prompt(`Por favor ingrese un número:`).trim());
-let arrayNumC = [];
-let iii = 1;
-for (iii; iii<=userInNumC; iii++) {
-    arrayNumC.push(iii);
-};
-console.log(arrayNumC);
+// let userInNumC = parseInt(prompt(`Por favor ingrese un número:`).trim());
+// let arrayNumC = [];
+// let iii = 1;
+// for (iii; iii<=userInNumC; iii++) {
+//     arrayNumC.push(iii);
+// };
+// console.log(arrayNumC);
 
 
 // 10) Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola el número más grande de la serie.
+let userInNumD = prompt(`Por favor ingrese varios números separados por comas:`).split(",");
+console.log(Math.max(...userInNumD));
+
+
 // 11) Pedir al usuario que ingrese una palabra y mostrar en la consola si la palabra es un palíndromo o no.
 // 12) Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola la suma de los números pares.
 // 13) Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola la cantidad de números negativos.
