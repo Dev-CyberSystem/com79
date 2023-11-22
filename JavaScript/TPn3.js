@@ -543,11 +543,10 @@ let onlyWords = stringPhrase.trim().split(" ").join("");
 let wordsAmount = onlyWords.length;
 let arrayPhrase = [];
 let ii = 0;
-for (ii; ii<=wordsAmount-1; ii++) {
-    arrayPhrase.push(onlyWords.toUpperCase()[ii]);
-};
+for (ii; ii <= wordsAmount - 1; ii++) {
+  arrayPhrase.push(onlyWords.toUpperCase()[ii]);
+}
 console.log(arrayPhrase);
-
 
 // 9) Pedir al usuario que ingrese un número y mostrar en la consola los números del 1 al número ingresado.
 // let userInNumC = parseInt(prompt(`Por favor ingrese un número:`).trim());
@@ -558,14 +557,35 @@ console.log(arrayPhrase);
 // };
 // console.log(arrayNumC);
 
-
 // 10) Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola el número más grande de la serie.
-let userInNumD = prompt(`Por favor ingrese varios números separados por comas:`).split(",");
-console.log(Math.max(...userInNumD));
-
+// let userInNumD = prompt(
+//   `Por favor ingrese varios números separados por comas:`
+// ).split(",");
+// console.log(Math.max(...userInNumD));
 
 // 11) Pedir al usuario que ingrese una palabra y mostrar en la consola si la palabra es un palíndromo o no.
+// RESUELTO EN EJERCICIO 13 1ra tanda!!
+
 // 12) Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola la suma de los números pares.
+let userInNumE = prompt(
+  `Por favor ingrese varios números separados por comas:`
+).split(",");
+let amountNum = userInNumE.length;
+let evenNum = [];
+let total = 0;
+let iT = 0;
+for (iT; iT <= amountNum - 1; iT++) {
+  if (userInNumE[iT] % 2 === 0) {
+    evenNum.push(userInNumE[iT]);
+  }
+}
+let iT2 = 0;
+for (iT2; iT2<=evenNum.length-1; iT2++) {
+    total += Number(evenNum[iT2]);
+}
+console.log(`La suma de los numeros pares ingresados es: ${total}`);
+
+
 // 13) Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola la cantidad de números negativos.
 // 14) Pedir al usuario que ingrese un número y mostrar en la consola todos los números impares desde el 1 hasta el número ingresado.
 // 15) Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola el número más pequeño de la serie.
