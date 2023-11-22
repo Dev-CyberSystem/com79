@@ -8,14 +8,12 @@
 // };
 // subtTwoPar();
 
-
 // Crea una funcion donde se declare una variable con el valor 5 y se le sume 10, luego muestra el resultado en la consola.
 let addNum = () => {
   let valueA = 5;
   console.log(`Resultado ejercicio 2 (suma): ${valueA + 10}`);
 }; //también funciona abreviado con -let addNum = (valueA=5) => console.log(`Resultado ejercicio 2 (suma): ${valueA+10}`);-
 addNum();
-
 
 // Crea una funcion donde se declaren dos variables con valores en string y se concatenen, luego muestra el resultado en la consola.
 let concTwoStr = () => {
@@ -25,7 +23,6 @@ let concTwoStr = () => {
 }; //También funciona con -let concTwoStr = (valueB=`River`,valueC=`es pésimo ;) ...`) => console.log(`Resultado ejercicio 3 (concatenado): ${valueB} ${valueC}`);-
 concTwoStr();
 
-
 // Crea una funcion donde se declaren dos variables con valores booleanos y se compare si son iguales, luego muestra el resultado en la consola.
 let boolEqComp = () => {
   let valueD = true;
@@ -33,7 +30,6 @@ let boolEqComp = () => {
   console.log(`Resultado ejercicio 4 (comparación): ${valueD == valueE}`);
 };
 boolEqComp();
-
 
 // Crea una funcion donde se declaren dos variables con valores booleanos y se compare si son diferentes, luego muestra el resultado en la consola.
 let boolDifComp = () => {
@@ -43,7 +39,6 @@ let boolDifComp = () => {
 };
 boolDifComp();
 
-
 // Crea una funcion donde se declaren dos variables con valores numericos y se compare si el primero es mayor que el segundo, luego muestra el resultado en la consola.
 let numBigComp = () => {
   let valueH = 734;
@@ -51,7 +46,6 @@ let numBigComp = () => {
   console.log(`Resultado ejercicio 6 (mayor que): ${valueH > valueI}`);
 };
 numBigComp();
-
 
 // Crea un programa que cuente el número de palabras en una frase proporcionada por el usuario. Una palabra se define como cualquier secuencia de caracteres separada por espacios en blanco.
 // let wordQuant = (phrase=prompt(`Ingrese sus nombres y apellidos completos por favor:`)) => {
@@ -61,7 +55,6 @@ numBigComp();
 //     console.log(`Resultado ejercicio 7 bis (caracteres) es: ${letterCount}`);
 // }
 // wordQuant();
-
 
 //Crear una función que tome un número como parámetro y devuelva "Positivo" si es mayor a cero, "Negativo" si es menor a cero o "Cero" si es igual a cero.
 let filterFunc = (numberIn) => {
@@ -79,7 +72,6 @@ let filterFunc = (numberIn) => {
 };
 filterFunc();
 
-
 //Crear una función que tome un número como parámetro y devuelva "Par" si es divisible por 2 o "Impar" si no lo es.
 let evenOdd = (numberIn2) => {
   let state;
@@ -94,14 +86,11 @@ let evenOdd = (numberIn2) => {
 };
 evenOdd();
 
-
-//Crear un programa que pida al usuario un número y luego muestre si es par o impar. 
+//Crear un programa que pida al usuario un número y luego muestre si es par o impar.
 // COMPLETADO EN EJERCICIO 9 !!
 
-
-// Crear un programa que pida al usuario un número y luego muestre si es positivo, negativo o cero. 
+// Crear un programa que pida al usuario un número y luego muestre si es positivo, negativo o cero.
 // COMPLETADO EN EJERCICIO 8 !!
-
 
 // Crear un programa que pida al usuario dos números y luego muestre cuál es el mayor de los dos.
 // let higherNum = (numA, numB) => {
@@ -111,7 +100,6 @@ evenOdd();
 //     console.log(`Resultado ejercicio 10 (mayor): ${compareNum}`);
 // }
 // higherNum();
-
 
 // Crear un programa que pida al usuario una contraseña y la valide según ciertas condiciones, como la longitud y la presencia de caracteres especiales.
 // let finalPass;
@@ -136,7 +124,6 @@ evenOdd();
 // passValidation();
 // console.log(`Resultado ejercicio 11 (validación): ${finalPass}`);
 
-
 // Crear un programa que pida al usuario una calificación y luego muestre si es aprobatoria o no (nota mínima para aprobar es 70).
 // let userRatingApproved;
 // let ratingChecked = () => {
@@ -153,14 +140,12 @@ evenOdd();
 // validation ? alert(`Gracias por su calificación (${userRatingApproved}/100), la misma es aprobatoria`) : alert(`Gracias por su calificación (${userRatingApproved}/100), la misma es desaprobatoria`);
 // console.log(`Resultado ejercicio 12 (calificador): ${userRatingApproved}`);
 
-
 //Crear una función que tome una cadena como parámetro y devuelva "Es un palíndromo" si la cadena es igual al revés, de lo contrario, devolver "No es un palíndromo".
 // let userInChain = prompt(`Por favor ingrese un palíndromo`).trim().toUpperCase();
 // let stdChain = userInChain.split("");
 // let invChain = [...stdChain].reverse();
 // let validationChain = stdChain.join("")===invChain.join("");
 // validationChain ? (alert(`"${userInChain}" Es un palíndromo`),console.log(`Resultado ejercicio 13 (palíndromo):"${userInChain}" Es un palíndromo`)) : (alert(`"${userInChain}" No es un palíndromo`), console.log(`Resultado ejercicio 13 (palíndromo):"${userInChain}" No es un palíndromo`));
-
 
 // Crear un programa que pida al usuario una letra y luego muestre si es una vocal o una consonante.
 // let filteredLetter;
@@ -177,7 +162,6 @@ evenOdd();
 // let vocalValidation = filteredLetter.match(/[aeiou]/);
 // alert(`La letra "${filteredLetter}" es una ${vocalValidation ? `vocal` : `consonante`}.`);
 // console.log(`Resultado ejercicio 14 (vocal-consonante): "${filteredLetter}" es una ${vocalValidation ? `vocal` : `consonante`}.`);
-
 
 // Crear un programa que pida al usuario un número del 1 al 7 y luego muestre el día de la semana correspondiente.
 // let filteredDayNum;
@@ -196,10 +180,8 @@ evenOdd();
 // alert(`El número ingresado (${filteredDayNum}) corresponde al día ${selectedDay}.`);
 // console.log(`Resultado ejercicio 15 (seleccion día): ${selectedDay}`);
 
-
-// Crear un programa que pida al usuario un número y luego muestre si es primo o no. 
+// Crear un programa que pida al usuario un número y luego muestre si es primo o no.
 //TODAVIA NO LO PUEDO RESOLVER!!
-
 
 // Crear un programa que pida al usuario su edad y luego muestre si es mayor o menor de edad (18 años).
 // let adultCheck = () => {
@@ -215,7 +197,6 @@ evenOdd();
 //     }
 // }
 // adultCheck();
-
 
 // Crear un programa que pida al usuario dos números y luego muestre si su suma es mayor, menor o igual a 100.
 // let passedNumA;
@@ -255,7 +236,6 @@ evenOdd();
 // alert(`La suma de los números ingresados es ${validationState} que 100`);
 // console.log(`Resultado ejercicio 18 (igual menor mayor): "${passedNumA}" más "${passedNumB}" es ${validationState} que 100`);
 
-
 // Crear un programa que pida al usuario tres números y luego muestre cuál es el mayor de los tres.
 // let passedNumC;
 // let passedNumD;
@@ -294,7 +274,6 @@ evenOdd();
 // alert(`El mayor de los números ingresados es "${compareThreeNum}"`);
 // console.log(`Resultado ejercicio 19 (mayor de tres): "${compareThreeNum}" es el mayor`);
 
-
 // Crear un programa que pida al usuario una letra y luego muestre si es una letra mayúscula o minúscula.
 // let passedLetter;
 // let caseState;
@@ -315,7 +294,6 @@ evenOdd();
 // alert(`La letra ingresada "${passedLetter}" es una letra ${caseState ? `minúscula` : `mayúscula`}.`);
 // console.log(`Resultado ejercicio 20 (minúscula mayúscula): "${passedLetter}" es ${caseState ? `minúscula` : `mayúscula`}`);
 
-
 //Crear una función que tome un número como parámetro y devuelva "Fizz" si es divisible por 3, "Buzz" si es divisible por 5 o "FizzBuzz" si es divisible por ambos.
 // En cualquier otro caso, devolver el número.
 let fizzBuzz = (fbNum) => {
@@ -332,7 +310,6 @@ let fizzBuzz = (fbNum) => {
   }
 };
 console.log(`Resultado ejercicio 21 (Fizz Buzz): ${fizzBuzz()}`);
-
 
 // Crear un programa que pida al usuario un número y luego muestre si es un número perfecto o no. Un número perfecto es aquel que es igual a la suma de sus divisores propios.
 // let checkedNumP;
@@ -351,10 +328,8 @@ console.log(`Resultado ejercicio 21 (Fizz Buzz): ${fizzBuzz()}`);
 //     if (checkedNumP===)
 // } TODAVÍA NO LO PUEDO TERMINAR DE RESOLVER!!
 
-
-// Crear un programa que pida al usuario un número y luego muestre su descomposición en factores primos. 
+// Crear un programa que pida al usuario un número y luego muestre su descomposición en factores primos.
 // TODAVÍA NO LO PUEDO RESOLVER!!
-
 
 // Crear un programa que pida al usuario una fecha (día, mes y año) y luego muestre si es válida o no. Una fecha es válida si cumple con ciertas condiciones, como la cantidad de días en el mes y si es un año bisiesto o no.
 // let userInDate = prompt(`Por favor introduzca una fecha en formato dd/mm/aaaa:`).split("/");
@@ -401,7 +376,6 @@ console.log(`Resultado ejercicio 21 (Fizz Buzz): ${fizzBuzz()}`);
 // }
 // validatorDate();
 
-
 // 1) Crea un programa que reciba un número del 1 al 12 y muestre el nombre del mes correspondiente.
 // let monthNum = parseInt(prompt(`Por favor ingrese un número del 1 al 12`).trim());
 // switch (monthNum) {
@@ -446,7 +420,6 @@ console.log(`Resultado ejercicio 21 (Fizz Buzz): ${fizzBuzz()}`);
 //     break;
 // }
 
-
 // 2) Crea un programa que reciba un número del 1 al 7 y muestre el día de la semana correspondiente.
 // let dayNum = parseInt(prompt(`Por favor ingrese un número del 1 al 7`).trim());
 // switch (dayNum) {
@@ -476,10 +449,8 @@ console.log(`Resultado ejercicio 21 (Fizz Buzz): ${fizzBuzz()}`);
 //     break;
 // }
 
-
 // 3) Crea un programa que reciba un carácter y muestre si es una vocal o una consonante.
 // RESUELTO EN EJERCICIO 14 1ra tanda!!
-
 
 // 4) Crea un programa que reciba un número del 1 al 5 y muestre el nombre del día de la semana correspondiente a esa posición en un arreglo.
 // let dayNum = parseInt(prompt(`Por favor ingrese un número del 1 al 5`).trim());
@@ -502,15 +473,61 @@ console.log(`Resultado ejercicio 21 (Fizz Buzz): ${fizzBuzz()}`);
 //     break;
 //   default:
 //     console.log(`El valor ingresado es incorrecto`);
+//     arrayNum.push(`INCORRECTO`);
 //     break;
 // }
 // let stringNum = arrayNum.join(" ");
 // console.log(arrayNum);
 // console.log(stringNum);
 
-
 // 5) Crea un programa que reciba una letra y muestre si es mayúscula o minúscula.
+// RESUELTO EN EJERCICIO 20 1ra tanda!!
+
 // 6) Crea un programa que reciba una nota del 0 al 10 y muestre la calificación correspondiente (suspenso, aprobado, notable, sobresaliente).
+// let userInScore = parseInt(prompt(`Por favor ingrese un número del 1 al 5`).trim());
+// let scoreNote;
+// switch (userInScore) {
+//   case 0:
+//     scoreNote = `suspenso`;
+//     break;
+//   case 1:
+//     scoreNote = `suspenso`;
+//     break;
+//   case 2:
+//     scoreNote = `suspenso`;
+//     break;
+//   case 3:
+//     scoreNote = `suspenso`;
+//     break;
+//   case 4:
+//     scoreNote = `suspenso`;
+//     break;
+//   case 5:
+//     scoreNote = `suspenso`;
+//     break;
+//   case 6:
+//     scoreNote = `aprobado`;
+//     break;
+//   case 7:
+//     scoreNote = `aprobado`;
+//     break;
+//   case 8:
+//     scoreNote = `aprobado`;
+//     break;
+//   case 9:
+//     scoreNote = `notable`;
+//     break;
+//   case 10:
+//     scoreNote = `sobresaliente`;
+//     break;
+//   default:
+//     console.log(`El valor ingresado es incorrecto`);
+//     scoreNote = `nula`;
+//     break;
+// }
+// console.log(`La nota ingresada (${userInScore}) es: "${scoreNote}".`);
+
+
 // Imprimir los números pares del 2 al 20 en la consola.
 // Recorrer un string y mostrar en la consola cada letra en mayúsculas.
 // Pedir al usuario que ingrese un número y mostrar en la consola los números del 1 al número ingresado.
