@@ -696,14 +696,26 @@ console.log(`La cantidad de números negativos es: ${contadorNegativos}`);*/
  
 //impares desde el 1 hasta elelegido
 
-const numeroIngresado = parseInt(prompt("Ingresa un número:"));
+/*const numeroIngresado = parseInt(prompt("Ingresa un número:"));
 
 console.log(`Números impares desde 1 hasta ${numeroIngresado}:`);
 for (let i = 1; i <= numeroIngresado; i++) {
     if (i % 2 !== 0) {
         console.log(i);
     }
-}
+}*/
+
+//el mas pequeño 
+
+
+const numeros = prompt("Ingrese números separados por la coma:");
+
+const numerosArray = numeros.split(",").map(num => parseFloat(num.trim()));
+
+const numeroMasPequeno = Math.min(...numerosArray);
+
+console.log(`El número más pequeño es el : ${numeroMasPequeno}`);
+
 
 
 
