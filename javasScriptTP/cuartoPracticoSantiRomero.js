@@ -717,7 +717,7 @@ const numeroMasPequeno = Math.min(...numerosArray);
 console.log(`El número más pequeño es el : ${numeroMasPequeno}`);*/
 
 //adivina adivinador
-const numeroAleatorio = Math.floor(Math.random() * 100) + 1;
+/*const numeroAleatorio = Math.floor(Math.random() * 100) + 1;
 
 let intentos = 0;
 let adivinado = false;
@@ -733,8 +733,43 @@ while (!adivinado) {
     }
 }
 
-console.log(`¡Felicidades! Adivinaste el número ${numeroAleatorio} en ${intentos} intentos.`);
+console.log(`¡Felicidades! Adivinaste el número ${numeroAleatorio} en ${intentos} intentos.`);*/
 
+
+//números pares
+
+/*const numeros = prompt("Ingresa una serie de números separados por coma:");
+
+const numerosArray = numeros.split(",").map(num => parseInt(num.trim()));
+
+const numerosPares = numerosArray.filter(num => num % 2 === 0);
+
+const cantidadNumerosPares = numerosPares.length;
+console.log(`La cantidad de números pares es: ${cantidadNumerosPares}`);*/
+
+
+
+//el mas grande
+
+function encontrarNumeroMasGrande(arrayDeNumeros) {
+  let numeroMasGrande = arrayDeNumeros[0];
+
+  for (let i = 1; i < arrayDeNumeros.length; i++) {
+      if (arrayDeNumeros[i] > numeroMasGrande) {
+          numeroMasGrande = arrayDeNumeros[i];
+      }
+  }
+
+  return numeroMasGrande;
+}
+
+const numerosIngresados = prompt("Ingresa una serie de números separados por coma:");
+
+const numerosArray = numerosIngresados.split(",").map(num => parseFloat(num.trim()));
+
+const resultado = encontrarNumeroMasGrande(numerosArray);
+
+console.log(`El número más grande es: ${resultado}`);
 
 
 
