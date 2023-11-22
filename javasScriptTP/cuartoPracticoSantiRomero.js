@@ -673,11 +673,26 @@ verificarLetra();*/
 
        //desde 0 hasta el seleccionado
 
-       const numeroIngresado = parseInt(prompt("Ingresa un número:"));
+       /*const numeroIngresado = parseInt(prompt("Ingresa un número:"));
 
         for (let i = 0; i <= numeroIngresado; i++) {
         console.log(i);
-         }
+         }*/
+         
+  // números negativos
+
+const numeros = prompt("Ingresa una serie de números separados por coma:");
+const numerosArray = numeros.split(",");
+
+let contadorNegativos = 0;
+
+numerosArray.forEach(numero => {
+    if (parseFloat(numero) < 0) {
+        contadorNegativos++;
+    }
+});
+
+console.log(`La cantidad de números negativos es: ${contadorNegativos}`);
 
 
 

@@ -204,19 +204,19 @@ console.log(posicion);
 // 6) Crea un programa que reciba una nota del 0 al 10 y muestre la calificación correspondiente (suspenso, aprobado, notable, sobresaliente).
 // Imprimir los números pares del 2 al 20 en la consola.
 // Recorrer un string y mostrar en la consola cada letra en mayúsculas.
-
-
 // Pedir al usuario que ingrese un número y mostrar en la consola los números del 1 al número ingresado.
 // Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola el número más grande de la serie.
 // Pedir al usuario que ingrese una palabra y mostrar en la consola si la palabra es un palíndromo o no.
 // Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola la suma de los números pares.
 // Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola la cantidad de números negativos.
+
+
 // Pedir al usuario que ingrese un número y mostrar en la consola todos los números impares desde el 1 hasta el número ingresado.
 // Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola el número más pequeño de la serie.
 // Pedir al usuario que adivine un número generado aleatoriamente entre 1 y 100. Mostrar en la consola si el usuario adivinó o no el número y la cantidad de intentos que le tomó.
 // Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola la cantidad de números pares.
 // Dado un array de números, escribir una función que retorne el número más grande del array.
-// Dado un array de números, escribir una función que retorne un nuevo array con los números pares del array original.
+// Dado un array de números, escribir una función que retorne un nuevo array con los números parzes del array original.
 // Dado un array de números, escribir una función que retorne la suma de todos los números del array.
 // Dado un array de strings, escribir una función que retorne un nuevo array con todos los strings en mayúsculas.
 // Dado un array de números y un número X, escribir una función que retorne un nuevo array con todos los números del array original que sean mayores que X.
