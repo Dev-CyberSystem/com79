@@ -174,19 +174,7 @@ function resta(num1, num2) {
   comparacion1();
 
   // Crear un programa que pida al usuario una contraseña y la valide según ciertas condiciones, como la longitud y la presencia de caracteres especiales.
-  //function comparacion2() {
-   // let contrasena = prompt("Ingrese una contraseña")
-   // let alfabeto = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()";
-   // let regex = /^(?=.*[A-Z])(?=.*[a-z]{2,})(?=.*\d{4,})(?=.*[!@#$%^&*()]).{6,12}$/;
-  //  let valido = regex.test(contrasena);
-
-  //  if (valido) {
-    //    console.log("La contraseña ingresada es valida");
-   //   } else {
-  //      console.log("La contraseña ingresada es invalida");
-   //   } 
- // }
- // comparacion2();
+ 
 
  // Crear un programa que pida al usuario una calificación y luego muestre si es aprobatoria o no (nota mínima para aprobar es 70).
  function comparacion3() {
