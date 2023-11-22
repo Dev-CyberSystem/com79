@@ -681,7 +681,7 @@ verificarLetra();*/
          
   // números negativos
 
-const numeros = prompt("Ingresa una serie de números separados por coma:");
+/*const numeros = prompt("Ingrese números separados por coma:");
 const numerosArray = numeros.split(",");
 
 let contadorNegativos = 0;
@@ -692,7 +692,19 @@ numerosArray.forEach(numero => {
     }
 });
 
-console.log(`La cantidad de números negativos es: ${contadorNegativos}`);
+console.log(`La cantidad de números negativos es: ${contadorNegativos}`);*/
+ 
+//impares desde el 1 hasta elelegido
+
+const numeroIngresado = parseInt(prompt("Ingresa un número:"));
+
+console.log(`Números impares desde 1 hasta ${numeroIngresado}:`);
+for (let i = 1; i <= numeroIngresado; i++) {
+    if (i % 2 !== 0) {
+        console.log(i);
+    }
+}
+
 
 
 
