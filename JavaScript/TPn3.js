@@ -2,7 +2,6 @@
 
 //Tareas
 
-
 // Crea una Funcion que reciba dos parametros y los reste, luego muestra el resultado en la consola.
 // let subtTwoPar = (parA=parseInt(prompt(`Ejercicio 1 - Ingrese un número`)), parB=parseInt(prompt(`Ejercicio 1 - Ingrese otro número`))) => {
 //     console.log(`Resultado ejercicio 1 (resta): ${parA-parB}`);
@@ -12,45 +11,45 @@
 
 // Crea una funcion donde se declare una variable con el valor 5 y se le sume 10, luego muestra el resultado en la consola.
 let addNum = () => {
-    let valueA = 5;
-    console.log(`Resultado ejercicio 2 (suma): ${valueA+10}`);
+  let valueA = 5;
+  console.log(`Resultado ejercicio 2 (suma): ${valueA + 10}`);
 }; //también funciona abreviado con -let addNum = (valueA=5) => console.log(`Resultado ejercicio 2 (suma): ${valueA+10}`);-
 addNum();
 
 
 // Crea una funcion donde se declaren dos variables con valores en string y se concatenen, luego muestra el resultado en la consola.
 let concTwoStr = () => {
-    let valueB = `River`;
-    let valueC = `es pésimo ;)`;
-    console.log(`Resultado ejercicio 3 (concatenado): ${valueB} ${valueC}`);
+  let valueB = `River`;
+  let valueC = `es pésimo ;)`;
+  console.log(`Resultado ejercicio 3 (concatenado): ${valueB} ${valueC}`);
 }; //También funciona con -let concTwoStr = (valueB=`River`,valueC=`es pésimo ;) ...`) => console.log(`Resultado ejercicio 3 (concatenado): ${valueB} ${valueC}`);-
 concTwoStr();
 
 
 // Crea una funcion donde se declaren dos variables con valores booleanos y se compare si son iguales, luego muestra el resultado en la consola.
 let boolEqComp = () => {
-    let valueD = true;
-    let valueE = false;
-    console.log(`Resultado ejercicio 4 (comparación): ${valueD==valueE}`);
+  let valueD = true;
+  let valueE = false;
+  console.log(`Resultado ejercicio 4 (comparación): ${valueD == valueE}`);
 };
 boolEqComp();
 
 
 // Crea una funcion donde se declaren dos variables con valores booleanos y se compare si son diferentes, luego muestra el resultado en la consola.
 let boolDifComp = () => {
-    let valueF = false;
-    let valueG = false;
-    console.log(`Resultado ejercicio 5 (diferente de): ${valueF!=valueG}`);
+  let valueF = false;
+  let valueG = false;
+  console.log(`Resultado ejercicio 5 (diferente de): ${valueF != valueG}`);
 };
 boolDifComp();
 
 
 // Crea una funcion donde se declaren dos variables con valores numericos y se compare si el primero es mayor que el segundo, luego muestra el resultado en la consola.
 let numBigComp = () => {
-    let valueH = 734;
-    let valueI = 652;
-    console.log(`Resultado ejercicio 6 (mayor que): ${valueH>valueI}`);
-}
+  let valueH = 734;
+  let valueI = 652;
+  console.log(`Resultado ejercicio 6 (mayor que): ${valueH > valueI}`);
+};
 numBigComp();
 
 
@@ -66,39 +65,42 @@ numBigComp();
 
 //Crear una función que tome un número como parámetro y devuelva "Positivo" si es mayor a cero, "Negativo" si es menor a cero o "Cero" si es igual a cero.
 let filterFunc = (numberIn) => {
-    let tempData;
-    if (numberIn > 0) {
-        tempData = `Positivo`;
-    } else if (numberIn < 0) {
-        tempData = `Negativo`;
-    } else if (numberIn === 0) {
-        tempData = `Cero`;
-    } else {
-        tempData = `Ingrese un número por favor...`;
-    }
-    console.log(`Resultado ejercicio 8 (signo): ${tempData}`);
-}
+  let tempData;
+  if (numberIn > 0) {
+    tempData = `Positivo`;
+  } else if (numberIn < 0) {
+    tempData = `Negativo`;
+  } else if (numberIn === 0) {
+    tempData = `Cero`;
+  } else {
+    tempData = `Ingrese un número por favor...`;
+  }
+  console.log(`Resultado ejercicio 8 (signo): ${tempData}`);
+};
 filterFunc();
 
 
 //Crear una función que tome un número como parámetro y devuelva "Par" si es divisible por 2 o "Impar" si no lo es.
 let evenOdd = (numberIn2) => {
-    let state;
-    if (numberIn2%2==0) {
-        state = `Par`;
-    } else if (numberIn2==undefined) {
-        state= `Ingrese un número por favor...`;
-    } else {
-        state = `Impar`;
-    }
-    console.log(`Resultado ejercicio 9 (par-impar): ${state}`);
-}
+  let state;
+  if (numberIn2 % 2 == 0) {
+    state = `Par`;
+  } else if (numberIn2 == undefined) {
+    state = `Ingrese un número por favor...`;
+  } else {
+    state = `Impar`;
+  }
+  console.log(`Resultado ejercicio 9 (par-impar): ${state}`);
+};
 evenOdd();
 
 
-//Crear un programa que pida al usuario un número y luego muestre si es par o impar. COMPLETADO EN EJERCICIO 9 !!
+//Crear un programa que pida al usuario un número y luego muestre si es par o impar. 
+// COMPLETADO EN EJERCICIO 9 !!
 
-// Crear un programa que pida al usuario un número y luego muestre si es positivo, negativo o cero. COMPLETADO EN EJERCICIO 8 !!
+
+// Crear un programa que pida al usuario un número y luego muestre si es positivo, negativo o cero. 
+// COMPLETADO EN EJERCICIO 8 !!
 
 
 // Crear un programa que pida al usuario dos números y luego muestre cuál es el mayor de los dos.
@@ -195,7 +197,9 @@ evenOdd();
 // console.log(`Resultado ejercicio 15 (seleccion día): ${selectedDay}`);
 
 
-// Crear un programa que pida al usuario un número y luego muestre si es primo o no. TODAVIA NO LO PUEDO RESOLVER!!
+// Crear un programa que pida al usuario un número y luego muestre si es primo o no. 
+//TODAVIA NO LO PUEDO RESOLVER!!
+
 
 // Crear un programa que pida al usuario su edad y luego muestre si es mayor o menor de edad (18 años).
 // let adultCheck = () => {
@@ -312,22 +316,22 @@ evenOdd();
 // console.log(`Resultado ejercicio 20 (minúscula mayúscula): "${passedLetter}" es ${caseState ? `minúscula` : `mayúscula`}`);
 
 
-//Crear una función que tome un número como parámetro y devuelva "Fizz" si es divisible por 3, "Buzz" si es divisible por 5 o "FizzBuzz" si es divisible por ambos. 
+//Crear una función que tome un número como parámetro y devuelva "Fizz" si es divisible por 3, "Buzz" si es divisible por 5 o "FizzBuzz" si es divisible por ambos.
 // En cualquier otro caso, devolver el número.
 let fizzBuzz = (fbNum) => {
-    if (fbNum==undefined) {
-        return `Ingrese un número por favor`;
-    } else if ((fbNum%3===0)&&(fbNum%5!=0)) {
-        return `Fizz`;
-    } else if ((fbNum%3!=0)&&(fbNum%5===0)) {
-        return `Buzz`;
-    } else if ((fbNum%3===0)&&(fbNum%5===0)) {
-        return `FizzBuzz`;
-    } else {
-        return fbNum;
-    }
-}
-console.log(`Resultado ejercicio 21 (Fizz Buzz): ${fizzBuzz()}`)
+  if (fbNum == undefined) {
+    return `Ingrese un número por favor`;
+  } else if (fbNum % 3 === 0 && fbNum % 5 != 0) {
+    return `Fizz`;
+  } else if (fbNum % 3 != 0 && fbNum % 5 === 0) {
+    return `Buzz`;
+  } else if (fbNum % 3 === 0 && fbNum % 5 === 0) {
+    return `FizzBuzz`;
+  } else {
+    return fbNum;
+  }
+};
+console.log(`Resultado ejercicio 21 (Fizz Buzz): ${fizzBuzz()}`);
 
 
 // Crear un programa que pida al usuario un número y luego muestre si es un número perfecto o no. Un número perfecto es aquel que es igual a la suma de sus divisores propios.
@@ -348,7 +352,9 @@ console.log(`Resultado ejercicio 21 (Fizz Buzz): ${fizzBuzz()}`)
 // } TODAVÍA NO LO PUEDO TERMINAR DE RESOLVER!!
 
 
-// Crear un programa que pida al usuario un número y luego muestre su descomposición en factores primos. TODAVÍA NO LO PUEDO RESOLVER!!
+// Crear un programa que pida al usuario un número y luego muestre su descomposición en factores primos. 
+// TODAVÍA NO LO PUEDO RESOLVER!!
+
 
 // Crear un programa que pida al usuario una fecha (día, mes y año) y luego muestre si es válida o no. Una fecha es válida si cumple con ciertas condiciones, como la cantidad de días en el mes y si es un año bisiesto o no.
 // let userInDate = prompt(`Por favor introduzca una fecha en formato dd/mm/aaaa:`).split("/");
@@ -396,11 +402,113 @@ console.log(`Resultado ejercicio 21 (Fizz Buzz): ${fizzBuzz()}`)
 // validatorDate();
 
 
-
 // 1) Crea un programa que reciba un número del 1 al 12 y muestre el nombre del mes correspondiente.
+// let monthNum = parseInt(prompt(`Por favor ingrese un número del 1 al 12`).trim());
+// switch (monthNum) {
+//   case 1:
+//     console.log(`Usted a seleccionado el mes de enero (${monthNum})`);
+//     break;
+//   case 2:
+//     console.log(`Usted a seleccionado el mes de febrero (${monthNum})`);
+//     break;
+//   case 3:
+//     console.log(`Usted a seleccionado el mes de marzo (${monthNum})`);
+//     break;
+//   case 4:
+//     console.log(`Usted a seleccionado el mes de abril (${monthNum})`);
+//     break;
+//   case 5:
+//     console.log(`Usted a seleccionado el mes de mayo (${monthNum})`);
+//     break;
+//   case 6:
+//     console.log(`Usted a seleccionado el mes de junio (${monthNum})`);
+//     break;
+//   case 7:
+//     console.log(`Usted a seleccionado el mes de julio (${monthNum})`);
+//     break;
+//   case 8:
+//     console.log(`Usted a seleccionado el mes de agosto (${monthNum})`);
+//     break;
+//   case 9:
+//     console.log(`Usted a seleccionado el mes de setiembre (${monthNum})`);
+//     break;
+//   case 10:
+//     console.log(`Usted a seleccionado el mes de octubre (${monthNum})`);
+//     break;
+//   case 11:
+//     console.log(`Usted a seleccionado el mes de noviembre (${monthNum})`);
+//     break;
+//   case 12:
+//     console.log(`Usted a seleccionado el mes de diciembre (${monthNum})`);
+//     break;
+//   default:
+//     console.log(`El valor ingresado es incorrecto`);
+//     break;
+// }
+
+
 // 2) Crea un programa que reciba un número del 1 al 7 y muestre el día de la semana correspondiente.
+// let dayNum = parseInt(prompt(`Por favor ingrese un número del 1 al 7`).trim());
+// switch (dayNum) {
+//   case 1:
+//     console.log(`Usted a seleccionado el día lunes`);
+//     break;
+//   case 2:
+//     console.log(`Usted a seleccionado el día martes`);
+//     break;
+//   case 3:
+//     console.log(`Usted a seleccionado el día miércoles`);
+//     break;
+//   case 4:
+//     console.log(`Usted a seleccionado el día jueves`);
+//     break;
+//   case 5:
+//     console.log(`Usted a seleccionado el día viernes`);
+//     break;
+//   case 6:
+//     console.log(`Usted a seleccionado el día sábado`);
+//     break;
+//   case 7:
+//     console.log(`Usted a seleccionado el día domingo`);
+//     break;
+//   default:
+//     console.log(`El valor ingresado es incorrecto`);
+//     break;
+// }
+
+
 // 3) Crea un programa que reciba un carácter y muestre si es una vocal o una consonante.
+// RESUELTO EN EJERCICIO 14 1ra tanda!!
+
+
 // 4) Crea un programa que reciba un número del 1 al 5 y muestre el nombre del día de la semana correspondiente a esa posición en un arreglo.
+// let dayNum = parseInt(prompt(`Por favor ingrese un número del 1 al 5`).trim());
+// let arrayNum = [`El`, `día`, `seleccionado`, `es`, `el`];
+// switch (dayNum) {
+//   case 1:
+//     arrayNum.push(`lunes`);
+//     break;
+//   case 2:
+//     arrayNum.push(`martes`);
+//     break;
+//   case 3:
+//     arrayNum.push(`miercoles`);
+//     break;
+//   case 4:
+//     arrayNum.push(`jueves`);
+//     break;
+//   case 5:
+//     arrayNum.push(`viernes`);
+//     break;
+//   default:
+//     console.log(`El valor ingresado es incorrecto`);
+//     break;
+// }
+// let stringNum = arrayNum.join(" ");
+// console.log(arrayNum);
+// console.log(stringNum);
+
+
 // 5) Crea un programa que reciba una letra y muestre si es mayúscula o minúscula.
 // 6) Crea un programa que reciba una nota del 0 al 10 y muestre la calificación correspondiente (suspenso, aprobado, notable, sobresaliente).
 // Imprimir los números pares del 2 al 20 en la consola.
