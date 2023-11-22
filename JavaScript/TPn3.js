@@ -527,9 +527,27 @@ console.log(`Resultado ejercicio 21 (Fizz Buzz): ${fizzBuzz()}`);
 // }
 // console.log(`La nota ingresada (${userInScore}) es: "${scoreNote}".`);
 
+// 7) Imprimir los números pares del 2 al 20 en la consola.
+let arrayEven = [];
+let i = 2;
+for (i; i <= 20; i++) {
+  if (i % 2 === 0) {
+    arrayEven.push(i);
+  }
+}
+console.log(`Números pares entre 2-20: ${arrayEven}`);
 
-// Imprimir los números pares del 2 al 20 en la consola.
-// Recorrer un string y mostrar en la consola cada letra en mayúsculas.
+// 8) Recorrer un string y mostrar en la consola cada letra en mayúsculas.
+let stringPhrase = `Esto es tan solo el mejor texto de prueba`;
+let onlyWords = stringPhrase.trim().split(" ").join("");
+let wordsAmount = onlyWords.length;
+let arrayPhrase = [];
+let ii = 0;
+for (ii; ii<=wordsAmount-1; ii++) {
+    arrayPhrase.push(onlyWords.toUpperCase()[ii]);
+};
+console.log(arrayPhrase);
+
 // Pedir al usuario que ingrese un número y mostrar en la consola los números del 1 al número ingresado.
 // Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola el número más grande de la serie.
 // Pedir al usuario que ingrese una palabra y mostrar en la consola si la palabra es un palíndromo o no.
