@@ -16,8 +16,8 @@ sumarDiez()
 
 // Crea una funcion donde se declaren dos variables con valores en string y se concatenen, luego muestra el resultado en la consola.
 function stringConcatenados(){
-    let string1=`Facundo`
-    let string2= `Gimenez`
+    let string1=`Andi`
+    let string2= `Orlandi`
     let resultado=`mi nombre es ${string1} ${string2}`
     console.log(resultado)
 }
