@@ -789,7 +789,7 @@ console.log("Números pares:", numerosPares);*/
  
 //sumando los números del array
 
-function sumarNumeros(array) {
+/*function sumarNumeros(array) {
   let suma = 0;
   
   for (let i = 0; i < array.length; i++) {
@@ -803,5 +803,18 @@ let numerosTexto = prompt("Ingresa números separados por coma (por ejemplo: 1, 
 let numerosArray = numerosTexto.split(",").map(numero => parseInt(numero));
 
 let resultadoSuma = sumarNumeros(numerosArray);
-console.log("La suma de los números ingresados es:", resultadoSuma);
+console.log("La suma de los números ingresados es:", resultadoSuma);*/
+// string del array en mayuscula
 
+function convertirAMayusculas(array) {
+  let arrayMayusculas = array.map(string => string.toUpperCase());
+  return arrayMayusculas;
+}
+
+let stringsTexto = prompt("Ingresa las palabras separadas por coma (por ejemplo: hola, mundo, cómo, estás):");
+
+let arrayDeStrings = stringsTexto.split(",");
+
+let arrayEnMayusculas = convertirAMayusculas(arrayDeStrings);
+
+console.log("Array en mayúsculas:", arrayEnMayusculas);
