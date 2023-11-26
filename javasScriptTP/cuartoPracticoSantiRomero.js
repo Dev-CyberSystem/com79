@@ -751,7 +751,7 @@ console.log(`La cantidad de números pares es: ${cantidadNumerosPares}`);*/
 
 //el mas grande
 
-function encontrarNumeroMasGrande(arrayDeNumeros) {
+/*function encontrarNumeroMasGrande(arrayDeNumeros) {
   let numeroMasGrande = arrayDeNumeros[0];
 
   for (let i = 1; i < arrayDeNumeros.length; i++) {
@@ -769,9 +769,20 @@ const numerosArray = numerosIngresados.split(",").map(num => parseFloat(num.trim
 
 const resultado = encontrarNumeroMasGrande(numerosArray);
 
-console.log(`El número más grande es: ${resultado}`);
+console.log(`El número más grande es: ${resultado}`);*/
 
+//Números pares del array
 
+function losNumerosPares(array) {
+  let numerosPares = array.filter(numero => numero % 2 === 0);
+  return numerosPares;
+}
 
+let numerosTexto = prompt("Ingresa números separados por coma (por ejemplo: 1, 2, 3):");
 
+let numerosArray = numerosTexto.split(",").map(numero => parseInt(numero));
 
+let numerosPares = losNumerosPares(numerosArray);
+
+console.log("Números ingresados:", numerosArray);
+console.log("Números pares:", numerosPares);
