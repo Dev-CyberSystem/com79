@@ -773,7 +773,7 @@ console.log(`El número más grande es: ${resultado}`);*/
 
 //Números pares del array
 
-function losNumerosPares(array) {
+/*function losNumerosPares(array) {
   let numerosPares = array.filter(numero => numero % 2 === 0);
   return numerosPares;
 }
@@ -785,4 +785,23 @@ let numerosArray = numerosTexto.split(",").map(numero => parseInt(numero));
 let numerosPares = losNumerosPares(numerosArray);
 
 console.log("Números ingresados:", numerosArray);
-console.log("Números pares:", numerosPares);
+console.log("Números pares:", numerosPares);*/
+ 
+//sumando los números del array
+
+function sumarNumeros(array) {
+  let suma = 0;
+  
+  for (let i = 0; i < array.length; i++) {
+    suma += array[i];
+  }
+
+  return suma;
+}
+
+let numerosTexto = prompt("Ingresa números separados por coma (por ejemplo: 1, 2, 3):");
+let numerosArray = numerosTexto.split(",").map(numero => parseInt(numero));
+
+let resultadoSuma = sumarNumeros(numerosArray);
+console.log("La suma de los números ingresados es:", resultadoSuma);
+
