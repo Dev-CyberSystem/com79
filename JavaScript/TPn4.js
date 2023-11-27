@@ -123,11 +123,9 @@ let btnSearchProd = document.getElementById(`btnSearchProd`);
 let btnNewProdAdd = document.getElementById(`btnNewProdAdd`);
 btnNewProdAdd.addEventListener(`click`, () => {
     addNewProdList();
-    console.log(orderCart);
 });
 btnDelProd.addEventListener(`click`, () => {
     delListProd();
-    console.log(orderCart);
 });
 btnSearchProd.addEventListener(`click`, () => {
     searchListProd();
@@ -143,6 +141,7 @@ let addNewProdList = () => {
     let newProdName = prompt(`Ingrese nombre del producto nuevo:`).toLowerCase();
     if (newProdName.match(/[a-z]/) && newProdName.length>=3) {
         orderCart.push(newProdName);
+        console.log(orderCart);
         reCount();
     } else {
         alert(`Ingrese un nombre válido (3 caracteres min.)`);
@@ -153,9 +152,11 @@ let delListProd = () => {
     let searchProdName = prompt(`Ingrese nombre del producto a eliminar:`).toLowerCase();
     for (iter=0; iter<=orderCart.length-1; iter++) {
         if (orderCart[iter].toLowerCase() === searchProdName) {
-            delMessage.innerHTML = `♦ Se eliminó el item ${orderCart[iter]}`;
+            delMessage.innerHTML = `♦ Se eliminó el producto "${orderCart[iter]}"`;
             orderCart.splice(iter, 1,);
+            console.log(orderCart);
             reCount();
+            searchMessage.innerHTML = ``;
         }
     }
     // if () {
@@ -167,7 +168,7 @@ let searchListProd = () => {
     let searchProdName = prompt(`Ingrese nombre del producto buscado:`).toLowerCase();
     for (iter=0; iter<=orderCart.length-1; iter++) {
         if (orderCart[iter].toLowerCase() === searchProdName) {
-            searchMessage.innerHTML = `♦ El producto solicitado (${orderCart[iter]}) ya se encuentra en su lista`;
+            searchMessage.innerHTML = `♦ El producto solicitado ("${orderCart[iter]}") ya se encuentra en su lista.`;
         }
     }
 }
