@@ -1,4 +1,4 @@
-// Autor: Fernández Cristian Javier
+/* // Autor: Fernández Cristian Javier
 // Trabajo Practico N° 3
 // Comisión 79i 
 // Mentores: Diego Olmi - Francisco Iturburu
@@ -322,33 +322,10 @@ function EsMayusculaOMinuscula() {
 }
 EsMayusculaOMinuscula();
  
-// Crear un programa que pida al usuario una fecha (día, mes y año) y luego muestre si es válida o no. Una fecha es válida si cumple con ciertas condiciones, como la cantidad de días en el mes y si es un año bisiesto o no.
-
-function esFechaValida() {
-    let dia = parseInt(prompt("ingrese el día:"));
-    let mes = parseInt(prompt("ingresevel mes:"));
-    let anio = parseInt(prompt("Ingrese el año:"));
-
-    if (isNaN(dia) || isNaN(mes) || isNaN(anio) || mes < 1 || mes > 12 || dia < 1 || dia > diasEnMes(mes, anio)) {
-        console.log("La fecha ingresada no es válida.");
-    } else {
-        console.log("La fecha ingresada es válida.");
-    }
-}
-
-function diasEnMes(mes, anio) {
-    return new Date(anio, mes, 0).getDate();
-}    
-
-esFechaValida();
-
 
 //Crea un programa que reciba un número del 1 al 12 y muestre el nombre del mes correspondiente.
 
-
-
 let numMes = parseInt(prompt("ingrese un nro de 1 al doce"))
-
 
 function saberMes(numeroMes) {
     
@@ -398,7 +375,6 @@ function saberMes(numeroMes) {
                 }                        
 saberMes(numMes);
 
-
 //Imprimir los números pares del 2 al 20 en la consola.
 
 function imprimirPares(){
@@ -428,4 +404,34 @@ function mostrarMayusculas() {
   }
 
   mostrarMayusculas();
+  
+// Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola la suma de los números pares.
+  function function7() {
+    let i = prompt("Ingresar numeros separados por coma: ");
+    let numeros = i.split(/[,\s]+/).map(numero => parseInt(numero.trim(), 10));
+    if (numeros.some(isNaN)) {
+      console.log("Entrada invalida. Ingresar numeros");
+    } else {
+      let suma = 0;
+      for (let i = 0; i < numeros.length; i++) {
+        suma = suma + numeros[i];
+      }
+      console.log(`La suma de los numeros es ${suma}`);
+    }
+  }; 
+  function7();
+ */
+
+  // Dado un array de números, escribir una función que retorne el número más grande del array.
+   function maxNumeroArray() {
+    let array = [-1000, 200, 40, 80, 10, 20000, 30];
+    let maxNum = -Infinity;
+    for (let i = 0; i < array.length; i++) {
+      if (array[i] > maxNum) {
+        maxNum = array[i];
+      }
+    }
+    console.log(`El maximo numero es ${maxNum}`);
+  };
+  maxNumeroArray();
  
