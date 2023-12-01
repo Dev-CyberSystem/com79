@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="cssCarrito.css">
   </head>
   <body>
     <h1>Carrito</h1>
 
     <form id="formAddProducts">
       <label>Agregar Productos</label>
-      <input type="text" id="inputAddProducts" />
+      <input type="text" maxlength="20" required id="inputAddProducts" />
       <button id="buttonAddProducts">Agregar Producto</button>
     </form>
     <ul id="productList"></ul>
@@ -24,8 +25,9 @@
     <label>filtrar Productos</label>
     <input type="text" id="inputFilterProducts" />
     <button type="button" onclick="filtrarProductos()">filtrar Producto</button>
+    
 
-    <p id="filterList"></p>
+    <ul id="filterList"></ul>
 
     <script src="./javaScript/carrito.js"></script>
   </body>

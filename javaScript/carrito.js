@@ -7,7 +7,7 @@ const productList = document.getElementById("productList");
 let inputSearch = document.getElementById("inputSearchProducts");
 let searchList = document.getElementById("searchList");
 let filterInput = document.getElementById("inputFilterProducts");
-
+let listaDeFiltrados = document.getElementById("filterList")
 //AGREGAR PRODUCTOS
 addBtnProducts.addEventListener("click", (event) => {
   event.preventDefault();
@@ -56,14 +56,37 @@ function buscarProductoEnCarrito(producto) {
 
 function filtrarProductos() {
   const filtro = filterInput.value.toLowerCase().trim();
-
   const filtrado = filtroProducto(filtro);
-
-  console.log(filtrado, "productos filtrados");
+  //aca la vacia para que muestre la coincidencia actual
+  listaDeFiltrados.innerHTML=""
+  //para mostrar los productos filtrados por pantalla verificamos que hayan y en ese caso lo recorremos al array que tiene los filtrados y los agregamos como elementos de la lista y sino mostramos que no hay coincidencia.
+if(filtrado.length>0){
+  filtrado.forEach(p => {
+  const li = document.createElement("li");
+  const boton = document.createElement("button")
+  boton.classList.add("boton")
+  boton.textContent='eliminar'
+  li.textContent=`El/los producto/s filtrados son ${p}` 
+  listaDeFiltrados.appendChild(li)
+  listaDeFiltrados.appendChild(boton)
+ 
+  
+  boton.addEventListener("click",(event)=>{
+    event.preventDefault();
+    li.remove();
+    boton.remove()
+  })
+})
+}else{
+  listaDeFiltrados.textContent="No hay coincidencias"
+  console.log("No hay coincidencias")
+  }
+ 
 }
 function filtroProducto(filtro) {
-  const productosFiltrados = carrito.filter((producto) =>
+  const productosFiltrados = carrito.filter( producto =>
     producto.includes(filtro)
   );
   return productosFiltrados;
 }
+
