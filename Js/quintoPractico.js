@@ -2,14 +2,16 @@ let arrayCarrito = [];
 
 const newProduct = document.getElementById("productInput");
 const carrito = document.getElementById("listaCarrito");
-let inputSearch = document.getElementById("inputSearchProducts");
-let searchList = document.getElementById("searchList");
+const inputSearch = document.getElementById("inputSearchProducts");
+const searchList = document.getElementById("searchList");
+const filterInput = document.getElementById("inputFilterProducts");
+const filterText= document.getElementById("filterList")
 
 function addProduct() {
   let producto = newProduct.value.trim().toLowerCase()
     if (producto !== "") {
       let productList = document.createElement("li");
-      arrayCarrito.push = producto
+      arrayCarrito.push(producto)
       productList.textContent = producto;
       // botón para eliminar
       let deleteButton = document.createElement("button");
@@ -44,4 +46,21 @@ function addProduct() {
   function buscarProductoEnCarrito(productToSearch) {
     console.log(productToSearch, "<--- Soy el producto a buscar");
     return arrayCarrito.indexOf(productToSearch);
+  }
+
+  function filterProduct() {
+    const filtro = filterInput.value.toLowerCase().trim();
+  
+    const filtrado = filtroProducto(filtro);
+    if (filtrado !== ""){
+      filterText.textContent = `el producto o los productos filtrados son ${filtrado}`
+    }
+  
+    console.log(filtrado, "productos filtrados");
+  }
+  function filtroProducto(filtro) {
+    const productosFiltrados = arrayCarrito.filter((producto) =>
+      producto.includes(filtro)
+    );
+    return productosFiltrados;
   }
