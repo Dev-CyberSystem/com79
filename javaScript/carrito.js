@@ -7,6 +7,7 @@ const productList = document.getElementById("productList");
 let inputSearch = document.getElementById("inputSearchProducts");
 let searchList = document.getElementById("searchList");
 let filterInput = document.getElementById("inputFilterProducts");
+const toDelete = document.getElementById("deleteProduct")
 
 //AGREGAR PRODUCTOS
 addBtnProducts.addEventListener("click", (event) => {
@@ -25,8 +26,16 @@ function listarProductos() {
   if (carrito.length !== 0) {
     carrito.forEach((producto, index) => {
       const li = document.createElement("li");
+      //boton  para eliminar
+      const deleteButton= document.createElement("button")
+      deleteButton.setAttribute("type","button")
+      deleteButton.textContent= "eliminar"
+      deleteButton.onclick = function () {
+        eliminarProducto(li);
+      };
       li.textContent = `${index + 1} - ${producto}`;
       productList.appendChild(li);
+      li.appendChild(deleteButton);
     });
   } else {
     productList.textContent = "El carrito esta Vacio";
@@ -66,4 +75,11 @@ function filtroProducto(filtro) {
     producto.includes(filtro)
   );
   return productosFiltrados;
+}
+
+//Eliminar Productos
+
+function eliminarProducto() {
+  let productList= document.getElementById("productList")
+  productList.removeChild(producto)
 }
