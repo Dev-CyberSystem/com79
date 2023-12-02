@@ -15,11 +15,14 @@ function addProduct() {
       productList.textContent = producto;
       // botón para eliminar
       let deleteButton = document.createElement("button");
-      deleteButton.textContent = "Eliminar";
+      let iconTrash = document.createElement("i")
+      iconTrash.setAttribute("class", "bi bi-trash3")
+      deleteButton.setAttribute("class", "btn btn-outline-danger me-0 ms-2")
       deleteButton.onclick = function () {
         eliminarElemento(productList);
       };
       // termina boton para eliminar
+      deleteButton.appendChild(iconTrash);
       productList.appendChild(deleteButton);
       carrito.appendChild(productList);
       document.getElementById("productInput").value= ""
