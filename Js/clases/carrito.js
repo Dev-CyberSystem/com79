@@ -7,6 +7,7 @@ const productList = document.getElementById('productList');
 let inputBuscar = document.getElementById('inputBuscarProducts');
 let buscarList = document.getElementById('searchList');
 let filtroinput = document.getElementById('inputFilterProducts');
+let filtroList = document.getElementById('filterList')
 
 addBtnProducts.addEventListener("click", (event) => {
     event.preventDefault()
@@ -60,6 +61,15 @@ function listarProductos() {
     const  filtroP = filtroinput.value.toLowerCase().trim();
     const filtradoP = filtroProd(filtroP)
     console.log(filtradoP, "productos filtrados");
+   if(carrito.length !== 0)
+   {
+             filtroList.textContent = `El producto es ${ filtradoP} `
+   }
+   else{
+     filtroList.textContent = `El producto ${filtradoP} no se encuentra registrado`
+   }
+
+   
   };
 
  function filtroProd(filtroP) 
