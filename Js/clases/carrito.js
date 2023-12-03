@@ -63,13 +63,11 @@ function listarProductos() {
     console.log(filtradoP, "productos filtrados");
    if(carrito.length !== 0)
    {
-             filtroList.textContent = `El producto es ${ filtradoP} `
+     filtroList.textContent = `El producto es ${ filtradoP} `
    }
    else{
      filtroList.textContent = `El producto ${filtradoP} no se encuentra registrado`
    }
-
-   
   };
 
  function filtroProd(filtroP) 
