@@ -13,16 +13,17 @@ function addProduct() {
       let productList = document.createElement("li");
       arrayCarrito.push(producto)
       productList.textContent = producto;
+      productList.setAttribute("class","list-group-item")
       // botón para eliminar
       let deleteButton = document.createElement("button");
       let iconTrash = document.createElement("i")
       iconTrash.setAttribute("class", "bi bi-trash3")
-      deleteButton.setAttribute("class", "btn btn-outline-danger me-0 ms-2")
+      deleteButton.setAttribute("class", "btn btn-outline-danger position-absolute end-0 translate-middle-y mt-2 pt-1")
       deleteButton.onclick = function () {
         eliminarElemento(productList);
       };
       // termina boton para eliminar
-      deleteButton.appendChild(iconTrash);
+      deleteButton.append(iconTrash);
       productList.appendChild(deleteButton);
       carrito.appendChild(productList);
       document.getElementById("productInput").value= ""
