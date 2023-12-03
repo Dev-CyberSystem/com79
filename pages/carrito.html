@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+
     <h1>Carrito</h1>
 
     <form id="formAddProducts">
@@ -13,11 +13,17 @@
       <input type="text" id="inputAddProducts" />
       <button id="buttonAddProducts">Agregar Producto</button>
     </form>
-<ul id="productList"> </ul>
+    <ul id="productList"> </ul>
 
+    <label> Buscar Productos</label>
+    <input type="text" id="inputBuscarProducts"/>
+    <button type="button" onclick="buscarProductos()">Buscar</button>
 
-
-</ul>
+    <p id="searchList"></p>
+    <label> Filtrar Productos</label>
+    <input type="text" id="inputFilterProducts">
+    <button type="button" onclick="filtrarProducts()"> Filtrar Producto</button>
+    <p id="filterList"></p>
 <script src="../Js/clases/carrito.js" type="text/javascript"></script>
 </body>
 </html>
