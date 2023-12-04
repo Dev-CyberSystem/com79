@@ -79,12 +79,12 @@ function eliminarProductos(){
   let eliminar = eliminarInput.value.toLowerCase().trim();
   for(let i = 0; i<contador; i++){
     if(eliminar === carrito[i]){
-      let resultadoEliminar = carrito.filter(eliminar)
-      console.log(`Su producto [${eliminar}] fue eliminado correctamente del carrito [${carrito}] `)
-      console.log(resultadoEliminar)
+
+      carrito.splice(i,1)
+      console.log('Este es el nuevo carrito:',carrito)
     }
     else{
-      console.log(`No se ha encontrado el producto ingresado`)
+       console.log(`No se ha encontrado el producto ingresado`)
     }
   }
 }
