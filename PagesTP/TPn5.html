@@ -10,11 +10,17 @@
     <main>
       <h1>TRABAJO PRÁCTICO N°5</h1>
       <h2>Fecha de presentación: 4/12/23</h2>
-      
-      <hr>
+
+      <hr />
 
       <h2>CARRITO</h2>
-      <h3><p>Tu carrito tiene <span id="cartProdAmount">0</span> productos.</p></h3>
+      <h3>
+        <p>
+          Tu carrito tiene
+          <span id="cartProdAmount">0</span>
+          productos.
+        </p>
+      </h3>
       <p>Agrega un producto</p>
       <form id="formAddProducts">
         <label>Nombre</label>
@@ -24,26 +30,24 @@
       <p>Lista de productos:</p>
       <ul id="productList"></ul>
 
-      <hr>
-      
-      <label>Buscar Productos</label>
-      <input type="text" id="inputSearchProducts" />
-      <button type="button" onclick="buscarProductos()">Buscar Producto</button>
-  
+      <hr />
+      <form action="">
+        <label>Buscar Productos</label>
+        <input type="text" id="inputSearchProducts" />
+        <button type="button" onclick="buscarProductos()">Buscar</button>
+      </form>
+
       <p id="searchList"></p>
 
-      <hr>
+      <hr />
 
-      <form action="formFilterProducts"></form>
-      <label>filtrar Productos</label>
-      <input type="text" id="inputFilterProducts" />
-      <button type="button" onclick="filtrarProductos()">filtrar Producto</button>
-  
+      <form action="formFilterProducts">
+        <label>Filtrar Productos</label>
+        <input type="text" id="inputFilterProducts" />
+        <button type="button" onclick="filtrarProductos()">Filtrar</button>
+      </form>
+
       <ul id="filterList"></ul>
-
-
-
-
 
       <!-- <form action="">
         <label>Nombre</label>
@@ -64,7 +68,6 @@
       </form>
       <p id="delMessage" ></p>
       <p id="searchMessage" ></p> -->
-
     </main>
     <footer></footer>
     <script src="../JavaScript/TPn5.js"></script>

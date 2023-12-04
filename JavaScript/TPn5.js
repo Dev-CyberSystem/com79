@@ -90,7 +90,7 @@ function listarFiltrados() {
   if (filtrado.length !== 0) {
     filtrado.forEach((producto, index) => {
       const liFilter = document.createElement("li");
-      liFilter.innerHTML = `${index + 1} - ${producto} <button type="button" onclick="carrito=carrito.splice(${index}, 1)">Eliminar</button>`;
+      liFilter.innerHTML = `${index + 1} - ${producto} <button type="button" onclick="carrito.splice(${index}, 1)">Eliminar</button>`;
       filterList.appendChild(liFilter);
     });
   }
