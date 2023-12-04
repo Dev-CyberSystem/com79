@@ -150,6 +150,7 @@ let addNewProdList = () => {
 
 let delListProd = () => {
     let searchProdName = prompt(`Ingrese nombre del producto a eliminar:`).toLowerCase();
+    // let tempVal;
     for (iter=0; iter<=orderCart.length-1; iter++) {
         if (orderCart[iter].toLowerCase() === searchProdName) {
             delMessage.innerHTML = `♦ Se eliminó el producto "${orderCart[iter]}"`;
@@ -157,18 +158,32 @@ let delListProd = () => {
             console.log(orderCart);
             reCount();
             searchMessage.innerHTML = ``;
-        }
-    }
-    // if () {
-    //     alert(`No se ha podido encontrar el producto`)
-    // }
+            // tempVal = false;
+        } 
+        // else {
+        //     tempVal = true;
+        // }
+    };
+    // if (tempVal===true) {
+    //     delMessage.innerHTML = `♦ No se encontró el producto solicitado (${searchProdName})`
+    // };
+    // console.log(tempVal);
 };
 
 let searchListProd = () => {
     let searchProdName = prompt(`Ingrese nombre del producto buscado:`).toLowerCase();
-    for (iter=0; iter<=orderCart.length-1; iter++) {
-        if (orderCart[iter].toLowerCase() === searchProdName) {
-            searchMessage.innerHTML = `♦ El producto solicitado ("${orderCart[iter]}") ya se encuentra en su lista.`;
-        }
-    }
-}
+    // let tempVal2;
+    for (iter2=0; iter2<=orderCart.length-1; iter2++) {
+        if (orderCart[iter2].toLowerCase() === searchProdName) {
+            searchMessage.innerHTML = `♦ El producto solicitado ("${orderCart[iter2]}") ya se encuentra en su lista.`;
+            // tempVal2 = false;
+        } 
+        // else {
+        // tempVal2 = true;
+        // }
+    };
+    // if (tempVal2===true) {
+    //     searchMessage.innerHTML = `♦  No se encontró el producto solicitado ("${searchProdName}").`;
+    // };
+    // console.log(tempVal2);
+};
