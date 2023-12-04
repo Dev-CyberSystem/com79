@@ -60,18 +60,40 @@ function listarProductos() {
   {
     const  filtroP = filtroinput.value.toLowerCase().trim();
     const filtradoP = filtroProd(filtroP)
-    console.log(filtradoP, "productos filtrados");
-   if(carrito.length !== 0)
-   {
-     filtroList.textContent = `El producto es ${ filtradoP} `
-   }
-   else{
-     filtroList.textContent = `El producto ${filtradoP} no se encuentra registrado`
-   }
-  };
+   filtroList.innerHTML=""
+    
+   if(filtradoP.length !== 0)
+   { 
+  //const ul = document.createElement('ul')
+    filtradoP.forEach((producto) =>
+    {
+      const li = document.createElement('li')
+      li.innerHTML=`${producto} <button onclick="eliminarProducto('${producto}')"> Eliminar </button>`
+      
+      filtroList.appendChild(li)
+    
+    });
+  }else{
+      const p = document.createElement('p')
+      p.textContent = `No hay productos que contengan ${filtroP}`;
+      filtroList.appendChild(p)
+    }
+    console.log(filtradoP, "productos filtrados"); 
+  }
 
  function filtroProd(filtroP) 
   {
    const filtradoDeProductos = carrito.filter((producto) => producto.includes(filtroP));
    return filtradoDeProductos;
   };
+  const eliminarProducto = () =>
+  {
+    console.log(producto, `<--- Soy el producto a eliminar`)
+    const indice2 = carrito.indexOf(producto);
+    if(indice2 !== -1)
+    {
+      carrito.slice(indice2,1)
+      listarProductos()
+      filtroList.textContent = " "
+    }
+  }
