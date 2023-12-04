@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TPn5</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <h1>TRABAJO PRÁCTICO N°5</h1>
+      <h2>Fecha de presentación: 4/12/23</h2>
+      
+      <hr>
+
+      <h2>CARRITO</h2>
+      <h3><p>Tu carrito tiene <span id="cartProdAmount">0</span> productos.</p></h3>
+      <p>Agrega un producto</p>
+      <form id="formAddProducts">
+        <label>Nombre</label>
+        <input type="text" id="inputAddProducts" />
+        <button id="buttonAddProducts">Agregar</button>
+      </form>
+      <p>Lista de productos:</p>
+      <ul id="productList"></ul>
+
+      <hr>
+      
+      <label>Buscar Productos</label>
+      <input type="text" id="inputSearchProducts" />
+      <button type="button" onclick="buscarProductos()">Buscar Producto</button>
+  
+      <p id="searchList"></p>
+
+      <hr>
+
+      <form action="formFilterProducts"></form>
+      <label>filtrar Productos</label>
+      <input type="text" id="inputFilterProducts" />
+      <button type="button" onclick="filtrarProductos()">filtrar Producto</button>
+  
+      <ul id="filterList"></ul>
+
+
+
+
+
+      <!-- <form action="">
+        <label>Nombre</label>
+        <input id="newProdName" type="text" placeholder="Producto nuevo...">
+        <button type="button" id="btnNewProdAdd">Agregar</button>
+        
+      </form>
+      
+      <hr>
+      <p><b>Contenido del carrito:</b></p>
+      <p id="listCart" >-Sin productos-</p>
+      <hr>
+      <form action="">
+        <label>Buscar producto</label>
+        <input id="searchProdName" type="text" placeholder="Nombre del producto...">
+        <button type="button" id="btnSearchProd">Buscar</button>
+        <button type="button" id="btnDelProd">Eliminar</button>
+      </form>
+      <p id="delMessage" ></p>
+      <p id="searchMessage" ></p> -->
+
+    </main>
+    <footer></footer>
+    <script src="../JavaScript/TPn5.js"></script>
+  </body>
+</html>
