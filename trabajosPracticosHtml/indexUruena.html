@@ -3,11 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index</title>
+    <title>Carrito</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   </head>
   <body>
 
-      <script src="../trabajosPracticosJs/tres.js"></script>
+    <h1>CARRITO</h1>
+    <form id="addProductsForm">
+      <label>Agregar un producto</label>
+      <input type="text" id="inputAddProducts">
+      <button id="buttonAddProducts">Agregar Producto</button>
+    </form>
+    <ul id="productoLista"></ul>
+
+    <label>Buscar Producto</label>
+    <input type="text" id="inputBuscarProducto" />
+    <button type="button" onclick="buscarProducto()">Buscar Producto</button>
+
+    <p id="buscarLista"></p>
+
+    <label>filtrar Productos</label>
+    <input type="text" id="inputFiltrarProducto" />
+    <button type="button" onclick="filtrarProducto()">Filtrar Producto</button>
+
+    <p id="FiltrarLista"></p>
+      <script src="../trabajosPracticosJs/quinto.js"></script>
 
   </body>
 </html>
