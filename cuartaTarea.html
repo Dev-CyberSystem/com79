@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quinta Tarea</title>
+</head>
+<body>
+    <h1>Quinta Tarea</h1>>
+    
+
+    <h2>mis prácticas</h2>
+    <form id='formulario'>
+        Nombre: <input type="text" name="Nombre" value="Georgina"/><br/>
+        Apellido: <input type="text" name="Apellido" value="Costilla"/><br/>
+    </form>
+
+    <button onclick= mostrarValores>Mostrar resultados</button> <!--el evento onclick llamara a la función: mostrarValores-->
+    <div id='valores'></div>
+
+    <script>
+        function mostrarValores(){
+            let formulario = document.forms['formulario']
+            let texto= ""
+            for (let elemento of formulario) {
+                texto += elemento.value
+            }
+            document.getElementById('valores').innerHTML= texto
+        }
+    </script>
+
+<script src="./JS/cuartaTareaYmisApuntesDePractica.js"></script>
+</body>
+</html>
