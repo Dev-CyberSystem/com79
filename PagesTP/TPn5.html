@@ -22,6 +22,7 @@
         </p>
       </h3>
       <p>Agrega un producto</p>
+
       <form id="formAddProducts">
         <label>Nombre</label>
         <input type="text" id="inputAddProducts" />
@@ -31,22 +32,21 @@
       <ul id="productList"></ul>
 
       <hr />
-      <form action="">
+
+      <form id="formSearchProducts">
         <label>Buscar Productos</label>
         <input type="text" id="inputSearchProducts" />
         <button type="button" onclick="buscarProductos()">Buscar</button>
       </form>
-
       <p id="searchList"></p>
 
       <hr />
 
-      <form action="formFilterProducts">
+      <form id="formFilterProducts">
         <label>Filtrar Productos</label>
         <input type="text" id="inputFilterProducts" />
         <button type="button" onclick="filtrarProductos()">Filtrar</button>
       </form>
-
       <ul id="filterList"></ul>
 
       <!-- <form action="">

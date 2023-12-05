@@ -4,11 +4,15 @@ const addFormProducts = document.getElementById("formAddProducts");
 const addInputProducts = document.getElementById("inputAddProducts");
 const addBtnProducts = document.getElementById("buttonAddProducts");
 const productList = document.getElementById("productList");
+
+let formSearch = document.getElementById("formSearchProducts");
 let inputSearch = document.getElementById("inputSearchProducts");
 let searchList = document.getElementById("searchList");
-let filterInput = document.getElementById("inputFilterProducts");
+
 let filterForm = document.getElementById("formFilterProducts");
+let filterInput = document.getElementById("inputFilterProducts");
 let filterList = document.getElementById("filterList");
+
 let cartProdAmount = document.getElementById(`cartProdAmount`);
 
 //AGREGAR PRODUCTOS
@@ -69,11 +73,11 @@ function buscarProductoEnCarrito(producto) {
 
 let filtrado;
 function filtrarProductos() {
-  const filtro = filterInput.value.trim();
+  let filtro = filterInput.value.trim();
 
   filtrado = filtroProducto(filtro);
 
-  console.log(filtrado, "productos filtrados");
+  console.log(`productos filtrados: ${filtrado}`);
   listarFiltrados();
 }
 function filtroProducto(filtro) {
@@ -89,8 +93,9 @@ function listarFiltrados() {
 
   if (filtrado.length !== 0) {
     filtrado.forEach((producto, index) => {
-      const liFilter = document.createElement("li");
-      liFilter.innerHTML = `${index + 1} - ${producto} <button type="button" onclick="carrito.splice(${index}, 1)">Eliminar</button>`;
+        console.log(index+1, `index`)
+      let liFilter = document.createElement("li");
+      liFilter.innerHTML = `${index+1} - ${producto} <button type="button" onclick="carrito.splice('parseInt(${index})', 1), filtrarProductos(), listarProductos()">Eliminar</button>`;
       filterList.appendChild(liFilter);
     });
   }
