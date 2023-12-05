@@ -44,9 +44,8 @@ function buscarProductos() {
   let productSearch = inputSearch.value.toLowerCase().trim();
   let indice = buscarProductoEnCarrito(productSearch);
   if (indice !== -1) {
-    searchList.textContent = `El producto ${productSearch} - esta en la posición ${
-      indice + 1
-    } del carrito`;
+    searchList.textContent = `El producto ${productSearch} - esta en la posición ${indice + 1
+      } del carrito`;
   } else {
     searchList.textContent = `El producto ${productSearch} - no esta en el carrito`;
   }
@@ -74,17 +73,16 @@ function filtroProducto(filtro) {
 
 
 //Eliminar Productos
-
-function eliminarProductos(){
+function eliminarProductos() {
   let eliminar = eliminarInput.value.toLowerCase().trim();
-  for(let i = 0; i<contador; i++){
-    if(eliminar === carrito[i]){
+  for (let i = 0; i < contador; i++) {
+    if (eliminar === carrito[i]) {
 
-      carrito.splice(i,1)
-      console.log('Este es el nuevo carrito:',carrito)
+      carrito.splice(i, 1)
+      console.log('Este es el nuevo carrito:', carrito)
     }
-    else{
-       console.log(`No se ha encontrado el producto ingresado`)
+    else {
+      console.log(`No se ha encontrado el producto ingresado`)
     }
   }
 }
