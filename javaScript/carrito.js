@@ -85,29 +85,31 @@ function filtroProducto(filtro) {
 
 
 //Eliminar Productos
-function eliminarProductos() {
-  let eliminar = eliminarInput.value.toLowerCase().trim();
-  for (let i = 0; i < contador; i++) {
-    if (eliminar === carrito[i]) {
+// function eliminarProductos() {
+//   let eliminar = eliminarInput.value.toLowerCase().trim();
+//   for (let i = 0; i < contador; i++) {
+//     if (eliminar === carrito[i]) {
 
-      carrito.splice(i, 1)
-      console.log('Este es el nuevo carrito:', carrito)
-    }
-    else {
-      console.log(`No se ha encontrado el producto ingresado`)
-    }
-  }
-}
-const eliminarProducto = (producto) => {
-  console.log(producto, "<--- Soy el producto a eliminar");
+//       carrito.splice(i, 1)
+//       console.log('Este es el nuevo carrito:', carrito)
+//     }
+//     else {
+//       console.log(`No se ha encontrado el producto ingresado`)
+//     }
+//   }
+// }
 
-  const indice = carrito.indexOf(producto);
-  if (indice !== -1) {
-    carrito.splice(indice, 1);
-    listarProductos();
-    filterList.textContent = "";
-  }
-};
+
+// const eliminarProducto = (producto) => {
+//   console.log(producto, "<--- Soy el producto a eliminar");
+
+//   const indice = carrito.indexOf(producto);
+//   if (indice !== -1) {
+//     carrito.splice(indice, 1);
+//     listarProductos();
+//     filterList.textContent = "";
+//   }
+// };
 
 // otra manera de filtrar y eliminar.
 
