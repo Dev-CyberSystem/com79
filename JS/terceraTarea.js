@@ -6,14 +6,14 @@ function resta (num1,num2){
     console.log("Este es el resultado de la resta:" + resultado)
 }resta(5,3)
 
-// Crea una funcion donde se declare una variable con el valor 5 y se le sume 10, luego muestra el resultado en la consola.
+// Crea una funcion donde se declare una letiable con el valor 5 y se le sume 10, luego muestra el resultado en la consola.
 
 function suma(numeroValor= 5){
     resultadoValor = numeroValor + 10
     console.log("Este es el resultado de la suma:" + resultadoValor)
 }suma()
 
-// Crea una funcion donde se declaren dos variables con valores en string y se concatenen, luego muestra el resultado en la consola.
+// Crea una funcion donde se declaren dos letiables con valores en string y se concatenen, luego muestra el resultado en la consola.
 
 function nombreCompleto(nombre= "Georgina", apellido= "Costilla"){
 
@@ -21,21 +21,21 @@ function nombreCompleto(nombre= "Georgina", apellido= "Costilla"){
 
 }nombreCompleto()
 
-// Crea una funcion donde se declaren dos variables con valores booleanos y se compare si son iguales, luego muestra el resultado en la consola.
+// Crea una funcion donde se declaren dos letiables con valores booleanos y se compare si son iguales, luego muestra el resultado en la consola.
 
 function valorBool(valorUno= true, valorDos=false){
     resultadoBooleano= valorUno == valorDos
-    console.log("Los valores de las variables son iguales:" + resultadoBooleano)
+    console.log("Los valores de las letiables son iguales:" + resultadoBooleano)
 }valorBool()
 
-// Crea una funcion donde se declaren dos variables con valores booleanos y se compare si son diferentes, luego muestra el resultado en la consola.
+// Crea una funcion donde se declaren dos letiables con valores booleanos y se compare si son diferentes, luego muestra el resultado en la consola.
 
 function valorBooleano(primerValor= true, segundoValor=false){
     resultadoBool= primerValor != segundoValor
-    console.log("Los valores de las variables son diferentes:" + resultadoBool)
+    console.log("Los valores de las letiables son diferentes:" + resultadoBool)
 }valorBooleano()
 
-// Crea una funcion donde se declaren dos variables con valores numericos y se compare si el primero es mayor que el segundo, luego muestra el resultado en la consola.
+// Crea una funcion donde se declaren dos letiables con valores numericos y se compare si el primero es mayor que el segundo, luego muestra el resultado en la consola.
 
 function valorNum(num1= 10, num2= 5){
     resultValor= num1 > num2
@@ -248,7 +248,19 @@ if (letraIngresada === letraIngresada.toUpperCase()) {
     console.log("Por favor, ingrese una letra.")
 }
 
-//Crear una función que tome un número como parámetro y devuelva "Fizz" si es divisible por 3, "Buzz" si es divisible por 5 o "FizzBuzz" si es divisible por ambos. En cualquier otro caso, devolver el número.
+// Crear una función que tome un número como parámetro y devuelva "Fizz" si es divisible por 3, "Buzz" si es divisible por 5 o "FizzBuzz" si es divisible por ambos. En cualquier otro caso, devolver el número.
+
+function valorFuncion (valorNum){
+    if (valorNum % 3 === 0 && valorNum % 5 === 0){
+        console.log("FizzBuzz")
+    }else if(valorNum % 5 == 0){
+        console.log("Buzz")
+    } else if (valorNum % 3 == 0){
+        console.log("Fizz")
+    }else{
+        console.log(`${valorNum} este valor ingresado, no es divisible por 3 y/o 5`)
+    }
+}valorFuncion(30)
 
 // Crear un programa que pida al usuario un número y luego muestre si es un número perfecto o no. Un número perfecto es aquel que es igual a la suma de sus divisores propios.
 
@@ -336,6 +348,14 @@ for (let i = 2; i <= 20; i += 2) {
 }
 
 // Recorrer un string y mostrar en la consola cada letra en mayúsculas.
+
+let miLetra = "georgina";
+
+for (let i = 0; i < miLetra.length; i++) {
+    let letraMayuscula = miLetra[i].toUpperCase();
+    console.log(letraMayuscula);
+}
+
 // Pedir al usuario que ingrese un número y mostrar en la consola los números del 1 al número ingresado.
 
 let numIngresar = parseInt(prompt("Ingrese un número:"))
@@ -347,6 +367,22 @@ for (let i = 1; i <= numIngresar; i ++) {
 // Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola el número más grande de la serie.
 // Pedir al usuario que ingrese una palabra y mostrar en la consola si la palabra es un palíndromo o no.
 // Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola la suma de los números pares.
+
+let entradaUsuario = prompt("Ingrese una serie de números separados por coma:")
+let numerosStr = entradaUsuario.split(',')
+let sumaPares = 0
+
+for (let i = 0; i < numerosStr.length; i++) {
+    
+    let numero = parseInt(numerosStr[i])
+    if (numero % 2 === 0) {
+
+        sumaPares += numero
+    }
+}
+
+console.log("La suma de los números pares es: " + sumaPares)
+
 // Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola la cantidad de números negativos.
 // Pedir al usuario que ingrese un número y mostrar en la consola todos los números impares desde el 1 hasta el número ingresado.
 // Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola el número más pequeño de la serie.
