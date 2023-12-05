@@ -10,6 +10,7 @@ let filterInput = document.getElementById("inputFilterProducts");
 let filterList = document.getElementById("filterList");
 
 //AGREGAR PRODUCTOS
+
 addBtnProducts.addEventListener("click", (event) => {
   event.preventDefault();
   let producto = addInputProducts.value.toLowerCase().trim();
@@ -20,6 +21,7 @@ addBtnProducts.addEventListener("click", (event) => {
 });
 
 //LISTAR PRODUCTOS
+
 function listarProductos() {
   productList.innerHTML = "";
 
