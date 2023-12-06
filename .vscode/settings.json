@@ -1,6 +1,17 @@
 {
+<<<<<<< HEAD
     "liveServer.settings.port": 5502,
     "cSpell.words": [
         "Rectangulo"
+=======
+    "cSpell.words": [
+        "caracter",
+        "comparacion",
+        "contrasena",
+        "Numeros",
+        "Palindromo",
+        "palíndromo",
+        "validacion"
+>>>>>>> 2e62f07ebcf4b43271d3aaa7320911b6653afb8a
     ]
 }
