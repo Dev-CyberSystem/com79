@@ -1,5 +1,5 @@
 //POO
-
+/*
 const objeto = 
 {
     clave: valor,
@@ -69,3 +69,26 @@ console.log(animalito, "<---- Animalito")
 
 const perro1 = new Perro('guau')
 console.log(perro1, "<---- Perro")
+*/
+//Practica de get yset
+
+class Auto{
+    constructor(marca, tipoA, precio)
+    {
+         this.marca = marca,
+         this.tipoA = tipoA,
+         this.precio = precio
+    }
+   imprimirProducto()
+   {
+    console.log(`El producto ${this.marca} , el tipo es: ${this.tipoA}, precio: ${this.precio}`)
+   }
+}
+
+const auto1 = new Auto('Toyota','SUV',2000000)
+const auto2 = new Auto('Volkswagen','4x4',5000000)
+const auto3 = new Auto('Mercedes','SUV',2000000)
+
+const deposito = [auto1, auto2, auto3]
+
+deposito.forEach(p => p.imprimirProducto())
