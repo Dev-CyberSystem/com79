@@ -1,0 +1,13 @@
+[
+    {
+      "nombre": "iphone 7",
+       "precio": 699,
+        "cantidad": 1
+    },
+    {
+        "nombre": "iphone 8",
+        "precio": 799,
+        "cantidad": 1
+     }
+
+]
