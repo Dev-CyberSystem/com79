@@ -33,7 +33,9 @@ function addProduct() {
   }
   function eliminarElemento(productToDelete) {
     let carrito = document.getElementById("listaCarrito");
+    let filterText= document.getElementById("filterList");
     carrito.removeChild(productToDelete);
+    filterText.removeChild(productToDelete);
   }
 
   function buscarProductos() {
@@ -56,9 +58,14 @@ function addProduct() {
     const filtro = filterInput.value.toLowerCase().trim();
   
     const filtrado = filtroProducto(filtro);
-    if (filtrado !== ""){
-      filterText.textContent = `el producto o los productos filtrados son ${filtrado}`
-    }
+    filtrado.forEach((producto) => {
+    if (producto !== ""){
+      let listado= document.createElement("li")
+      listado.textContent = producto
+    
+      filterText.appendChild(listado)
+      }
+    })
   
     console.log(filtrado, "productos filtrados");
   }
