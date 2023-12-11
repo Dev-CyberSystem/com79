@@ -1,0 +1,30 @@
+[
+    {
+      "nombre": "iPhone 7",
+      "precio": 699,
+      "cantidad": 1
+    },
+    {
+      "nombre": "Monitor Samsung 49",
+      "precio": 199,
+      "cantidad": 1
+    },
+    {
+      "nombre": "Teclado Razer",
+      "precio": 199,
+      "cantidad": 1
+    },
+    {
+      "nombre": "Mouse Razer",
+      "precio": 199,
+      "cantidad": 1
+    },
+    {
+      "nombre": "Mouse Pad Razer",
+      "precio": 199,
+      "cantidad": 1
+    }
+
+
+]
+
