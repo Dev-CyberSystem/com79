@@ -52,3 +52,16 @@ class persona {
 
 let estudiante = new persona ("georgina", 32, "estudiante")
 estudiante.mensaje()
+
+//También puedo asignarles como valores a una variable, las propiedades de un objeto, por ej:
+
+let yo = new persona ("georgina", 32, "estudiante")
+
+let variableAsiganadaPropiedadDelObjeto = {nombre} = yo
+console.log(nombre)
+
+let datoEdad = yo.edad
+console.log(datoEdad) //otra alternativa de guardar el valor de una propiedad en una variable 
+
+//objetos inmutables: cuando no queremos modificar, ni eliminar (delete) los elementos del objeto durante el sistema, 
+//utilizamos: object.freezer()

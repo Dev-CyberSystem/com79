@@ -53,6 +53,15 @@ perro.caracteristicas_theo.unshift("hermoso") // agrega un elemento al principio
 
 console.log(perro.caracteristicas_theo[0])
 
+let numAleatorio = Math.floor(Math.random() * 100)
+let numUsuarioAleatorio = prompt("adivine el número que se mostrará por pantalla: ")
+
+if (numAleatorio === numUsuarioAleatorio){
+    console.log(numAleatorio + "Adivino!")
+}else{
+    console.log(numAleatorio + " Ups, perdió!")
+}
+
 /*------------------------------------------------------*/
 
 // Trabajo en equipo

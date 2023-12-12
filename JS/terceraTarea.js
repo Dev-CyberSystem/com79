@@ -384,9 +384,26 @@ for (let i = 0; i < numerosStr.length; i++) {
 console.log("La suma de los números pares es: " + sumaPares)
 
 // Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola la cantidad de números negativos.
+
 // Pedir al usuario que ingrese un número y mostrar en la consola todos los números impares desde el 1 hasta el número ingresado.
+
 // Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola el número más pequeño de la serie.
+
+let numConComa = parseInt(prompt("Ingrese una serie de números separados por coma:"))
+let numIngresadoConComa = numConComa.split(',')
+
 // Pedir al usuario que adivine un número generado aleatoriamente entre 1 y 100. Mostrar en la consola si el usuario adivinó o no el número y la cantidad de intentos que le tomó.
+
+let numAleatorio = Math.floor(Math.random() * 100) + 1
+let numUsuarioAleatorio = parseInt(prompt("adivine el número que se mostrará por pantalla: "))
+
+if (numAleatorio === numUsuarioAleatorio){
+    console.log(numAleatorio + "Adivino!")
+}else{
+    console.log(numAleatorio + " Ups, perdió!")
+}
+
+
 // Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola la cantidad de números pares.
 
 // Dado un array de números, escribir una función que retorne el número más grande del array.
