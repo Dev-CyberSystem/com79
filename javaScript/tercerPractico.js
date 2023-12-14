@@ -194,9 +194,45 @@ letras();
 
 // Crear un programa que pida al usuario un número del 1 al 7 y luego muestre el día de la semana correspondiente.
 
+function calendario () {
+    let num9 = prompt("Ingrese un numero del 1 al 7: ");
+    
+    if (num9==1){
+        console.log("Es Lunes");
+    } else if (num9==2) {
+        console.log("Es Martes");
+    } else if (num9==3) {
+        console.log("Es Miercoles");
+    }  else if (num9==4) {
+        console.log("Es Jueves");
+    }  else if (num9==5) {
+        console.log("Es Viernes");
+    }  else if (num9==6) {
+        console.log("Es Sabado");
+    }  else if (num9==7) {
+        console.log("Es Domingo");
+    }
+}
 
+calendario();
 
 // Crear un programa que pida al usuario un número y luego muestre si es primo o no.
+
+function primos() {
+    let num10 = prompt("Ingrese el numero a comprobar si es primo o no: ");
+
+    if (num10 < 2) {
+      return("El numero no es primo");
+    }
+    for (var i = 2; i <= Math.sqrt(num10); i++) {
+      if (num10 % i === 0) {
+        return("El numero no es primo")
+      }
+    }
+    console.log("El numero es primo")
+  }
+primos();
+
 // Crear un programa que pida al usuario su edad y luego muestre si es mayor o menor de edad (18 años).
 // Crear un programa que pida al usuario dos números y luego muestre si su suma es mayor, menor o igual a 100.
 // Crear un programa que pida al usuario tres números y luego muestre cuál es el mayor de los tres.
