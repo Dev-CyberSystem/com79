@@ -1,0 +1,24 @@
+{
+<<<<<<< HEAD
+    "liveServer.settings.port": 5502,
+    "cSpell.words": [
+        "aniadir",
+        "telefono"
+=======
+<<<<<<< HEAD
+    "liveServer.settings.port": 5502,
+    "cSpell.words": [
+        "Rectangulo"
+=======
+    "cSpell.words": [
+        "caracter",
+        "comparacion",
+        "contrasena",
+        "Numeros",
+        "Palindromo",
+        "palíndromo",
+        "validacion"
+>>>>>>> 2e62f07ebcf4b43271d3aaa7320911b6653afb8a
+>>>>>>> 408195ee89bc4b8e6eae2b5e34bd004429bd84ae
+    ]
+}
