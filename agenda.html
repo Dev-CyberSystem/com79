@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agenda Telefónica</title>
+    </head>
+    <body>
+
+  <h1>Agenda Telefónica</h1>
+
+  <label for="nombre">Nombre:</label>
+  <input type="text" id="nombre" placeholder="Nombre">
+
+  <label for="telefono">Teléfono:</label>
+  <input type="text" id="telefono" placeholder="Teléfono">
+
+  <button type="button" onclick="aniadirContacto()">Añadir Contacto</button>
+
+  <hr>
+
+  <label for="buscarNombre">Buscar por Nombre:</label>
+  <input type="text" id="buscarNombre" placeholder="Nombre a buscar">
+
+  <button type="button" onclick="buscarContacto()">Buscar</button>
+
+  <ul id="listaContactos"></ul>
+
+  <script src="./Js/sextoPractico.js"></script>
+</body>
+</html>
