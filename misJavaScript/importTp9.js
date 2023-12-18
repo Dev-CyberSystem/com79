@@ -6,8 +6,6 @@
 // ○ Una agenda de contactos está formada por un conjunto de contactos. Se
 // podrá crear de dos formas, indicando nosotros el tamaño o con un tamaño
 // por defecto (10).
-
-
 // ○ Las funciones serán:
 // ■ aniadirContacto(Contacto): Añade un contacto a la agenda, sino la
 // agenda no puede almacenar mas contactos indicar por pantalla.
@@ -23,4 +21,15 @@
 // datos
 
 
+import {existeContacto,agregarContacto,listarContactos,buscarContacto,eliminarContacto,agendaLlena} from './exportTp9'
 
+console.log(agenda.forEach(contacto =>  console.log(contacto) ), "Esta es mi agenda")
+
+
+existeContacto('Julian5');
+existeContacto('Julian20');
+agregarContacto('julian', 38156666);
+listarContactos();
+buscarContacto('Julian');
+eliminarContacto('Julian2');
+agendaLlena();
